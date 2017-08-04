@@ -15,6 +15,28 @@ def longsword_attack():
                           damage={8: 1, 6: 2})
 
 
+def sneak_sword():
+    return PhysicalAttack(name="Sneak Sword",
+                          stat_bonus="DEX",
+                          save=None,
+                          damage={6: 3})
+
+
+def power_throw():
+    return PhysicalAttack(name="Spin Throw",
+                          stat_bonus="STR",
+                          save=None,
+                          damage={6: 3},
+                          num_available=9)
+
+
+def throw_rock():
+    return PhysicalAttack(name="Throw Rock",
+                          stat_bonus="STR",
+                          save=None,
+                          damage={4: 1})
+
+
 def mace_hit():
     return PhysicalAttack(name="Mace",
                           stat_bonus="STR",
@@ -54,3 +76,11 @@ def sacred_flame():
                        stat_bonus=None,
                        save={"stat": "DEX", "DC": 13},
                        damage={8: 1})
+
+
+def guiding_bolt():
+    return SpellAttack(name="Guiding Bolt",
+                       stat_bonus="WIS",
+                       save=None,
+                       damage={6: 4},
+                       num_available=4)

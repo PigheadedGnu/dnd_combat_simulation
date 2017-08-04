@@ -1,11 +1,15 @@
+import os
 import numpy as np
 from Simulator import Simulator
 from settings import *
 from enemies import *
 from players import *
 
-pcs = [Marshall(), Max()]
-enemies = [hobgoblin(), hobgoblin(), hobgoblin()]
+if os.path.exists("./DM_enemies.py"):
+    from DM_enemies import *
+
+pcs = [Marshall(), Max(), Johnny(), Freddy()]
+enemies = [goblin()]
 
 number_of_rounds = []
 number_of_player_deaths = []
