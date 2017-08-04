@@ -1,20 +1,21 @@
 import numpy as np
+
 from Simulator import Simulator
-from settings import *
 from enemies import *
+from heuristics.Heuristics import *
 from players import *
-from Heuristics import *
+from settings import *
 
 pcs = [Marshall(), Max()]
-enemies = [goblin(), goblin(), hobgoblin()]
-target_selection_heuristic = HighestHealth()
+enemies = [goblin(), goblin(), goblin()]
+heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())
 
 number_of_rounds = []
 number_of_player_deaths = []
 winning_teams = []
 for i in range(NUM_TRIALS):
     sim = Simulator(pcs, enemies)
-    num_rounds, num_player_deaths, winning_team = sim.run_battle(heuristics, target_selection_heuristic)
+    num_rounds, num_player_deaths, winning_team = sim.run_battle(heuristics)
     number_of_player_deaths.append(num_player_deaths)
     winning_teams.append(winning_team)
     number_of_rounds.append(num_rounds)
