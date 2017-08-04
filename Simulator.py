@@ -20,7 +20,7 @@ class Simulator:
                              sorted(pc_initiative + enemies_initiative, key=lambda x: x[1],
                                     reverse=True)]
 
-    def run_round(self, heuristics):
+    def run_round(self, heuristics, target_selection_heuristic):
         for creature, team in self.battle_order:
             if creature.hp <= 0:
                 continue
@@ -28,7 +28,7 @@ class Simulator:
             enemies = [x[0] for x in self.battle_order if x[1] != team and x[0].hp > 0]
             if not enemies:
                 break
-            creature.act(allies, enemies, heuristics)
+            creature.act(allies, enemies, heuristics, target_selection_heuristic)
 
         dead_enemies = [c.name for c in self.enemies if c.hp <= 0]
         dead_pcs = [c.name for c in self.pcs if c.hp <= 0]
@@ -39,14 +39,14 @@ class Simulator:
 
         return dead_enemies, dead_pcs
 
-    def run_battle(self, heuristics):
+    def run_battle(self, heuristics, target_selection_heuristic):
         num_player_deaths = 0
         round_num = 0
         self.calc_initiative()
         while self.enemies and self.pcs:
             if VERBOSITY > 1:
                 print("---- Round {0} ----".format(round_num))
-            enemies_dead, players_dead = self.run_round(heuristics)
+            enemies_dead, players_dead = self.run_round(heuristics, target_selection_heuristic)
             if players_dead:
                 num_player_deaths += len(players_dead)
 

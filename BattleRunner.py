@@ -3,16 +3,18 @@ from Simulator import Simulator
 from settings import *
 from enemies import *
 from players import *
+from Heuristics import *
 
 pcs = [Marshall(), Max()]
-enemies = [hobgoblin(), hobgoblin(), hobgoblin()]
+enemies = [goblin(), goblin(), hobgoblin()]
+target_selection_heuristic = HighestHealth()
 
 number_of_rounds = []
 number_of_player_deaths = []
 winning_teams = []
 for i in range(NUM_TRIALS):
     sim = Simulator(pcs, enemies)
-    num_rounds, num_player_deaths, winning_team = sim.run_battle(heuristics)
+    num_rounds, num_player_deaths, winning_team = sim.run_battle(heuristics, target_selection_heuristic)
     number_of_player_deaths.append(num_player_deaths)
     winning_teams.append(winning_team)
     number_of_rounds.append(num_rounds)
