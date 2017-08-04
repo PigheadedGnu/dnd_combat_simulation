@@ -1,11 +1,14 @@
-from random import random
+from random import random, randint
+from Creature import d20
+from settings import VERBOSITY
 
 
 class Action:
+    name = ""
     action_type = ""
     recharge_percentile = 0.0
     ready = True
-    bonus = "None"
+    stat_bonus = "None"
 
     def try_recharge(self):
         percentile = random()
@@ -17,25 +20,9 @@ class Attack(Action):
     def __init__(self, name, stat_bonus, save, damage,
                  recharge_percentile=0.0, num_available=-1, bonus_to_hit=0,
                  bonus_to_damage=0, multi_attack=1):
-        """
-        :param stat_bonus: A 3-letter stat code that is used to get the bonus for to-hit and
-         damage
-        :param save: A dictionary with an entry for the stat (a 3-letter stat code) and an entry
-         for the DC, which is an integer.
-        :param damage: A dictionary of damage dice. The key is the integer of the maximum face of
-         the dice and the value is the number of dice. E.g. {8: 6} would be 6d8 damage
-        :param recharge_percentile: Percentile to recharge the attack. Randomly generate percentile
-         after each use and on each subsequent turn and if randomly generated percentile is greater
-         than the attack is ready for use.
-        :param num_available: Number of times this attack can be used in a battle
-        :param bonus_to_hit: Bonus to hit of the attack added to the d20
-        :param bonus_to_damage: Bonus to damage of the attack, added to the attack roll.
-        :param multi_attack: How many times the attack dice should be rolled for a single
-         attack action
-        """
         assert stat_bonus is None or save is None
         self.name = name
-        self.bonus = stat_bonus
+        self.stat_bonus = stat_bonus
         self.save = save
         self.dice = damage
         self.recharge_percentile = recharge_percentile
@@ -46,11 +33,47 @@ class Attack(Action):
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Attack"
 
+    def do_damage(self, attacker, attacked):
+        raise NotImplementedError("do_damage is not implemented on this class!")
+
+
+class PhysicalAttack(Attack):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+    def do_damage(self, attacker, attacked):
+        damage = 0
+        hit_check = d20() + attacker.saves[self.stat_bonus] + self.bonus_to_hit
+        if hit_check >= attacker.ac:
+            damage = calc_roll(self) + attacker.saves[self.stat_bonus] + self.bonus_to_damage
+
+        attacked.hp -= damage
+        if VERBOSITY > 1:
+            print(attacked.name, "took", damage, "damage from", attacker.name,
+                  "({0})".format(self.name))
+
 
 class SpellAttack(Attack):
     def __init__(self, **kwargs):
-        super(SpellAttack, self).__init__(**kwargs)
-        self.action_type = "Spell Attack"
+        super().__init__(**kwargs)
+
+    def do_damage(self, attacker, attacked):
+        damage = 0
+        if self.stat_bonus is not None:
+            attack_bonus = attacker.proficiency + \
+                           attacker.saves[self.stat_bonus] if self.stat_bonus != "None" else 0
+            hit_check = d20() + attack_bonus + self.bonus_to_hit
+            if hit_check >= attacker.ac:
+                damage = calc_roll(self) + self.bonus_to_damage
+        else:
+            save_check = d20() + attacked.saves[self.save['stat']]
+            if save_check <= self.save['DC']:
+                damage = calc_roll(self) + self.bonus_to_damage
+
+        attacked.hp -= damage
+        if VERBOSITY > 1:
+            print(attacked.name, "took", damage, "damage from", attacker.name,
+                  "({0})".format(self.name))
 
 
 class Heal(Action):
@@ -63,3 +86,20 @@ class Heal(Action):
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Heal"
 
+    def do_heal(self, healer, healed):
+        health_up = calc_roll(self) + healer.saves[self.stat_bonus] if \
+            self.stat_bonus is not "None" else 0
+        new_health = min(healed.hp + health_up, healed.max_hp)
+        if VERBOSITY > 1:
+            print(healed.name, "healed from", healed.hp, "to", new_health)
+        healed.hp = new_health
+
+
+def calc_roll(action):
+    """
+    :param action: An action object with a dice property
+    """
+    total = 0
+    for max_roll, num_dice in action.dice.items():
+        total += sum(map(lambda x: randint(1, max_roll), range(num_dice)))
+    return total

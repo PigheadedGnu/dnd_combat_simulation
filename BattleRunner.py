@@ -4,7 +4,7 @@ from settings import *
 from enemies import *
 from players import *
 
-pcs = [Marshall()]
+pcs = [Marshall(), Max()]
 enemies = [goblin(), goblin(), goblin()]
 
 number_of_rounds = []
