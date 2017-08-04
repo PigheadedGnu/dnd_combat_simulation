@@ -17,8 +17,7 @@ class Creature:
         self.ac = ac
         self.proficiency = proficiency
         self.saves = saves
-        self.attacks = sorted([a for a in actions if
-                               a.action_type == "Attack" or a.action_type == "Spell Attack"],
+        self.attacks = sorted([a for a in actions if a.action_type == "Attack"],
                               key=lambda x: sum([num_dice * (max_roll/2.0+0.5)
                                                  for num_dice, max_roll in x.dice.items()]),
                               reverse=True)
@@ -27,7 +26,6 @@ class Creature:
                                                for num_dice, max_roll in x.dice.items()]),
                             reverse=True)
         self.heuristics = heuristics
-
 
     @staticmethod
     def choose_action(action_set):

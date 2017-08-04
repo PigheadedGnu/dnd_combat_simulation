@@ -5,7 +5,7 @@ from enemies import *
 from players import *
 
 pcs = [Marshall(), Max()]
-enemies = [goblin(), goblin(), goblin()]
+enemies = [hobgoblin(), hobgoblin(), hobgoblin()]
 
 number_of_rounds = []
 number_of_player_deaths = []

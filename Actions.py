@@ -33,7 +33,7 @@ class Attack(Action):
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Attack"
 
-    def do_damage(self, attacker, attacked):
+    def do_damage(self, attacker, target):
         raise NotImplementedError("do_damage is not implemented on this class!")
 
 
@@ -41,15 +41,15 @@ class PhysicalAttack(Attack):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def do_damage(self, attacker, attacked):
+    def do_damage(self, attacker, target):
         damage = 0
         hit_check = d20() + attacker.saves[self.stat_bonus] + self.bonus_to_hit
-        if hit_check >= attacker.ac:
+        if hit_check >= target.ac:
             damage = calc_roll(self) + attacker.saves[self.stat_bonus] + self.bonus_to_damage
 
-        attacked.hp -= damage
+        target.hp -= damage
         if VERBOSITY > 1:
-            print(attacked.name, "took", damage, "damage from", attacker.name,
+            print(target.name, "took", damage, "damage from", attacker.name,
                   "({0})".format(self.name))
 
 
@@ -57,7 +57,7 @@ class SpellAttack(Attack):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def do_damage(self, attacker, attacked):
+    def do_damage(self, attacker, target):
         damage = 0
         if self.stat_bonus is not None:
             attack_bonus = attacker.proficiency + \
@@ -66,13 +66,13 @@ class SpellAttack(Attack):
             if hit_check >= attacker.ac:
                 damage = calc_roll(self) + self.bonus_to_damage
         else:
-            save_check = d20() + attacked.saves[self.save['stat']]
+            save_check = d20() + target.saves[self.save['stat']]
             if save_check <= self.save['DC']:
                 damage = calc_roll(self) + self.bonus_to_damage
 
-        attacked.hp -= damage
+        target.hp -= damage
         if VERBOSITY > 1:
-            print(attacked.name, "took", damage, "damage from", attacker.name,
+            print(target.name, "took", damage, "damage from", attacker.name,
                   "({0})".format(self.name))
 
 

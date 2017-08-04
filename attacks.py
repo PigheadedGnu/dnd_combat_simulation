@@ -8,6 +8,13 @@ def short_sword_slash():
                           damage={6: 1})
 
 
+def longsword_attack():
+    return PhysicalAttack(name="Long Sword",
+                          stat_bonus="STR",
+                          save=None,
+                          damage={8: 1, 6: 2})
+
+
 def mace_hit():
     return PhysicalAttack(name="Mace",
                           stat_bonus="STR",
