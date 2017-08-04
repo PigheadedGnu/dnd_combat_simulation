@@ -3,16 +3,16 @@ from Actions import PhysicalAttack, SpellAttack
 
 def short_sword_slash():
     return PhysicalAttack(name="Short Sword",
-                  stat_bonus="STR",
-                  save=None,
-                  damage={6: 1})
+                          stat_bonus="STR",
+                          save=None,
+                          damage={6: 1})
 
 
 def mace_hit():
     return PhysicalAttack(name="Mace",
-                  stat_bonus="STR",
-                  save=None,
-                  damage={8: 1})
+                          stat_bonus="STR",
+                          save=None,
+                          damage={8: 1})
 
 
 def scorching_ray():

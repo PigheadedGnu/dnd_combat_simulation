@@ -80,15 +80,15 @@ class Heal(Action):
     def __init__(self, name, heal, stat_bonus, recharge_percentile, num_available):
         self.name = name
         self.dice = heal
-        self.bonus = stat_bonus
+        self.stat_bonus = stat_bonus
         self.recharge_percentile = recharge_percentile
         self.num_available = num_available
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Heal"
 
     def do_heal(self, healer, healed):
-        health_up = calc_roll(self) + healer.saves[self.stat_bonus] if \
-            self.stat_bonus is not "None" else 0
+        health_up = calc_roll(self) + (healer.saves[self.stat_bonus] if
+                                       self.stat_bonus != "None" else 0)
         new_health = min(healed.hp + health_up, healed.max_hp)
         if VERBOSITY > 1:
             print(healed.name, "healed from", healed.hp, "to", new_health)
