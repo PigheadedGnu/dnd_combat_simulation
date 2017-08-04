@@ -1,4 +1,3 @@
-from random import randint
 from Creature import d20
 from copy import deepcopy
 from settings import VERBOSITY

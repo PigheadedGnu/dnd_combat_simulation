@@ -30,13 +30,13 @@ class Creature:
     def take_damage(self, attack, bonus):
         damage = 0
         if attack.bonus is not None:
-            hit_check = d20() + self.saves[attack.bonus]
+            hit_check = d20() + self.saves[attack.bonus] + attack.bonus_to_hit
             if hit_check >= self.ac:
-                damage = calc_roll(attack) + bonus
+                damage = calc_roll(attack) + bonus + attack.bonus_to_damage
         else:
             save_check = d20() + self.saves[attack.save['stat']]
             if save_check <= attack.save['DC']:
-                damage = calc_roll(attack)
+                damage = calc_roll(attack) + attack.bonus_to_damage
 
         self.hp -= damage
         if VERBOSITY > 1:
