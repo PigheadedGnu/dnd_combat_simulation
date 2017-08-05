@@ -1,11 +1,14 @@
 import numpy as np
+
 from Simulator import Simulator
-from settings import *
 from enemies import *
+from heuristics.Heuristics import *
 from players import *
+from settings import *
 
 pcs = [Marshall(), Max()]
-enemies = [hobgoblin(), hobgoblin(), hobgoblin()]
+enemies = [goblin(), goblin(), goblin()]
+heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())
 
 number_of_rounds = []
 number_of_player_deaths = []

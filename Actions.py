@@ -1,6 +1,7 @@
 from random import random, randint
+
 from Creature import d20
-from settings import VERBOSITY
+from Logger import Logger
 
 
 class Action:
@@ -9,6 +10,7 @@ class Action:
     recharge_percentile = 0.0
     ready = True
     stat_bonus = "None"
+    logger = Logger()
 
     def try_recharge(self):
         percentile = random()
@@ -36,6 +38,9 @@ class Attack(Action):
     def do_damage(self, attacker, target):
         raise NotImplementedError("do_damage is not implemented on this class!")
 
+    def log_attack(self, attacker, target, damage):
+        self.logger.log_action("{0} took damage from {1} ({2})".format(target.name, damage, attacker.name))
+
 
 class PhysicalAttack(Attack):
     def __init__(self, **kwargs):
@@ -48,9 +53,7 @@ class PhysicalAttack(Attack):
             damage = calc_roll(self) + attacker.saves[self.stat_bonus] + self.bonus_to_damage
 
         target.hp -= damage
-        if VERBOSITY > 1:
-            print(target.name, "took", damage, "damage from", attacker.name,
-                  "({0})".format(self.name))
+        self.log_attack(attacker, target, damage)
 
 
 class SpellAttack(Attack):
@@ -71,9 +74,7 @@ class SpellAttack(Attack):
                 damage = calc_roll(self) + self.bonus_to_damage
 
         target.hp -= damage
-        if VERBOSITY > 1:
-            print(target.name, "took", damage, "damage from", attacker.name,
-                  "({0})".format(self.name))
+        self.log_attack(attacker, target, damage)
 
 
 class Heal(Action):
@@ -86,12 +87,14 @@ class Heal(Action):
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Heal"
 
+    def log_heal(self, healed, new_health):
+        self.logger.log_action("{0} healed from {1} to {2}".format(healed.name, healed.hp, new_health))
+
     def do_heal(self, healer, healed):
         health_up = calc_roll(self) + (healer.saves[self.stat_bonus] if
                                        self.stat_bonus != "None" else 0)
         new_health = min(healed.hp + health_up, healed.max_hp)
-        if VERBOSITY > 1:
-            print(healed.name, "healed from", healed.hp, "to", new_health)
+        self.log_heal(healed, new_health)
         healed.hp = new_health
 
 
