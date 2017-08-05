@@ -1,5 +1,6 @@
 from Creature import Creature
 from attacks import *
+from Actions import *
 
 
 def roper_bite():
@@ -10,6 +11,19 @@ def roper_bite():
 
 
 def roper():
-    return Creature(name="Roper", hp=93, ac=19, proficiency=3,
+    return Creature(name="Roper", hp=74, ac=18, proficiency=3,
                     saves={"STR": 4, "CON": 3, "DEX": -1, "INT": 1, "WIS": 1, "CHA": 1},
                     actions=[roper_bite()], heuristics=[])
+
+
+def wounding_ray():
+    return SpellSave(name="Wounding Ray",
+                     stat_bonus="INT",
+                     save={"stat": "CON", "DC": 13},
+                     damage={10: 3})
+
+
+def two_headed_spectator():
+    return Creature(name="Spectator x 2", hp=59, ac=15, proficiency=3,
+                    saves={"STR": 4, "CON": 3, "DEX": -1, "INT": 1, "WIS": 1, "CHA": 1},
+                    actions=[short_sword_slash()], heuristics=[])

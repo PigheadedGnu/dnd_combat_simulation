@@ -1,6 +1,7 @@
 from random import random, randint
 from Creature import d20
 from settings import VERBOSITY
+import math
 
 
 class Action:
@@ -69,6 +70,23 @@ class SpellAttack(Attack):
             save_check = d20() + target.saves[self.save['stat']]
             if save_check <= self.save['DC']:
                 damage = calc_roll(self) + self.bonus_to_damage
+
+        target.hp -= damage
+        if VERBOSITY > 1:
+            print(target.name, "took", damage, "damage from", attacker.name,
+                  "({0})".format(self.name))
+
+
+class SpellSave(Attack):
+    def __init__(self, **kwargs):
+        assert kwargs.get('save') is not None
+        super().__init__(**kwargs)
+
+    def do_damage(self, attacker, target):
+        save_check = d20() + target.saves[self.save['stat']]
+        damage = calc_roll(self)
+        if save_check > self.save['DC']:
+            damage = math.ceil(damage / 2.0)
 
         target.hp -= damage
         if VERBOSITY > 1:

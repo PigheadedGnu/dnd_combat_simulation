@@ -9,7 +9,7 @@ if os.path.exists("./DM_enemies.py"):
     from DM_enemies import *
 
 pcs = [Marshall(), Max(), Johnny(), Freddy()]
-enemies = [goblin()]
+enemies = [goblin(), goblin(), goblin()]
 
 number_of_rounds = []
 number_of_player_deaths = []
@@ -27,7 +27,10 @@ if NUM_TRIALS > 1:
     print("Number of times at least 1 player death:",
           len([x for x in number_of_player_deaths if x > 0]))
     print("Percent of times players won:", 1 - np.mean(winning_teams))
-    print("Average number of rounds when player won:",
-          np.mean([number_of_rounds[i] for i in range(NUM_TRIALS) if winning_teams[i] == 0]))
-    print("Average number of rounds when monsters won:",
-          np.mean([number_of_rounds[i] for i in range(NUM_TRIALS) if winning_teams[i] == 1]))
+
+    players_won = [number_of_rounds[i] for i in range(NUM_TRIALS) if winning_teams[i] == 0]
+    monsters_won = [number_of_rounds[i] for i in range(NUM_TRIALS) if winning_teams[i] == 1]
+    if players_won:
+        print("Average number of rounds when player won:", np.mean(players_won))
+    if monsters_won:
+        print("Average number of rounds when monsters won:", np.mean(monsters_won))
