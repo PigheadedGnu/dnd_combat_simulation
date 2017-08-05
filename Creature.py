@@ -3,7 +3,7 @@ from heuristics.HeuristicContainer import HeuristicContainer
 
 
 class Creature:
-    def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer):
+    def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer()):
         """
         :param hp: An integer of the creatures HP
         :param ac: An integer of the creatures AC
@@ -56,6 +56,7 @@ class Creature:
         return heuristic.select(enemies)
 
     def _check_heal_need(self, allies, should_heal_heuristic):
+        print(self.heuristics)
         if self.heuristics.heal_selection:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)
