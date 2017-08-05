@@ -12,7 +12,7 @@ def Marshall():
 def Max():
     return Creature(name="Max", hp=24, ac=13, proficiency=2,
                     saves={"STR": 2, "CON": 2, "DEX": 2, "INT": 2, "WIS": 2, "CHA": 2},
-                    actions=[scorching_ray(), magic_missile(), acid_splash()], heuristics=[])
+                    actions=[scorching_ray(), magic_missile(), acid_splash()])
 
 
 def Johnny():

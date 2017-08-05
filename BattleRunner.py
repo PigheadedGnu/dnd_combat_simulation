@@ -1,15 +1,19 @@
 import os
 import numpy as np
+
 from Simulator import Simulator
-from settings import *
 from enemies import *
+from heuristics.Heuristics import *
 from players import *
+from settings import *
 
 if os.path.exists("./DM_enemies.py"):
     from DM_enemies import *
 
 pcs = [Marshall(), Max(), Johnny(), Freddy()]
 enemies = [goblin(), goblin(), goblin()]
+heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())
+
 
 number_of_rounds = []
 number_of_player_deaths = []
