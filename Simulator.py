@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-from Creature import d20
+from utils  import d20
 from Logger import Logger
 
 

@@ -1,5 +1,5 @@
 from Actions import PhysicalAttack, SpellAttack
-
+from effects import bleed
 
 def short_sword_slash():
     return PhysicalAttack(name="Short Sword",
@@ -19,7 +19,8 @@ def sneak_sword():
     return PhysicalAttack(name="Sneak Sword",
                           stat_bonus="DEX",
                           save=None,
-                          damage={6: 3})
+                          damage={6: 3},
+                          )
 
 
 def power_throw():

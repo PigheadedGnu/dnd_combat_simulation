@@ -68,6 +68,7 @@ class LowestAC(TargetSelectionHeuristic):
     def select(self, targets):
         target = min(targets, key=lambda t: t.ac)
         self.log_target_selection(target, "Lowest ac")
+        return target
 
 
 class LowestHealthPercentage(TargetSelectionHeuristic):

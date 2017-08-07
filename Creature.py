@@ -1,4 +1,3 @@
-from random import randint
 from heuristics.HeuristicContainer import HeuristicContainer
 
 
@@ -26,6 +25,7 @@ class Creature:
                                                for num_dice, max_roll in x.dice.items()]),
                             reverse=True)
         self.heuristics = heuristics
+        self.applied_effects = []
 
     @staticmethod
     def choose_action(action_set):
@@ -37,9 +37,21 @@ class Creature:
                 action.ready = False
                 return action
 
+    def apply_effects(self):
+        if self.applied_effects is not None and len(self.applied_effects) > 0:
+            for effect in self.applied_effects:
+                if effect.turns_left == 0:
+                    self.applied_effects.remove(effect)
+            [effect.apply(self) for effect in self.applied_effects]
+
     def act(self, allies, enemies, heuristic):
         heal_target = self._check_heal_need(allies, heuristic.heal_selection)
-        if len(self.heals) > 0:
+
+        self.apply_effects()
+        if self.hp < 0:
+            return
+
+        if len(self.heals) > 0 and heal_target:
             if heal_target and [h for h in self.heals if h.num_available > 0]:
                 heal = self.choose_action(self.heals)
                 heal.do_heal(self, heal_target)
@@ -49,6 +61,7 @@ class Creature:
                 if enemies:
                     target = self._choose_target(enemies, heuristic.attack_selection)
                     attack.do_damage(self, target)
+                    attack.apply_effects(target)
 
     def _choose_target(self, enemies, heuristic):
         if self.heuristics.attack_selection:
@@ -56,12 +69,8 @@ class Creature:
         return heuristic.select(enemies)
 
     def _check_heal_need(self, allies, should_heal_heuristic):
-        print(self.heuristics)
         if self.heuristics.heal_selection:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)
 
 
-def d20():
-    # Roll a d20
-    return randint(1, 20)

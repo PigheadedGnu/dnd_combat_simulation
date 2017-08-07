@@ -11,7 +11,7 @@ if os.path.exists("./DM_enemies.py"):
     from DM_enemies import *
 
 pcs = [Marshall(), Max(), Johnny(), Freddy()]
-enemies = [goblin(), goblin(), goblin()]
+enemies = [goblin(), goblin(), goblin(), goblin(), goblin()]
 heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())
 
 
