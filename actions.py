@@ -1,7 +1,7 @@
 from random import random, randint
 
-from Creature import d20
-from Logger import Logger
+from creature import d20
+from logger import Logger
 import math
 
 

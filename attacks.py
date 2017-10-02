@@ -1,4 +1,4 @@
-from Actions import PhysicalAttack, SpellAttack
+from actions import PhysicalAttack, SpellAttack
 
 
 def short_sword_slash():

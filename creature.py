@@ -8,7 +8,7 @@ class Creature:
         :param hp: An integer of the creatures HP
         :param ac: An integer of the creatures AC
         :param saves: A dictionary of saves with each key being a 3-letter stat code
-        :param actions: A list of action objects defined in Actions.py
+        :param actions: A list of action objects defined in actions.py
         :param heuristics: A list of strings that define heuristics for the creature
         """
         self.name = name
@@ -56,7 +56,6 @@ class Creature:
         return heuristic.select(enemies)
 
     def _check_heal_need(self, allies, should_heal_heuristic):
-        print(self.heuristics)
         if self.heuristics.heal_selection:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)

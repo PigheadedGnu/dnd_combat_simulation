@@ -1,6 +1,6 @@
-from Creature import Creature
+from creature import Creature
 from attacks import *
-from Actions import *
+from actions import *
 
 
 def roper_bite():
