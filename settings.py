@@ -1,8 +1,8 @@
-from DebugConstants import DebugConstants
+from debug_constants import DebugConstants
 
 
 NUM_TRIALS = 100
 
-# DebugConstants.py for debug constants and what they represent
+# debug_constants.py for debug constants and what they represent
 VERBOSITY = DebugConstants.NONE
 

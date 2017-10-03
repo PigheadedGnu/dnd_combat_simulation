@@ -1,4 +1,4 @@
-from DebugConstants import DebugConstants as Constants
+from debug_constants import DebugConstants as Constants
 from settings import VERBOSITY
 
 
