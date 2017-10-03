@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-from creature import d20
+from utils import calc_roll, d20
 from logger import Logger
 
 
