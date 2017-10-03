@@ -1,5 +1,5 @@
 from actions import PhysicalAttack, SpellAttack
-from effects import bleed
+from effects.effects import bleed
 
 
 def short_sword_slash():
