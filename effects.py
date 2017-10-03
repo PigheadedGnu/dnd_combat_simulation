@@ -1,4 +1,4 @@
-from Effect import *
+from effect import *
 
 
 def bleed(dice, turns):
