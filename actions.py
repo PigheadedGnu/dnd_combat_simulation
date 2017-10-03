@@ -42,7 +42,7 @@ class Attack(Action):
         raise NotImplementedError("do_damage is not implemented on this class!")
 
     def apply_effects(self, target):
-        [target.applied_effects.append(deepcopy(effect)) for effect in self.effects]
+        [effect.apply(target) for effect in self.effects]
 
     def log_attack(self, attacker, target, damage):
         self.logger.log_action("{0} took {1} damage from {2} ({3})".format(target.name, damage, self.name, attacker.name))
