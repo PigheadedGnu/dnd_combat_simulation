@@ -24,8 +24,8 @@ class Creature:
                             key=lambda x: sum([num_dice * (max_roll/2.0+0.5)
                                                for num_dice, max_roll in x.dice.items()]),
                             reverse=True)
+        self.num_actions_available = 1  # All creatures start with 1 available action
         self.heuristics = heuristics
-        self.num_action_available = 1
         self.applied_effects = []
 
     @staticmethod
@@ -43,7 +43,7 @@ class Creature:
             for effect in self.applied_effects:
                 if effect.turns_left == 0:
                     self.applied_effects.remove(effect)
-            [effect.apply(self) for effect in self.applied_effects]
+            [effect.affect(self) for effect in self.applied_effects]
 
     def act(self, allies, enemies, heuristic):
         heal_target = self._check_heal_need(allies, heuristic.heal_selection)
@@ -66,6 +66,8 @@ class Creature:
                             enemies = [e for e in enemies if e != target]
                         attack.do_damage(self, target)
                         attack.apply_effects(target)
+
+        self.num_actions_available = 1
 
     def _choose_target(self, enemies, heuristic):
         if self.heuristics.attack_selection:

@@ -1,5 +1,5 @@
 from actions import PhysicalAttack, SpellAttack
-from effects.effects import bleed
+from effects.effects import bleed, mace_stun
 
 
 def short_sword_slash():
@@ -50,7 +50,8 @@ def mace_hit():
     return PhysicalAttack(name="Mace",
                           stat_bonus="STR",
                           save=None,
-                          damage={8: 1})
+                          damage={8: 1},
+                          effects=[mace_stun()])
 
 
 def scorching_ray():
