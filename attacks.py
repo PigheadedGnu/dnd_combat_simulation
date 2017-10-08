@@ -20,8 +20,7 @@ def sneak_sword():
     return PhysicalAttack(name="Sneak Sword",
                           stat_bonus="DEX",
                           save=None,
-                          damage={6: 3},
-                          )
+                          damage={8: 1, 6: 3})
 
 
 def power_throw():
@@ -30,6 +29,14 @@ def power_throw():
                           save=None,
                           damage={6: 3},
                           num_available=9)
+
+
+def apm():
+    return PhysicalAttack(name="Armor Piercing Missile",
+                          stat_bonus="STR",
+                          save=None,
+                          damage={8: 5},
+                          num_available=4)
 
 
 def throw_rock():
@@ -53,6 +60,14 @@ def scorching_ray():
                        damage={6: 2},
                        num_available=2,
                        multi_attack=3)
+
+
+def lightning_bolt():
+    return SpellAttack(name="Lightning Bolt",
+                       save={"stat": "DEX", "DC": 15},
+                       stat_bonus=None,
+                       damage={6: 8},
+                       num_available=3)
 
 
 def magic_missile():

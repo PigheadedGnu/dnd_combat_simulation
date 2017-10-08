@@ -10,8 +10,8 @@ from settings import *
 if os.path.exists("./DM_enemies.py"):
     from DM_enemies import *
 
-pcs = [Marshall()]
-enemies = [goblin(), goblin(), goblin(), goblin(), goblin()]
+pcs = [Marshall(), Freddy(), Johnny(), Max()]
+enemies = [green_dragon()]
 heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())
 
 

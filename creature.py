@@ -25,6 +25,7 @@ class Creature:
                                                for num_dice, max_roll in x.dice.items()]),
                             reverse=True)
         self.heuristics = heuristics
+        self.num_action_available = 1
         self.applied_effects = []
 
     @staticmethod
@@ -50,18 +51,21 @@ class Creature:
         self.apply_effects()
         if self.hp < 0:
             return
-
-        if len(self.heals) > 0 and heal_target:
-            if heal_target and [h for h in self.heals if h.num_available > 0]:
-                heal = self.choose_action(self.heals)
-                heal.do_heal(self, heal_target)
-        else:
-            attack = self.choose_action(self.attacks)
-            for _ in range(attack.multi_attack):
-                if enemies:
-                    target = self._choose_target(enemies, heuristic.attack_selection)
-                    attack.do_damage(self, target)
-                    attack.apply_effects(target)
+        while self.num_actions_available > 0:
+            self.num_actions_available -= 1
+            if len(self.heals) > 0 and heal_target:
+                if heal_target and [h for h in self.heals if h.num_available > 0]:
+                    heal = self.choose_action(self.heals)
+                    heal.do_heal(self, heal_target)
+            else:
+                attack = self.choose_action(self.attacks)
+                for _ in range(attack.multi_attack):
+                    if enemies:
+                        target = self._choose_target(enemies, heuristic.attack_selection)
+                        if attack.aoe:
+                            enemies = [e for e in enemies if e != target]
+                        attack.do_damage(self, target)
+                        attack.apply_effects(target)
 
     def _choose_target(self, enemies, heuristic):
         if self.heuristics.attack_selection:
