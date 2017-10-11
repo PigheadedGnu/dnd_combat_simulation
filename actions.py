@@ -21,9 +21,9 @@ class Action:
 
 
 class Attack(Action):
-    def __init__(self, name, stat_bonus, save, damage,
-                 recharge_percentile=0.0, num_available=-1, bonus_to_hit=0,
-                 bonus_to_damage=0, multi_attack=1, aoe=False, effects=None):
+    def __init__(self, name, damage, recharge_percentile=0.0, num_available=-1,
+                 bonus_to_hit=0, bonus_to_damage=0, multi_attack=1,
+                 stat_bonus=None, save=None, aoe=False, effects=None):
         """
         :param name: Name of the attack
         :param stat_bonus: bonus to hit for the attack. One of this or
@@ -38,9 +38,12 @@ class Attack(Action):
         :param bonus_to_hit: integer for bonus to hit for the attack
         :param bonus_to_damage: integer for bonus to damage on the attack
         :param multi_attack: number of targets to hit for this attack
+        :param aoe: If this is an aoe attack or not. If it is, the multi-attack
+                    should be >1 and the attack will not hit the same target twice
         :param effects: list of any Effect objects the attack inflicts
         """
         assert stat_bonus is None or save is None
+        assert stat_bonus is not None or save is not None
         self.name = name
         self.stat_bonus = stat_bonus
         self.save = save
@@ -113,6 +116,23 @@ class SpellAttack(Attack):
 
 
 class SpellSave(Attack):
+    """ Spell saves are attacks which do full damage on a failed save or half
+    as much on a successful save.
+
+    :param name: Name of the attack
+    :param stat_bonus: Must be None
+    :param save: a dictionary with 'stat' and 'DC' as entries.
+    :param damage: dictionary of damage dice for the attack
+    :param recharge_percentile: percentile for recharge on the attack. The
+                                    chance to recharge is
+                                    p = (1 - recharge_percentile)
+    :param num_available: number of times this is available per battle
+    :param bonus_to_hit: Should be None
+    :param bonus_to_damage: Should be None
+    :param multi_attack: number of targets to hit for this attack.
+                        (Expected number if aoe)
+    :param effects: list of any Effect objects the attack inflicts
+    """
     def __init__(self, **kwargs):
         assert kwargs.get('save') is not None
         super().__init__(**kwargs)
@@ -129,14 +149,16 @@ class SpellSave(Attack):
 
 
 class Heal(Action):
-    def __init__(self, name, heal, stat_bonus, recharge_percentile, num_available):
+    def __init__(self, name, heal, stat_bonus, recharge_percentile=0.0,
+                 num_available=-1):
         """ A heal restores hit points to an ally. Always hits
 
         :param name: string that is name of the heal
         :param heal: dictionary with keys as dice value and values as number of that dice
         :param stat_bonus: string with the bonus based of which stat the caster uses
         :param recharge_percentile: chance to recharge is p = 1 - recharge percentile
-        :param num_available: number of this heal available during a battle
+        :param num_available: number of this heal available during a battle.
+                            a value of -1 means it's always available.
         """
         self.name = name
         self.dice = heal
