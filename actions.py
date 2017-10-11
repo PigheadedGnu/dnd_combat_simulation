@@ -56,6 +56,11 @@ class Attack(Action):
         self.effects = effects if effects else []
 
     def do_damage(self, attacker, target):
+        """ Called to test whether an attack hits and then applies the damage.
+        :param attacker: The creature using the attack
+        :param target: The creature receiving the attack
+        :return: None, damage is applied on the target object
+        """
         raise NotImplementedError("do_damage is not implemented on this class!")
 
     def apply_effects(self, target):
@@ -67,6 +72,9 @@ class Attack(Action):
 
 class PhysicalAttack(Attack):
     def __init__(self, **kwargs):
+        """ An attack that tests the chance to hit against target's AC
+        Chance to hit = roll d20 + attackers save + attack bonus to hit
+        """
         super().__init__(**kwargs)
 
     def do_damage(self, attacker, target):
@@ -81,6 +89,10 @@ class PhysicalAttack(Attack):
 
 class SpellAttack(Attack):
     def __init__(self, **kwargs):
+        """ Either a saving throw from target or test of hit chance to targets AC
+        Chance to hit is d20 + relevant stat bonus + bonus to damage
+        A saving throw is a d20 + relevant stat bonus compared to spell DC
+        """
         super().__init__(**kwargs)
 
     def do_damage(self, attacker, target):
@@ -118,6 +130,14 @@ class SpellSave(Attack):
 
 class Heal(Action):
     def __init__(self, name, heal, stat_bonus, recharge_percentile, num_available):
+        """ A heal restores hit points to an ally. Always hits
+
+        :param name: string that is name of the heal
+        :param heal: dictionary with keys as dice value and values as number of that dice
+        :param stat_bonus: string with the bonus based of which stat the caster uses
+        :param recharge_percentile: chance to recharge is p = 1 - recharge percentile
+        :param num_available: number of this heal available during a battle
+        """
         self.name = name
         self.dice = heal
         self.stat_bonus = stat_bonus

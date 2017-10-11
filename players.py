@@ -4,7 +4,7 @@ from heals import *
 
 
 def Marshall():
-    return Creature(name="Marshall", hp=42, ac=18, proficiency=3,
+    return Creature(name="Marshall", hp=42, ac=20, proficiency=3,
                     saves={"STR": 2, "CON": 2, "DEX": 1, "INT": 1, "WIS": 2, "CHA": 1},
                     actions=[guiding_bolt(), mace_hit(), cure_wounds()])
 
