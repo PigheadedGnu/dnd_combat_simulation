@@ -21,9 +21,20 @@ class Action:
 
 
 class Attack(Action):
-    def __init__(self, name, damage, recharge_percentile=0.0, num_available=-1,
-                 bonus_to_hit=0, bonus_to_damage=0, multi_attack=1,
-                 stat_bonus=None, save=None, aoe=False, effects=None):
+    def __init__(self, name, recharge_percentile=0.0, num_available=-1,
+                 multi_attack=1):
+        self.name = name
+        self.recharge_percentile = recharge_percentile
+        self.num_available = num_available
+        self.action_type = "Attack"
+        self.multi_attack = multi_attack
+        self.aoe = False
+        self.ready = True  # If the attack is ready at the current time. All attacks start ready
+
+
+class SingleAttack(Attack):
+    def __init__(self, damage, bonus_to_hit=0, bonus_to_damage=0,
+                 stat_bonus=None, save=None, aoe=False, effects=None, **kwargs):
         """
         :param name: Name of the attack
         :param stat_bonus: bonus to hit for the attack. One of this or
@@ -44,19 +55,14 @@ class Attack(Action):
         """
         assert stat_bonus is None or save is None
         assert stat_bonus is not None or save is not None
-        self.name = name
         self.stat_bonus = stat_bonus
         self.save = save
         self.dice = damage
-        self.recharge_percentile = recharge_percentile
-        self.num_available = num_available
         self.bonus_to_hit = bonus_to_hit
         self.bonus_to_damage = bonus_to_damage
-        self.multi_attack = multi_attack
-        self.ready = True  # If the attack is ready at the current time. All attacks start ready
-        self.action_type = "Attack"
         self.aoe = aoe
         self.effects = effects if effects else []
+        super().__init__(**kwargs)
 
     def do_damage(self, attacker, target):
         """ Called to test whether an attack hits and then applies the damage.
@@ -66,6 +72,10 @@ class Attack(Action):
         """
         raise NotImplementedError("do_damage is not implemented on this class!")
 
+    def calc_expected_damage(self):
+        return self.multi_attack * sum([n_dice * (max_roll / 2.0 + 0.5) for
+                                        n_dice, max_roll in self.dice.items()])
+
     def apply_effects(self, target):
         [effect.apply(target) for effect in self.effects]
 
@@ -73,7 +83,7 @@ class Attack(Action):
         self.logger.log_action("{0} took {1} damage from {2} ({3})".format(target.name, damage, self.name, attacker.name))
 
 
-class PhysicalAttack(Attack):
+class PhysicalSingleAttack(SingleAttack):
     def __init__(self, **kwargs):
         """ An attack that tests the chance to hit against target's AC
         Chance to hit = roll d20 + attackers save + attack bonus to hit
@@ -90,7 +100,7 @@ class PhysicalAttack(Attack):
         self.log_attack(attacker, target, damage)
 
 
-class SpellAttack(Attack):
+class SpellSingleAttack(SingleAttack):
     def __init__(self, **kwargs):
         """ Either a saving throw from target or test of hit chance to targets AC
         Chance to hit is d20 + relevant stat bonus + bonus to damage
@@ -115,7 +125,7 @@ class SpellAttack(Attack):
         self.log_attack(attacker, target, damage)
 
 
-class SpellSave(Attack):
+class SpellSave(SingleAttack):
     """ Spell saves are attacks which do full damage on a failed save or half
     as much on a successful save.
 
@@ -150,7 +160,7 @@ class SpellSave(Attack):
 
 class Heal(Action):
     def __init__(self, name, heal, stat_bonus, recharge_percentile=0.0,
-                 num_available=-1):
+                 num_available=-1, num_targets=1):
         """ A heal restores hit points to an ally. Always hits
 
         :param name: string that is name of the heal
@@ -167,6 +177,7 @@ class Heal(Action):
         self.num_available = num_available
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Heal"
+        self.num_targets = num_targets
 
     def log_heal(self, healed, new_health, healer):
         self.logger.log_action("{0} healed from {1} to {2} ({3})".format(healed.name, healed.hp, new_health, healer.name))
@@ -178,3 +189,42 @@ class Heal(Action):
         self.log_heal(healed, new_health, healer)
         healed.hp = new_health
 
+
+class ComboAttack(Attack):
+    def __init__(self, attacks, **kwargs):
+        """ Container for multiple different attacks that do different damage
+
+        This differs from a single attack multiattack, where each hit does the
+        same damage dice, because this can incorporate multiple attacks of
+        different types against a single enemy.
+
+        An example of this is a Griffon which does two attacks every turn, one
+        with it's beak and one with it's claws. Beak does 1d8+4 damage and claws
+        do 2d6+4 damage.
+
+        :param attacks: List of attack actions
+
+        Notable keyword args:
+        :param multi_attack: Does it perform the combo on multiple enemeies?
+                            a value of 1 typically makes the most sense.
+
+        """
+        for a in attacks:
+            assert isinstance(a, SingleAttack)
+        self.attacks = attacks
+
+        super().__init__(**kwargs)
+
+    def calc_expected_damage(self):
+        total_expected_damage = 0
+        for attack in self.attacks:
+            total_expected_damage += attack.calc_expected_damage()
+        return total_expected_damage
+
+    def do_damage(self, attacker, target):
+        for attack in self.attacks:
+            attack.do_damage(attacker, target)
+
+    def apply_effects(self, target):
+        for attack in self.attacks:
+            attack.apply_effects(target)

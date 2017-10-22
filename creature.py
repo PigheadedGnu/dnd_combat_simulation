@@ -17,8 +17,7 @@ class Creature:
         self.proficiency = proficiency
         self.saves = saves
         self.attacks = sorted([a for a in actions if a.action_type == "Attack"],
-                              key=lambda x: sum([num_dice * (max_roll/2.0+0.5)
-                                                 for num_dice, max_roll in x.dice.items()]),
+                              key=lambda x: x.calc_expected_damage(),
                               reverse=True)
         self.heals = sorted([a for a in actions if a.action_type == "Heal"],
                             key=lambda x: sum([num_dice * (max_roll/2.0+0.5)
@@ -53,10 +52,15 @@ class Creature:
             return
         while self.num_actions_available > 0:
             self.num_actions_available -= 1
-            if len(self.heals) > 0 and heal_target:
-                if heal_target and [h for h in self.heals if h.num_available > 0]:
-                    heal = self.choose_action(self.heals)
-                    heal.do_heal(self, heal_target)
+            available_heals = [h for h in self.heals if h.num_available > 0]
+            if len(available_heals) > 0 and heal_target:
+                heal = self.choose_action(self.heals)
+                for _ in range(heal.num_targets):
+                    if heal_target is not None:
+                        heal.do_heal(self, heal_target)
+                        allies = [a for a in allies if a != heal_target]
+                        heal_target = self._check_heal_need(
+                            allies, heuristic.heal_selection)
             else:
                 attack = self.choose_action(self.attacks)
                 for _ in range(attack.multi_attack):

@@ -16,6 +16,12 @@ def hobgoblin():
                     actions=[longsword_attack()])
 
 
+def griffon():
+    return Creature(name="Griffon", hp=59, ac=12, proficiency=2,
+                    saves={"STR": 4, "CON": 3, "DEX": 2, "INT": -4, "WIS": 1, "CHA": -1},
+                    actions=[griffon_combo()])
+
+
 
 
 
