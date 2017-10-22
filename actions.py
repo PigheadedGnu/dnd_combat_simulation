@@ -160,7 +160,7 @@ class SpellSave(SingleAttack):
 
 class Heal(Action):
     def __init__(self, name, heal, stat_bonus, recharge_percentile=0.0,
-                 num_available=-1):
+                 num_available=-1, num_targets=1):
         """ A heal restores hit points to an ally. Always hits
 
         :param name: string that is name of the heal
@@ -177,6 +177,7 @@ class Heal(Action):
         self.num_available = num_available
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Heal"
+        self.num_targets = num_targets
 
     def log_heal(self, healed, new_health, healer):
         self.logger.log_action("{0} healed from {1} to {2} ({3})".format(healed.name, healed.hp, new_health, healer.name))
