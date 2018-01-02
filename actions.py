@@ -80,8 +80,23 @@ class SingleAttack(Attack):
         [effect.apply(target) for effect in self.effects]
 
     def log_attack(self, attacker, target, damage):
-        self.logger.log_action("{0} took {1} damage from {2} ({3})".format(target.name, damage, self.name, attacker.name))
+        self.logger.log_action("{0} took {1} damage from {2} ({3})".format(
+            target.name, damage, self.name, attacker.name))
 
+    def jsonify(self, attack_type="Single Target Attack"):
+        attack_info = {
+            "Action Type": attack_type,
+            "Stat Bonus": self.stat_bonus,
+            "Save": self.save,
+            "Damage Dice": self.dice,
+            "Bonus to Hit": self.bonus_to_hit,
+            "Bonus to Damage": self.bonus_to_damage,
+            "Is AoE": self.aoe,
+            "Number of Attacks": self.multi_attack,
+            "Recharge Percentile": self.recharge_percentile,
+            "Effects": [e.name for e in self.effects]
+        }
+        return attack_info
 
 class PhysicalSingleAttack(SingleAttack):
     def __init__(self, **kwargs):
@@ -98,6 +113,9 @@ class PhysicalSingleAttack(SingleAttack):
 
         target.hp -= damage
         self.log_attack(attacker, target, damage)
+
+    def jsonify(self):
+        return super().jsonify("Single Target Physical Attack")
 
 
 class SpellSingleAttack(SingleAttack):
@@ -123,6 +141,9 @@ class SpellSingleAttack(SingleAttack):
 
         target.hp -= damage
         self.log_attack(attacker, target, damage)
+
+    def jsonify(self):
+        return super().jsonify("Single Target Spell Attack")
 
 
 class SpellSave(SingleAttack):
@@ -157,6 +178,9 @@ class SpellSave(SingleAttack):
 
         self.log_attack(attacker, target, damage)
 
+    def jsonify(self):
+        return super().jsonify("Spell Attack Requiring Save")
+
 
 class Heal(Action):
     def __init__(self, name, heal, stat_bonus, recharge_percentile=0.0,
@@ -188,6 +212,16 @@ class Heal(Action):
         new_health = min(healed.hp + health_up, healed.max_hp)
         self.log_heal(healed, new_health, healer)
         healed.hp = new_health
+
+    def jsonify(self):
+        heal_info = {
+            "Action Type": "Heal",
+            "Heal Dice": self.dice,
+            "Stat Bonus": self.stat_bonus,
+            "Recharge Percentile": self.recharge_percentile,
+            "Number of Targets": self.num_targets
+        }
+        return heal_info
 
 
 class ComboAttack(Attack):
@@ -228,3 +262,9 @@ class ComboAttack(Attack):
     def apply_effects(self, target):
         for attack in self.attacks:
             attack.apply_effects(target)
+
+    def jsonify(self):
+        attack_info = {
+            "Action Type": "Combo Attack",
+            "Attacks": [a.jsonify() for a in self.attacks]
+        }

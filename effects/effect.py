@@ -9,6 +9,25 @@ class Effect:
         self.turns_left = turns
         self.name = name
 
+    def apply(self, creature):
+        """ How does this affect get applied """
+        pass
+
+    def on_turn_start(self, creature):
+        """ What this effect does at the start of a turn """
+        pass
+
+    def on_turn_end(self, creature):
+        """ What this effect does at the end of a turn """
+        pass
+
+    def jsonify(self):
+        effect_info = {
+            "Effect Name": self.name,
+            "Maximum Turns": self.turns_left,
+        }
+        return effect_info
+
 
 class DOTEffect(Effect):
     def __init__(self, dice, save, turns, name):
@@ -33,11 +52,28 @@ class DOTEffect(Effect):
         else:
             creature.applied_effects.append(self)
 
-    def affect(self, creature):
+    def on_turn_start(self, creature):
         total = calc_roll(self.dice)
         self.logger.log_action("{0} suffered {1} for {2} damage".format(creature.name, self.name, total))
         creature.hp -= total
         self.turns_left -= 1
+
+    def on_turn_end(self, creature):
+        save_attempt = d20() + creature.saves[self.save['stat']]
+        if save_attempt >= self.save['DC']:
+            self.logger.log_action(
+                "{0} saved from {1}".format(creature.name, self.name))
+            return False
+        else:
+            self.logger.log_action(
+                "{0} failed to save from {1}".format(creature.name, self.name))
+            return True
+
+    def jsonify(self):
+        effect_info = super().jsonify()
+        effect_info['Damage Dice'] = self.dice
+        effect_info['Save'] = self.save
+        return effect_info
 
 
 class StunEffect(Effect):
@@ -60,8 +96,27 @@ class StunEffect(Effect):
         else:
             creature.applied_effects.append(self)
 
-    def affect(self, creature):
+    def on_turn_start(self, creature):
         creature.num_actions_available = 0
         self.logger.log_action(
             "{0} was stunned by {1}".format(creature.name, self.name))
         self.turns_left -= 1
+
+    def on_turn_end(self, creature):
+        if self.turns_left <= 0:
+            return False
+
+        save_attempt = d20() + creature.saves[self.save['stat']]
+        if save_attempt >= self.save['DC']:
+            self.logger.log_action(
+                "{0} saved from {1}".format(creature.name, self.name))
+            return False
+        else:
+            self.logger.log_action(
+                "{0} failed to save from {1}".format(creature.name, self.name))
+            return True
+
+    def jsonify(self):
+        effect_info = super().jsonify()
+        effect_info['Save'] = self.save
+        return effect_info

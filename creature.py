@@ -1,5 +1,5 @@
 from heuristics.HeuristicContainer import HeuristicContainer
-
+import json
 
 class Creature:
     def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer()):
@@ -37,41 +37,51 @@ class Creature:
                 action.ready = False
                 return action
 
-    def apply_effects(self):
+    def on_turn_start(self):
         if self.applied_effects is not None and len(self.applied_effects) > 0:
             for effect in self.applied_effects:
-                if effect.turns_left == 0:
+                effect.on_turn_start(self)
+
+    def on_turn_end(self):
+        if self.applied_effects is not None and len(self.applied_effects) > 0:
+            for effect in self.applied_effects:
+                still_active = effect.on_turn_end(self)
+                if not still_active:
                     self.applied_effects.remove(effect)
-            [effect.affect(self) for effect in self.applied_effects]
+        self.num_actions_available = 1
 
-    def act(self, allies, enemies, heuristic):
-        heal_target = self._check_heal_need(allies, heuristic.heal_selection)
-
-        self.apply_effects()
+    def take_turn(self, allies, enemies, heuristic):
+        self.on_turn_start()
         if self.hp < 0:
             return
         while self.num_actions_available > 0:
             self.num_actions_available -= 1
-            available_heals = [h for h in self.heals if h.num_available > 0]
-            if len(available_heals) > 0 and heal_target:
-                heal = self.choose_action(self.heals)
-                for _ in range(heal.num_targets):
-                    if heal_target is not None:
-                        heal.do_heal(self, heal_target)
-                        allies = [a for a in allies if a != heal_target]
-                        heal_target = self._check_heal_need(
-                            allies, heuristic.heal_selection)
-            else:
-                attack = self.choose_action(self.attacks)
-                for _ in range(attack.multi_attack):
-                    if enemies:
-                        target = self._choose_target(enemies, heuristic.attack_selection)
-                        if attack.aoe:
-                            enemies = [e for e in enemies if e != target]
-                        attack.do_damage(self, target)
-                        attack.apply_effects(target)
+            self._try_heal(allies, heuristic)
+            self._try_attack(enemies, heuristic)
+        self.on_turn_end()
 
-        self.num_actions_available = 1
+    def _try_attack(self, enemies, heuristic):
+        attack = self.choose_action(self.attacks)
+        for _ in range(attack.multi_attack):
+            if enemies:
+                target = self._choose_target(enemies,
+                                             heuristic.attack_selection)
+                if attack.aoe:
+                    enemies = [e for e in enemies if e != target]
+                attack.do_damage(self, target)
+                attack.apply_effects(target)
+
+    def _try_heal(self, allies, heuristic):
+        heal_target = self._check_heal_need(allies, heuristic.heal_selection)
+        available_heals = [h for h in self.heals if h.num_available > 0]
+        if len(available_heals) > 0 and heal_target:
+            heal = self.choose_action(self.heals)
+            for _ in range(heal.num_targets):
+                if heal_target is not None:
+                    heal.do_heal(self, heal_target)
+                    allies = [a for a in allies if a != heal_target]
+                    heal_target = self._check_heal_need(
+                        allies, heuristic.heal_selection)
 
     def _choose_target(self, enemies, heuristic):
         if self.heuristics.attack_selection:
@@ -83,4 +93,15 @@ class Creature:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)
 
-
+    def jsonify(self):
+        """ Turn a creature object into JSON """
+        creature_info = {
+            "name": self.name,
+            "hp": self.max_hp,
+            "ac": self.ac,
+            "proficiency": self.proficiency,
+            "saves": self.saves,
+            "attacks": [a.jsonify() for a in self.attacks],
+            "heals": [h.jsonify() for h in self.heals],
+        }
+        return creature_info
