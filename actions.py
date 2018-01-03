@@ -268,3 +268,4 @@ class ComboAttack(Attack):
             "Action Type": "Combo Attack",
             "Attacks": [a.jsonify() for a in self.attacks]
         }
+        return attack_info
