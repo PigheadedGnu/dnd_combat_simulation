@@ -1,6 +1,6 @@
-from creature import Creature
-from attacks import *
-from heals import *
+from data.attacks import *
+from data.heals import *
+from src.creature import Creature
 
 
 def Marshall():

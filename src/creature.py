@@ -1,5 +1,5 @@
-from heuristics.HeuristicContainer import HeuristicContainer
-import json
+from src.heuristics.heuristic_container import HeuristicContainer
+
 
 class Creature:
     def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer()):
