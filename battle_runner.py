@@ -1,17 +1,19 @@
 import os
+
 import numpy as np
 
-from Simulator import Simulator
-from enemies import *
-from heuristics.Heuristics import *
-from players import *
+from data.players import *
 from settings import *
+from src.heuristics.target_selection_heuristics import *
+from src.heuristics.heuristic_container import *
+
+from src.simulator import Simulator
 
 if os.path.exists("./DM_enemies.py"):
-    from DM_enemies import *
+    from data.DM_enemies import *
 
-pcs = [Marshall(), Max(), Johnny(), Freddy()]
-enemies = [goblin(), goblin(), goblin()]
+pcs = [Marshall(), Freddy(), Johnny(), Max()]
+enemies = [green_dragon()]
 heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())
 
 

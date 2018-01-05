@@ -1,5 +1,5 @@
-from DebugConstants import DebugConstants as Constants
 from settings import VERBOSITY
+from src.debug.debug_constants import DebugConstants as Constants
 
 
 class Logger:

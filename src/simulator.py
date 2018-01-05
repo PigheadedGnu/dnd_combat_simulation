@@ -1,7 +1,7 @@
 from copy import deepcopy
 
-from Creature import d20
-from Logger import Logger
+from src.utils import d20
+from src.debug.logger import Logger
 
 
 class Simulator:
@@ -46,7 +46,7 @@ class Simulator:
             enemies = [x[0] for x in self.battle_order if x[1] != team and x[0].hp > 0]
             if not enemies:
                 break
-            creature.act(allies, enemies, heuristic)
+            creature.take_turn(allies, enemies, heuristic)
 
         dead_enemies = [c.name for c in self.enemies if c.hp <= 0]
         dead_pcs = [c.name for c in self.pcs if c.hp <= 0]

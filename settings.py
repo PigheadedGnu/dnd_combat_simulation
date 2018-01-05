@@ -1,7 +1,8 @@
-from DebugConstants import DebugConstants
+from src.debug.debug_constants import DebugConstants
 
-NUM_TRIALS = 1
 
-# DebugConstants.py for debug constants and what they represent
-VERBOSITY = DebugConstants.HEURISTIC
+NUM_TRIALS = 1000
+
+# debug_constants.py for debug constants and what they represent
+VERBOSITY = DebugConstants.NONE
 
