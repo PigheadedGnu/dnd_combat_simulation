@@ -1,7 +1,9 @@
-from creature import Creature
-from attacks import *
 from heuristics.HeuristicContainer import HeuristicContainer
-from heuristics.Heuristics import *
+
+from data.attacks import *
+from src.creature import Creature
+from src.heuristics.target_selection_heuristics import *
+
 
 def goblin():
     return Creature(name="Goblin", hp=7, ac=14, proficiency=1,
