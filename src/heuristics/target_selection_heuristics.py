@@ -85,13 +85,13 @@ class LowestHealthPercentageBelowThreshold(TargetSelectionHeuristic):
         self.threshold = threshold
 
     def select(self, targets):
+        target = None
         eligible_targets = [t for t in targets if t.hp <= t.max_hp * self.threshold]
         if len(eligible_targets) > 0:
             target = min(eligible_targets, key=lambda t: 1.0 * t.hp / t.max_hp)
-        else:
-            target = Random().select(targets)
-        self.log_target_selection(target, "Lowest health percentage below threshold {0}"\
-                                  .format(self.threshold))
+            self.log_target_selection(target,
+                                      "Lowest health percentage below "
+                                      "threshold {0}".format(self.threshold))
         return target
 
 
