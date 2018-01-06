@@ -1,9 +1,8 @@
-from random import random
-from copy import deepcopy
 import math
+from random import random
 
-from utils import calc_roll, d20
-from logger import Logger
+from src.utils import calc_roll, d20
+from src.debug.logger import Logger
 
 
 class Action:

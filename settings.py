@@ -1,4 +1,4 @@
-from debug_constants import DebugConstants
+from src.debug.debug_constants import DebugConstants
 
 
 NUM_TRIALS = 1000

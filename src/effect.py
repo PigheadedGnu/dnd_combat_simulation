@@ -1,5 +1,5 @@
-from logger import Logger
-from utils import *
+from src.debug.logger import Logger
+from src.utils import d20, calc_roll
 
 
 class Effect:
@@ -11,15 +11,18 @@ class Effect:
 
     def apply(self, creature):
         """ How does this affect get applied """
-        pass
+        raise RuntimeError("apply() is not implemented for {}!".format(self.name))
 
     def on_turn_start(self, creature):
         """ What this effect does at the start of a turn """
-        pass
+        raise RuntimeError("on_turn_start() is not implemented for {}!".format(self.name))
 
     def on_turn_end(self, creature):
-        """ What this effect does at the end of a turn """
-        pass
+        """ What this effect does at the end of a turn.
+
+            This method should implement some way for the effect to be removed.
+        """
+        raise RuntimeError("on_turn_end() is not implemented for {}!".format(self.name))
 
     def jsonify(self):
         effect_info = {

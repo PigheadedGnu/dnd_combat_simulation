@@ -1,4 +1,4 @@
-from effects.effect import *
+from src.effect import *
 
 
 def bleed(dice, save, turns):

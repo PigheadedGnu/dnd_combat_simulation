@@ -1,4 +1,4 @@
-from actions import Heal
+from src.actions import Heal
 
 
 def cure_wounds():

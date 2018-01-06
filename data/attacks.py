@@ -1,5 +1,5 @@
-from actions import *
-from effects.effects import bleed, mace_stun
+from data.effects import mace_stun
+from src.actions import *
 
 
 def short_sword_slash():

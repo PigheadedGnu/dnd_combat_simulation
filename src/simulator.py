@@ -1,7 +1,7 @@
 from copy import deepcopy
 
-from utils import calc_roll, d20
-from logger import Logger
+from src.utils import d20
+from src.debug.logger import Logger
 
 
 class Simulator:
