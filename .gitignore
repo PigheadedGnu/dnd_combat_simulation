@@ -1,4 +1,5 @@
 .idea/*
 *.pyc
-DM_enemies.py
+data/DM_enemies.py
 .DS_Store
+*.ui
