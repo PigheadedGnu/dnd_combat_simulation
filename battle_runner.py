@@ -12,6 +12,7 @@ from src.simulator import Simulator
 if os.path.exists("./DM_enemies.py"):
     from data.DM_enemies import *
 
+
 pcs = [Marshall(), Freddy(), Johnny(), Max()]
 enemies = [green_dragon()]
 heuristics = HeuristicContainer(LowestHealthPercentage(), LowestHealthPercentageBelowThreshold())

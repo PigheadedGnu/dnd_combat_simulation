@@ -1,7 +1,8 @@
 from src.heuristics.heuristic_container import HeuristicContainer
+from src.utils import *
 
 
-class Creature:
+class Combatant:
     def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer()):
         """
         :param hp: An integer of the creatures HP
@@ -93,15 +94,16 @@ class Creature:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)
 
-    def jsonify(self):
+    def jsonify(self, write_to_file=True):
         """ Turn a creature object into JSON """
-        creature_info = {
+        combatant_info = {
             "name": self.name,
             "hp": self.max_hp,
             "ac": self.ac,
             "proficiency": self.proficiency,
             "saves": self.saves,
-            "attacks": [a.jsonify() for a in self.attacks],
-            "heals": [h.jsonify() for h in self.heals],
+            "actions": [a.name for a in self.attacks] + [h.name for h in self.heals]
         }
-        return creature_info
+        if write_to_file:
+            write_json_to_file('combatants.json', combatant_info)
+        return combatant_info

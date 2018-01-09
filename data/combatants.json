@@ -1,0 +1,23 @@
+{
+  "Marshall": {
+    "name": "Marshall",
+    "hp": 42,
+    "ac": 18,
+    "proficiency": 3,
+    "saves": {
+      "STR": 2,
+      "CON": 2,
+      "DEX": 1,
+      "INT": 1,
+      "WIS": 2,
+      "CHA": 1
+    },
+    "actions": [
+      "Guiding Bolt",
+      "Mace Hit",
+      "Prayer of Healing",
+      "Cure Wounds",
+      "Divine Heal"
+    ]
+  }
+}

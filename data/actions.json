@@ -1,0 +1,85 @@
+{
+  "Prayer of Healing": {
+    "action_type": "Heal",
+    "name": "Prayer of Healing",
+    "dice": {
+      "8": 2
+    },
+    "stat_bonus": "WIS",
+    "recharge_percentile": 0.0,
+    "num_targets": 4,
+    "effects": []
+  },
+  "Divine Heal": {
+    "action_type": "Heal",
+    "name": "Divine Heal",
+    "dice": {
+      "10": 1
+    },
+    "stat_bonus": "WIS",
+    "recharge_percentile": 0.0,
+    "num_targets": 2,
+    "effects": []
+  },
+  "Cure Wounds": {
+    "action_type": "Heal",
+    "name": "Cure Wounds",
+    "dice": {
+      "8": 1
+    },
+    "stat_bonus": "WIS",
+    "recharge_percentile": 0.0,
+    "num_targets": 1,
+    "effects": []
+  },
+  "Sacred Flame": {
+    "name": "Sacred Flame",
+    "action_type": "Single Target Spell Attack",
+    "stat_bonus": null,
+    "save": {
+      "stat": "DEX",
+      "DC": 13
+    },
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Mace Hit": {
+    "name": "Mace Hit",
+    "action_type": "Single Target Physical Attack",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": [
+      "mace_stun"
+    ]
+  },
+  "Guiding Bolt": {
+    "name": "Guiding Bolt",
+    "action_type": "Single Target Spell Attack",
+    "stat_bonus": "WIS",
+    "save": null,
+    "dice": {
+      "6": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  }
+}
