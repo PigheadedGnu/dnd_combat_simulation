@@ -1,4 +1,4 @@
-from heuristics.HeuristicContainer import HeuristicContainer
+from src.heuristics.heuristic_container import HeuristicContainer
 
 from data.attacks import *
 from src.combatant import Combatant

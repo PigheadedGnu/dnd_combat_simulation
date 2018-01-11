@@ -16,8 +16,122 @@
       "Guiding Bolt",
       "Mace Hit",
       "Prayer of Healing",
-      "Cure Wounds",
-      "Divine Heal"
-    ]
+      "Divine Heal",
+      "Cure Wounds"
+    ],
+    "applied_effects": []
+  },
+  "Max": {
+    "name": "Max",
+    "hp": 32,
+    "ac": 11,
+    "proficiency": 3,
+    "saves": {
+      "STR": 2,
+      "CON": 2,
+      "DEX": 2,
+      "INT": 2,
+      "WIS": 2,
+      "CHA": 2
+    },
+    "actions": [
+      "Lightning Bolt",
+      "Scorching Ray",
+      "Magic Missile",
+      "Acid Splash"
+    ],
+    "applied_effects": []
+  },
+  "Johnny": {
+    "name": "Johnny",
+    "hp": 40,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 1,
+      "CON": 1,
+      "DEX": 2,
+      "INT": 2,
+      "WIS": 2,
+      "CHA": 2
+    },
+    "actions": [
+      "Sneak Sword"
+    ],
+    "applied_effects": []
+  },
+  "Freddy": {
+    "name": "Freddy",
+    "hp": 38,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "CON": 1,
+      "DEX": 2,
+      "INT": 2,
+      "WIS": 2,
+      "CHA": 2
+    },
+    "actions": [
+      "Armor Piercing Missile",
+      "Spin Throw",
+      "Throw Rock"
+    ],
+    "applied_effects": []
+  },
+  "Goblin": {
+    "name": "Goblin",
+    "hp": 7,
+    "ac": 14,
+    "proficiency": 1,
+    "saves": {
+      "STR": 1,
+      "CON": 1,
+      "DEX": 1,
+      "INT": 1,
+      "WIS": 1,
+      "CHA": 1
+    },
+    "actions": [
+      "Short Sword"
+    ],
+    "applied_effects": []
+  },
+  "Hobgoblin": {
+    "name": "Hobgoblin",
+    "hp": 11,
+    "ac": 18,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "CON": 1,
+      "DEX": 1,
+      "INT": 1,
+      "WIS": 1,
+      "CHA": 1
+    },
+    "actions": [
+      "Long Sword"
+    ],
+    "applied_effects": []
+  },
+  "Griffon": {
+    "name": "Griffon",
+    "hp": 59,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "CON": 3,
+      "DEX": 2,
+      "INT": -4,
+      "WIS": 1,
+      "CHA": -1
+    },
+    "actions": [
+      "Griffon Combo"
+    ],
+    "applied_effects": []
   }
 }

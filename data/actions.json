@@ -1,4 +1,268 @@
 {
+  "Short Sword": {
+    "name": "Short Sword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Long Sword": {
+    "name": "Long Sword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 1,
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Sneak Sword": {
+    "name": "Sneak Sword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": "DEX",
+    "save": null,
+    "dice": {
+      "8": 1,
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Spin Throw": {
+    "name": "Spin Throw",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Armor Piercing Missile": {
+    "name": "Armor Piercing Missile",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 5
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Throw Rock": {
+    "name": "Throw Rock",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Mace Hit": {
+    "name": "Mace Hit",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": [
+      "mace_stun"
+    ]
+  },
+  "Scorching Ray": {
+    "name": "Scorching Ray",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "fire",
+    "stat_bonus": "INT",
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 3,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Lightning Bolt": {
+    "name": "Lightning Bolt",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "lightning",
+    "stat_bonus": null,
+    "save": {
+      "stat": "DEX",
+      "DC": 15
+    },
+    "dice": {
+      "6": 8
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Magic Missile": {
+    "name": "Magic Missile",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "force",
+    "stat_bonus": "None",
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 1000,
+    "bonus_to_damage": 1,
+    "aoe": false,
+    "multi_attack": 3,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Acid Splash": {
+    "name": "Acid Splash",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "acid",
+    "stat_bonus": null,
+    "save": {
+      "stat": "DEX",
+      "DC": 13
+    },
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Sacred Flame": {
+    "name": "Sacred Flame",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "radiant",
+    "stat_bonus": null,
+    "save": {
+      "stat": "DEX",
+      "DC": 13
+    },
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Guiding Bolt": {
+    "name": "Guiding Bolt",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "radiant",
+    "stat_bonus": "WIS",
+    "save": null,
+    "dice": {
+      "6": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Beak Strike": {
+    "name": "Beak Strike",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claw Strike": {
+    "name": "Claw Strike",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Cure Wounds": {
+    "action_type": "Heal",
+    "name": "Cure Wounds",
+    "dice": {
+      "8": 1
+    },
+    "stat_bonus": "WIS",
+    "recharge_percentile": 0.0,
+    "num_targets": 1,
+    "effects": []
+  },
   "Prayer of Healing": {
     "action_type": "Heal",
     "name": "Prayer of Healing",
@@ -19,67 +283,6 @@
     "stat_bonus": "WIS",
     "recharge_percentile": 0.0,
     "num_targets": 2,
-    "effects": []
-  },
-  "Cure Wounds": {
-    "action_type": "Heal",
-    "name": "Cure Wounds",
-    "dice": {
-      "8": 1
-    },
-    "stat_bonus": "WIS",
-    "recharge_percentile": 0.0,
-    "num_targets": 1,
-    "effects": []
-  },
-  "Sacred Flame": {
-    "name": "Sacred Flame",
-    "action_type": "Single Target Spell Attack",
-    "stat_bonus": null,
-    "save": {
-      "stat": "DEX",
-      "DC": 13
-    },
-    "dice": {
-      "8": 1
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Mace Hit": {
-    "name": "Mace Hit",
-    "action_type": "Single Target Physical Attack",
-    "stat_bonus": "STR",
-    "save": null,
-    "dice": {
-      "8": 1
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": [
-      "mace_stun"
-    ]
-  },
-  "Guiding Bolt": {
-    "name": "Guiding Bolt",
-    "action_type": "Single Target Spell Attack",
-    "stat_bonus": "WIS",
-    "save": null,
-    "dice": {
-      "6": 4
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
     "effects": []
   }
 }
