@@ -3,7 +3,8 @@ from src.utils import *
 
 
 class Combatant:
-    def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer()):
+    def __init__(self, name, hp, ac, proficiency, saves, actions,
+                 heuristics=HeuristicContainer(), applied_effects=None):
         """
         :param hp: An integer of the creatures HP
         :param ac: An integer of the creatures AC
@@ -26,7 +27,7 @@ class Combatant:
                             reverse=True)
         self.num_actions_available = 1  # All creatures start with 1 available action
         self.heuristics = heuristics
-        self.applied_effects = []
+        self.applied_effects = applied_effects if applied_effects else []
 
     @staticmethod
     def choose_action(action_set):
@@ -94,6 +95,17 @@ class Combatant:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)
 
+    def take_damage(self, damage, attack_type):
+        """ Takes the given damage while checking for modifications to it """
+        for e in self.applied_effects:
+            if e.effect_type == "Type Resistance" and e.name == attack_type:
+                damage *= 0.5
+            if e.effect_type == "Type Vulnerability" and e.name == attack_type:
+                damage *= 1.5
+            if e.effect_type == "Type Immunity" and e.name == attack_type:
+                damage = 0
+        self.hp -= damage
+
     def jsonify(self, write_to_file=True):
         """ Turn a creature object into JSON """
         combatant_info = {
@@ -102,7 +114,8 @@ class Combatant:
             "ac": self.ac,
             "proficiency": self.proficiency,
             "saves": self.saves,
-            "actions": [a.name for a in self.attacks] + [h.name for h in self.heals]
+            "actions": [a.name for a in self.attacks] + [h.name for h in self.heals],
+            "applied_effects": self.applied_effects
         }
         if write_to_file:
             write_json_to_file('combatants.json', combatant_info)

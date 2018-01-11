@@ -19,6 +19,11 @@ def d20():
 
 
 def load_dice(dice):
+    """ Load a dictionary of dice from json into a usable dice object.
+
+        When the dice are read from a JSON file, the key is a string, so must
+         be turned into an integer here.
+    """
     return {int(k): v for k, v in dice.items()}
 
 

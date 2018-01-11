@@ -31,7 +31,7 @@ class Attack(Action):
 
 
 class SingleAttack(Attack):
-    def __init__(self, dice, bonus_to_hit=0, bonus_to_damage=0,
+    def __init__(self, dice, damage_type, bonus_to_hit=0, bonus_to_damage=0,
                  stat_bonus=None, save=None, aoe=False, effects=None, **kwargs):
         """
         :param name: Name of the attack
@@ -54,12 +54,14 @@ class SingleAttack(Attack):
         assert stat_bonus is None or save is None
         assert stat_bonus is not None or save is not None
         self.stat_bonus = stat_bonus
+        self.damage_type = damage_type
         self.save = save
         self.dice = load_dice(dice)
         self.bonus_to_hit = bonus_to_hit
         self.bonus_to_damage = bonus_to_damage
         self.aoe = aoe
         self.effects = effects if effects else []
+
         super().__init__(**kwargs)
 
     def do_damage(self, attacker, target):
@@ -85,6 +87,7 @@ class SingleAttack(Attack):
         attack_info = {
             "name": self.name,
             "action_type": attack_type,
+            "damage_type": self.damage_type,
             "stat_bonus": self.stat_bonus,
             "save": self.save,
             "dice": self.dice,
@@ -113,7 +116,7 @@ class PhysicalSingleAttack(SingleAttack):
         if hit_check >= target.ac:
             damage = calc_roll(self.dice) + attacker.saves[self.stat_bonus] + self.bonus_to_damage
 
-        target.hp -= damage
+        target.take_damage(damage, self.damage_type)
         self.log_attack(attacker, target, damage)
 
     def jsonify(self):
@@ -141,7 +144,7 @@ class SpellSingleAttack(SingleAttack):
             if save_check <= self.save['DC']:
                 damage = calc_roll(self.dice) + self.bonus_to_damage
 
-        target.hp -= damage
+        target.take_damage(damage, self.damage_type)
         self.log_attack(attacker, target, damage)
 
     def jsonify(self):
@@ -176,7 +179,7 @@ class SpellSave(SingleAttack):
         if save_check > self.save['DC']:
             damage = math.ceil(damage / 2.0)
 
-        target.hp -= damage
+        target.take_damage(damage, self.damage_type)
 
         self.log_attack(attacker, target, damage)
 
