@@ -7,7 +7,7 @@ import '../App.css';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 
-class combatantColumn extends React.Component {
+class CombatantColumn extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -64,10 +64,10 @@ class combatantColumn extends React.Component {
           defaultPageSize={20}
           className="-striped -highlight"
         />
-        <br/>
+        <br />
       </div>
     );
   }
 }
 
-export default combatantColumn;
+export default CombatantColumn;

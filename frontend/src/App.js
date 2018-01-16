@@ -11,8 +11,15 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <div className="col-xs-6">
-          <combatantcolumn/>
+        <div className="container">
+          <div className="row-fluid">
+            <div className="col-sm col-md col-lg">
+              <p>BLAH BLAH</p>
+            </div>
+            <div className="col-sm col-md col-lg">
+              <p>BLAH BLAH</p>
+            </div>
+          </div>
         </div>
       </div>
     );
