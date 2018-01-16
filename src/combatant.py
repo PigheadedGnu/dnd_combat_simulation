@@ -1,8 +1,10 @@
 from src.heuristics.heuristic_container import HeuristicContainer
+from src.utils import *
 
 
-class Creature:
-    def __init__(self, name, hp, ac, proficiency, saves, actions, heuristics=HeuristicContainer()):
+class Combatant:
+    def __init__(self, name, hp, ac, proficiency, saves, actions,
+                 heuristics=HeuristicContainer(), applied_effects=None):
         """
         :param hp: An integer of the creatures HP
         :param ac: An integer of the creatures AC
@@ -25,7 +27,7 @@ class Creature:
                             reverse=True)
         self.num_actions_available = 1  # All creatures start with 1 available action
         self.heuristics = heuristics
-        self.applied_effects = []
+        self.applied_effects = applied_effects if applied_effects else []
 
     @staticmethod
     def choose_action(action_set):
@@ -93,15 +95,28 @@ class Creature:
             return self.heuristics.heal_selection.select(allies)
         return should_heal_heuristic.select(allies)
 
-    def jsonify(self):
+    def take_damage(self, damage, attack_type):
+        """ Takes the given damage while checking for modifications to it """
+        for e in self.applied_effects:
+            if e.effect_type == "Type Resistance" and e.name == attack_type:
+                damage *= 0.5
+            if e.effect_type == "Type Vulnerability" and e.name == attack_type:
+                damage *= 1.5
+            if e.effect_type == "Type Immunity" and e.name == attack_type:
+                damage = 0
+        self.hp -= damage
+
+    def jsonify(self, write_to_file=True):
         """ Turn a creature object into JSON """
-        creature_info = {
+        combatant_info = {
             "name": self.name,
             "hp": self.max_hp,
             "ac": self.ac,
             "proficiency": self.proficiency,
             "saves": self.saves,
-            "attacks": [a.jsonify() for a in self.attacks],
-            "heals": [h.jsonify() for h in self.heals],
+            "actions": [a.name for a in self.attacks] + [h.name for h in self.heals],
+            "applied_effects": self.applied_effects
         }
-        return creature_info
+        if write_to_file:
+            write_json_to_file('combatants.json', combatant_info)
+        return combatant_info

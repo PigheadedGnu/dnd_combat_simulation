@@ -1,13 +1,14 @@
 from src.debug.logger import Logger
-from src.utils import d20, calc_roll
+from src.utils import *
 
 
 class Effect:
     logger = Logger()
 
-    def __init__(self, turns, name):
-        self.turns_left = turns
+    def __init__(self, max_turns, name):
+        self.turns_left = max_turns
         self.name = name
+        self.effect_type = "Base Effect"
 
     def apply(self, creature):
         """ How does this affect get applied """
@@ -24,27 +25,37 @@ class Effect:
         """
         raise RuntimeError("on_turn_end() is not implemented for {}!".format(self.name))
 
-    def jsonify(self):
-        effect_info = {
-            "Effect Name": self.name,
-            "Maximum Turns": self.turns_left,
-        }
+    def jsonify(self, effect_info=None, write_to_file=True):
+        if not effect_info:
+            effect_info = {
+                "name": self.name,
+                "max_turns": self.turns_left,
+                "effect_type": self.effect_type
+            }
+        else:
+            effect_info['name'] = self.name
+            effect_info['max_turns'] = self.turns_left
+            effect_info['effect_type'] = self.effect_type
+
+        if write_to_file:
+            write_json_to_file('effects.json', effect_info)
         return effect_info
 
 
 class DOTEffect(Effect):
-    def __init__(self, dice, save, turns, name):
+    def __init__(self, dice, save, max_turns, name):
         """ DOT effect applies damage each turn the effect is active
 
         :param dice: A dictionary of (faces, amount) pairs
         :param save: A dictionary with 'stat' and 'DC' entries
-        :param turns: Number of turns this stays active
+        :param max_turns: Number of turns this stays active
         :param name: Name of the effect
         """
 
-        super().__init__(turns, name)
+        super().__init__(max_turns, name)
         self.save = save
-        self.dice = dice
+        self.dice = load_dice(dice)
+        self.effect_type = "DOT Effect"
 
     def apply(self, creature):
         save_attempt = d20() + creature.saves[self.save['stat']]
@@ -72,23 +83,29 @@ class DOTEffect(Effect):
                 "{0} failed to save from {1}".format(creature.name, self.name))
             return True
 
-    def jsonify(self):
-        effect_info = super().jsonify()
-        effect_info['Damage Dice'] = self.dice
-        effect_info['Save'] = self.save
-        return effect_info
+    def jsonify(self, effect_info=None, write_to_file=True):
+        if not effect_info:
+            effect_info = {
+                'dice': self.dice,
+                'save': self.save
+            }
+        else:
+            effect_info['dice'] = self.dice
+            effect_info['save'] = self.save
+        return super().jsonify(effect_info, write_to_file)
 
 
 class StunEffect(Effect):
-    def __init__(self, save, turns, name):
+    def __init__(self, save, max_turns, name):
         """ Stun effect takes away the sufferer's actions for each turn its active
 
         :param save: A dictionary with 'stat' and 'DC' entries
-        :param turns: Number of turns this stays active
+        :param max_turns: Number of turns this stays active
         :param name: Name of this effect
         """
-        super().__init__(turns, name)
+        super().__init__(max_turns, name)
         self.save = save
+        self.effect_type = "Stun Effect"
 
     def apply(self, creature):
         save_attempt = d20() + creature.saves[self.save['stat']]
@@ -119,7 +136,35 @@ class StunEffect(Effect):
                 "{0} failed to save from {1}".format(creature.name, self.name))
             return True
 
-    def jsonify(self):
-        effect_info = super().jsonify()
-        effect_info['Save'] = self.save
-        return effect_info
+    def jsonify(self, effect_info=None, write_to_file=True):
+        if not effect_info:
+            effect_info = {
+                'save': self.save
+            }
+        else:
+            effect_info['save'] = self.save
+        return super().jsonify(effect_info, write_to_file)
+
+
+class PermanentTypeResistance(Effect):
+    def __init__(self, max_turns, name):
+        """ PermanentTypeResistance specifies that the thing with this effect is
+             resistant to any damage from the named given type permanently
+
+        :param max_turns: Number of turns this stays active
+        :param name: Name of the element that this type is resistant to
+        """
+        super().__init__(max_turns, name)
+        self.effect_type = "Type Resistance"
+
+    def apply(self, creature):
+        creature.applied_effects.append(self)
+
+    def on_turn_start(self, creature):
+        pass
+
+    def on_turn_end(self, creature):
+        return True
+
+    def jsonify(self, effect_info=None, write_to_file=True):
+        return super().jsonify(effect_info, write_to_file)

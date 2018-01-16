@@ -1,7 +1,6 @@
 import math
 from random import random
-
-from src.debug import calc_roll, d20
+from src.utils import *
 from src.debug.logger import Logger
 
 
@@ -32,7 +31,7 @@ class Attack(Action):
 
 
 class SingleAttack(Attack):
-    def __init__(self, damage, bonus_to_hit=0, bonus_to_damage=0,
+    def __init__(self, dice, damage_type, bonus_to_hit=0, bonus_to_damage=0,
                  stat_bonus=None, save=None, aoe=False, effects=None, **kwargs):
         """
         :param name: Name of the attack
@@ -40,7 +39,7 @@ class SingleAttack(Attack):
                             save must be None
         :param save: a dictionary with 'stat' and 'DC' as entries. One of this
                         or stat_bonus must be None
-        :param damage: dictionary of damage dice for the attack
+        :param dice: dictionary of damage dice for the attack
         :param recharge_percentile: percentile for recharge on the attack. The
                                         chance to recharge is
                                         p = (1 - recharge_percentile)
@@ -55,12 +54,14 @@ class SingleAttack(Attack):
         assert stat_bonus is None or save is None
         assert stat_bonus is not None or save is not None
         self.stat_bonus = stat_bonus
+        self.damage_type = damage_type
         self.save = save
-        self.dice = damage
+        self.dice = load_dice(dice)
         self.bonus_to_hit = bonus_to_hit
         self.bonus_to_damage = bonus_to_damage
         self.aoe = aoe
         self.effects = effects if effects else []
+
         super().__init__(**kwargs)
 
     def do_damage(self, attacker, target):
@@ -82,20 +83,25 @@ class SingleAttack(Attack):
         self.logger.log_action("{0} took {1} damage from {2} ({3})".format(
             target.name, damage, self.name, attacker.name))
 
-    def jsonify(self, attack_type="Single Target Attack"):
+    def jsonify(self, attack_type="Single Target Attack", write_to_file=True):
         attack_info = {
-            "Action Type": attack_type,
-            "Stat Bonus": self.stat_bonus,
-            "Save": self.save,
-            "Damage Dice": self.dice,
-            "Bonus to Hit": self.bonus_to_hit,
-            "Bonus to Damage": self.bonus_to_damage,
-            "Is AoE": self.aoe,
-            "Number of Attacks": self.multi_attack,
-            "Recharge Percentile": self.recharge_percentile,
-            "Effects": [e.name for e in self.effects]
+            "name": self.name,
+            "action_type": attack_type,
+            "damage_type": self.damage_type,
+            "stat_bonus": self.stat_bonus,
+            "save": self.save,
+            "dice": self.dice,
+            "bonus_to_hit": self.bonus_to_hit,
+            "bonus_to_damage": self.bonus_to_damage,
+            "aoe": self.aoe,
+            "multi_attack": self.multi_attack,
+            "recharge_percentile": self.recharge_percentile,
+            "effects": [e.name for e in self.effects]
         }
+        if write_to_file:
+            write_json_to_file("actions.json", attack_info)
         return attack_info
+
 
 class PhysicalSingleAttack(SingleAttack):
     def __init__(self, **kwargs):
@@ -110,7 +116,7 @@ class PhysicalSingleAttack(SingleAttack):
         if hit_check >= target.ac:
             damage = calc_roll(self.dice) + attacker.saves[self.stat_bonus] + self.bonus_to_damage
 
-        target.hp -= damage
+        target.take_damage(damage, self.damage_type)
         self.log_attack(attacker, target, damage)
 
     def jsonify(self):
@@ -138,7 +144,7 @@ class SpellSingleAttack(SingleAttack):
             if save_check <= self.save['DC']:
                 damage = calc_roll(self.dice) + self.bonus_to_damage
 
-        target.hp -= damage
+        target.take_damage(damage, self.damage_type)
         self.log_attack(attacker, target, damage)
 
     def jsonify(self):
@@ -173,7 +179,7 @@ class SpellSave(SingleAttack):
         if save_check > self.save['DC']:
             damage = math.ceil(damage / 2.0)
 
-        target.hp -= damage
+        target.take_damage(damage, self.damage_type)
 
         self.log_attack(attacker, target, damage)
 
@@ -182,8 +188,8 @@ class SpellSave(SingleAttack):
 
 
 class Heal(Action):
-    def __init__(self, name, heal, stat_bonus, recharge_percentile=0.0,
-                 num_available=-1, num_targets=1):
+    def __init__(self, name, dice, stat_bonus, recharge_percentile=0.0,
+                 num_available=-1, num_targets=1, effects=None):
         """ A heal restores hit points to an ally. Always hits
 
         :param name: string that is name of the heal
@@ -194,13 +200,14 @@ class Heal(Action):
                             a value of -1 means it's always available.
         """
         self.name = name
-        self.dice = heal
+        self.dice = load_dice(dice)
         self.stat_bonus = stat_bonus
         self.recharge_percentile = recharge_percentile
         self.num_available = num_available
         self.ready = True  # If the attack is ready at the current time. All attacks start ready
         self.action_type = "Heal"
         self.num_targets = num_targets
+        self.effects = effects if effects else []
 
     def log_heal(self, healed, new_health, healer):
         self.logger.log_action("{0} healed from {1} to {2} ({3})".format(healed.name, healed.hp, new_health, healer.name))
@@ -212,14 +219,18 @@ class Heal(Action):
         self.log_heal(healed, new_health, healer)
         healed.hp = new_health
 
-    def jsonify(self):
+    def jsonify(self, write_to_file=True):
         heal_info = {
-            "Action Type": "Heal",
-            "Heal Dice": self.dice,
-            "Stat Bonus": self.stat_bonus,
-            "Recharge Percentile": self.recharge_percentile,
-            "Number of Targets": self.num_targets
+            "action_type": "Heal",
+            "name": self.name,
+            "dice": self.dice,
+            "stat_bonus": self.stat_bonus,
+            "recharge_percentile": self.recharge_percentile,
+            "num_targets": self.num_targets,
+            "effects": [e.name for e in self.effects]
         }
+        if write_to_file:
+            write_json_to_file("actions.json", heal_info)
         return heal_info
 
 
@@ -262,9 +273,11 @@ class ComboAttack(Attack):
         for attack in self.attacks:
             attack.apply_effects(target)
 
-    def jsonify(self):
+    def jsonify(self, write_to_file=True):
         attack_info = {
-            "Action Type": "Combo Attack",
-            "Attacks": [a.jsonify() for a in self.attacks]
+            "action_type": "Combo Attack",
+            "attacks": [a.jsonify() for a in self.attacks]
         }
+        if write_to_file:
+            write_json_to_file('actions.json', attack_info)
         return attack_info
