@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DnDSimulator",
+  "name": "DnD 5e Combat Simulation",
   "icons": [
     {
       "src": "favicon.ico",
