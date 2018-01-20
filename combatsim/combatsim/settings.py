@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ponynote.urls'
+ROOT_URLCONF = 'combatsim.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ponynote.wsgi.application'
+WSGI_APPLICATION = 'combatsim.wsgi.application'
 
 
 # Database
