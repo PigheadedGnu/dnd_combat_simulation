@@ -1,11 +1,9 @@
 import json
 
-from src.managers.effect_manager import EffectManager
-
-from combatsim.combatsim.src.actions import ComboAttack, Heal, SpellSave, \
-    SpellSingleAttack, \
-    PhysicalSingleAttack
-from settings import BASE_DIR
+from core.settings import BASE_DIR
+from .effect_manager import EffectManager
+from ..actions import ComboAttack, Heal, SpellSave, \
+    SpellSingleAttack, PhysicalSingleAttack
 
 ACTION_MAPPING = {"Combo Attack": ComboAttack,
                   "Heal": Heal,

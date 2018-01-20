@@ -3,7 +3,7 @@ from src.heuristics import target_selection_heuristics
 from src.managers.combatant_manager import CombatantManager
 from src.simulator import Simulator
 
-from combatsim.combatsim.src.heuristics.heuristic_container import \
+from combatsim.simulator.src.heuristics import \
     HeuristicContainer
 
 heuristic_mapping = dict([(name, cls) for name, cls

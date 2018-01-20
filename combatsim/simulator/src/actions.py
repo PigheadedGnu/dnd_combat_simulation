@@ -1,9 +1,9 @@
 import math
 from random import random
 
-from src.utils import *
+from .utils import *
 
-from combatsim.combatsim.src.debug.logger import Logger
+from .debug.logger import Logger
 
 
 class Action:

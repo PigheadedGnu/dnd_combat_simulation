@@ -1,9 +1,6 @@
-import json
-
-from src.managers.action_manager import ActionManager
-
-from combatsim.combatsim.src.combatant import Combatant
-from settings import BASE_DIR
+from .action_manager import ActionManager
+from ..combatant import Combatant
+from ..utils import *
 
 
 class CombatantManager:
@@ -26,3 +23,16 @@ class CombatantManager:
         build_combatant_info = {k: v for k, v in info.items() if k != 'actions'}
 
         return Combatant(actions=combatant_actions, **build_combatant_info)
+
+    def get_all_combatants(self):
+        return_info = {}
+        for combatant in self.combatant_info:
+            c_info = self.combatant_info[combatant]
+            return_info[c_info['name']] = {
+                "label": capitalize(c_info['name']),
+                "name": c_info['name'],
+                "cr": c_info['cr'] if 'cr' in c_info else None,
+                "expected_damage": 10
+            }
+
+        return return_info

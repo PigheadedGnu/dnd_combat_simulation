@@ -1,7 +1,6 @@
-from src.utils import *
+from .utils import *
 
-from combatsim.combatsim.src.heuristics.heuristic_container import \
-    HeuristicContainer
+from .heuristics.heuristic_container import HeuristicContainer
 
 
 class Combatant:

@@ -1,6 +1,5 @@
-from src.utils import *
-
-from combatsim.combatsim.src.debug.logger import Logger
+from .utils import *
+from .debug.logger import Logger
 
 
 class Effect:

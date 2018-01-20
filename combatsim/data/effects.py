@@ -1,6 +1,3 @@
-from combatsim.combatsim.src.effect import *
-
-
 def bleed(dice, save, turns):
     return DOTEffect(dice=dice, save=save, max_turns=turns, name="bleed")
 

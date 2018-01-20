@@ -1,7 +1,7 @@
 from data.effects import mace_stun
 from src import damage_types
 
-from combatsim.combatsim.src.actions import *
+from combatsim.simulator.src.actions import *
 
 
 def short_sword_slash():

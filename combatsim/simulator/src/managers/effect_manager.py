@@ -1,7 +1,7 @@
 import json
 
-from combatsim.combatsim.src.effect import StunEffect, DOTEffect
-from settings import BASE_DIR
+from core.settings import BASE_DIR
+from ..effect import StunEffect, DOTEffect
 
 EFFECT_MAPPING = {
     "DOT Effect": DOTEffect,

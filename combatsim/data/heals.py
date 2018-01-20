@@ -1,4 +1,4 @@
-from combatsim.combatsim.src.actions import Heal
+from combatsim.simulator.src.actions import Heal
 
 
 def cure_wounds():

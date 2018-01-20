@@ -1,6 +1,6 @@
 import os
 
-from combatsim.combatsim.src.debug.debug_constants import DebugConstants
+from .debug.debug_constants import DebugConstants
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 

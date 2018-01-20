@@ -1,7 +1,5 @@
 import random
 
-from combatsim.combatsim.src.heuristics.heuristic import *
-
 
 # Heuristic types-------------------------
 class TargetSelectionHeuristic(Heuristic):
