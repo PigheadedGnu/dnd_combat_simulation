@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -115,3 +116,6 @@ webpack-stats.prod.json
 # build files
 build/
 bundles/
+
+.idea/*
+.DS_Store
