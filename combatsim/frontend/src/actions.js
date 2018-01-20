@@ -2,6 +2,8 @@
  * Created by Andrew on 1/16/18.
  */
 import {setterAction} from './common'
+import SimulatorSource from './sources/simulatorSource'
+
 
 /* Action types */
 export const SET_TEAM1_COMBATANTS = 'SET_TEAM1_COMBATANTS'
@@ -9,6 +11,7 @@ export const SET_TEAM2_COMBATANTS = 'SET_TEAM2_COMBATANTS'
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
 export const SET_ALL_COMBATANTS = 'SET_ALL_COMBATANTS'
 
+export const setAllCombatants = setterAction(SET_ALL_COMBATANTS)
 export const setT1Combatants = setterAction(SET_TEAM1_COMBATANTS)
 export const setT2Combatants = setterAction(SET_TEAM2_COMBATANTS)
 export const setCounter = setterAction(INCREMENT_COUNTER)
@@ -45,6 +48,15 @@ function addCombatantToSet(combatant, counter, set) {
   return updatedSet
 }
 
+const get = (sourceFunc, action, key) => (...args) => (dispatch) => {
+  sourceFunc(...args).then((res) => {
+    let data = key ? res.data[key] : res.data
+    dispatch(action(data))
+  })
+}
+
+export const getAllCombatants = get(SimulatorSource.getCombatants, setAllCombatants)
+
 export const updateT1Combatants = (newSet) => (dispatch, getState) => {
   let {team1Combatants, counter} = getState();
   // Must increment the counter each time to keep the appended values unique
@@ -80,3 +92,4 @@ export const addT2Combatant = (newCombatant) => (dispatch, getState) => {
 
   dispatch(setT2Combatants(addCombatantToSet(newCombatant, counter, team2Combatants)))
 };
+

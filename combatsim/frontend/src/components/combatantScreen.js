@@ -39,6 +39,17 @@ const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1
   </div>
 )
 
+class Container extends React.Component{
+  constructor(props) {
+    super(props)
+    props.getAllCombatants()
+  }
+
+  render() {
+    return <CombatantScreen {...this.props} />
+  }
+}
+
 const mapStateToProps = (state) => ({
   team1Combatants: state.team1Combatants,
   allCombatants: state.allCombatants,
@@ -46,10 +57,11 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
+  getAllCombatants: () => dispatch(actions.getAllCombatants()),
   team1Update: (newSet) => dispatch(actions.updateT1Combatants(newSet)),
   team2Update: (newSet) => dispatch(actions.updateT2Combatants(newSet)),
   team1Add: (newSet) => dispatch(actions.addT1Combatant(newSet)),
   team2Add: (newSet) => dispatch(actions.addT2Combatant(newSet))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(CombatantScreen)
+export default connect(mapStateToProps, mapDispatchToProps)(Container)

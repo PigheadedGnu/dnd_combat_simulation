@@ -1,6 +1,6 @@
-from django.urls import path, include
-from simulator import views
+from django.urls import path
+from .views import *
 
 urlpatterns = [
-    path('/combatants', views.get_combatants)
+    path('combatants', get_combatants)
 ]

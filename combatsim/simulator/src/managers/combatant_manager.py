@@ -25,14 +25,16 @@ class CombatantManager:
         return Combatant(actions=combatant_actions, **build_combatant_info)
 
     def get_all_combatants(self):
-        return_info = {}
+        """ Used to populate the combatants on the front-end """
+        return_info = []
         for combatant in self.combatant_info:
             c_info = self.combatant_info[combatant]
-            return_info[c_info['name']] = {
+            return_info.append({
                 "label": capitalize(c_info['name']),
-                "name": c_info['name'],
+                "value": c_info['name'],
                 "cr": c_info['cr'] if 'cr' in c_info else None,
-                "expected_damage": 10
-            }
+                "expDamage": 10,
+                "creatureType": c_info['creature_type'] if "creature_type" in c_info else None
+            })
 
         return return_info
