@@ -1,8 +1,6 @@
 import math
 from random import random
-
 from .utils import *
-
 from .debug.logger import Logger
 
 
@@ -21,9 +19,10 @@ class Action:
 
 
 class Attack(Action):
-    def __init__(self, name, recharge_percentile=0.0, num_available=-1,
-                 multi_attack=1):
+    def __init__(self, name, serialized_name, recharge_percentile=0.0,
+                 num_available=-1, multi_attack=1):
         self.name = name
+        self.serialized_name = serialized_name
         self.recharge_percentile = recharge_percentile
         self.num_available = num_available
         self.action_type = "Attack"
@@ -37,6 +36,7 @@ class SingleAttack(Attack):
                  stat_bonus=None, save=None, aoe=False, effects=None, **kwargs):
         """
         :param name: Name of the attack
+        :param serialized_name: A 4-char string that is short for this action
         :param stat_bonus: bonus to hit for the attack. One of this or
                             save must be None
         :param save: a dictionary with 'stat' and 'DC' as entries. One of this
@@ -76,7 +76,7 @@ class SingleAttack(Attack):
 
     def calc_expected_damage(self):
         return self.multi_attack * sum([n_dice * (max_roll / 2.0 + 0.5) for
-                                        n_dice, max_roll in self.dice.items()])
+                                        max_roll, n_dice in self.dice.items()])
 
     def apply_effects(self, target):
         [effect.apply(target) for effect in self.effects]
@@ -88,6 +88,7 @@ class SingleAttack(Attack):
     def jsonify(self, attack_type="Single Target Attack", write_to_file=True):
         attack_info = {
             "name": self.name,
+            "serialized_name": self.serialized_name,
             "action_type": attack_type,
             "damage_type": self.damage_type,
             "stat_bonus": self.stat_bonus,
@@ -121,8 +122,8 @@ class PhysicalSingleAttack(SingleAttack):
         target.take_damage(damage, self.damage_type)
         self.log_attack(attacker, target, damage)
 
-    def jsonify(self):
-        return super().jsonify("Single Target Physical Attack")
+    def jsonify(self, write_to_file=True):
+        return super().jsonify("Single Target Physical Attack", write_to_file=write_to_file)
 
 
 class SpellSingleAttack(SingleAttack):
@@ -149,8 +150,8 @@ class SpellSingleAttack(SingleAttack):
         target.take_damage(damage, self.damage_type)
         self.log_attack(attacker, target, damage)
 
-    def jsonify(self):
-        return super().jsonify("Single Target Spell Attack")
+    def jsonify(self, write_to_file=True):
+        return super().jsonify("Single Target Spell Attack", write_to_file=write_to_file)
 
 
 class SpellSave(SingleAttack):
@@ -185,16 +186,18 @@ class SpellSave(SingleAttack):
 
         self.log_attack(attacker, target, damage)
 
-    def jsonify(self):
-        return super().jsonify("Spell Attack Requiring Save")
+    def jsonify(self, write_to_file=True):
+        return super().jsonify("Spell Attack Requiring Save", write_to_file=write_to_file)
 
 
 class Heal(Action):
-    def __init__(self, name, dice, stat_bonus, recharge_percentile=0.0,
-                 num_available=-1, num_targets=1, effects=None):
+    def __init__(self, name, serialized_name, dice, stat_bonus,
+                 recharge_percentile=0.0, num_available=-1, num_targets=1,
+                 effects=None):
         """ A heal restores hit points to an ally. Always hits
 
         :param name: string that is name of the heal
+        :param serialized_name: A 4-char string that is short for this action
         :param heal: dictionary with keys as dice value and values as number of that dice
         :param stat_bonus: string with the bonus based of which stat the caster uses
         :param recharge_percentile: chance to recharge is p = 1 - recharge percentile
@@ -202,6 +205,7 @@ class Heal(Action):
                             a value of -1 means it's always available.
         """
         self.name = name
+        self.serialized_name = serialized_name
         self.dice = load_dice(dice)
         self.stat_bonus = stat_bonus
         self.recharge_percentile = recharge_percentile
@@ -225,6 +229,7 @@ class Heal(Action):
         heal_info = {
             "action_type": "Heal",
             "name": self.name,
+            "serialized_name": self.serialized_name,
             "dice": self.dice,
             "stat_bonus": self.stat_bonus,
             "recharge_percentile": self.recharge_percentile,
@@ -277,8 +282,10 @@ class ComboAttack(Attack):
 
     def jsonify(self, write_to_file=True):
         attack_info = {
+            "name": self.name,
+            "serialized_name": self.serialized_name,
             "action_type": "Combo Attack",
-            "attacks": [a.jsonify() for a in self.attacks]
+            "attacks": [a.jsonify(write_to_file=False) for a in self.attacks]
         }
         if write_to_file:
             write_json_to_file('actions.json', attack_info)

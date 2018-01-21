@@ -38,3 +38,42 @@ class CombatantManager:
             })
 
         return return_info
+
+    def deserialize_combatant(self, serialized_combatant):
+        """ Takes a string of the below format and turns it into a combatant
+
+        String form:
+            ?<name>:<hp>:<ac>:<proficiency>:<str save>:<dex save>:<con save>:
+            <wis save>:<int save>:<cha save>?[action...]?[effect...]
+
+        Name is a string and every other element besides actions and effects
+            are integers.
+        [action...] is a list of actions separated by |s
+            Only support 4-char action short-names now.
+        [effect...] is a list of effects separated by |s
+
+        Return:
+            combatant: A combatant built from the given string
+        """
+        split_string = serialized_combatant.split("?")[1:]
+
+        combatant_attr = split_string[0]
+        actions = split_string[1].split("|")
+        effects = split_string[2]
+
+        combatant = Combatant(
+            name=combatant_attr[0],
+            hp=combatant_attr[1],
+            ac=combatant_attr[2],
+            proficiency=combatant_attr[3],
+            saves={"STR": combatant_attr[4],
+                   "DEX": combatant_attr[5],
+                   "CON": combatant_attr[6],
+                   "WIS": combatant_attr[7],
+                   "INT": combatant_attr[8],
+                   "CHA": combatant_attr[9]},
+            actions=[self.action_manager.load_action_from_serialized_name(a)
+                     for a in actions]
+        )
+
+        return combatant

@@ -1,7 +1,7 @@
-from data.attacks import *
-from data.heals import *
+from .attacks import *
+from .heals import *
 
-from combatsim.simulator.src.combatant import Combatant
+from simulator.src.combatant import Combatant
 
 
 def Marshall():

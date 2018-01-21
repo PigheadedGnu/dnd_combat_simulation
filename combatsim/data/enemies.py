@@ -1,8 +1,8 @@
-from data.attacks import *
-from src.heuristics.heuristic_container import HeuristicContainer
-from src.heuristics.target_selection_heuristics import *
+from .attacks import *
+from simulator.src.heuristics.heuristic_container import HeuristicContainer
+from simulator.src.heuristics.target_selection_heuristics import *
 
-from combatsim.simulator.src.combatant import Combatant
+from simulator.src.combatant import Combatant
 
 
 def goblin():

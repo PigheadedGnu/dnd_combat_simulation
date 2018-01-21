@@ -107,6 +107,28 @@ class Combatant:
                 damage = 0
         self.hp -= damage
 
+    def calc_expected_damage(self):
+        """ Assume a battle will take 5 turns and calculate the expected damage over those 5 turns """
+        total_damage = 0
+
+        # Attacks are already sorted by top damage to lowest damage so we
+        # can just iterate through from start to end and divide by
+        for turn in range(5):
+            for attack in self.attacks:
+                # Try to recharge the attack and ensure we have some left of it.
+                # If that fails, move on to the next one.
+                attack.try_recharge()
+                if attack.ready and attack.num_available != 0:
+                    total_damage += attack.calc_expected_damage() + \
+                                    self.saves[attack.stat_bonus] + \
+                                    attack.bonus_to_damage
+                    attack.ready = False
+                    attack.num_available -= 1
+                    break
+                else:
+                    continue
+        return total_damage/5.0
+
     def jsonify(self, write_to_file=True):
         """ Turn a creature object into JSON """
         combatant_info = {
@@ -116,7 +138,8 @@ class Combatant:
             "proficiency": self.proficiency,
             "saves": self.saves,
             "actions": [a.name for a in self.attacks] + [h.name for h in self.heals],
-            "applied_effects": self.applied_effects
+            "applied_effects": self.applied_effects,
+            "expected_damage": self.calc_expected_damage()
         }
         if write_to_file:
             write_json_to_file('combatants.json', combatant_info)

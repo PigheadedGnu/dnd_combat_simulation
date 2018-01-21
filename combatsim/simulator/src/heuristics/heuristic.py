@@ -1,4 +1,4 @@
-from combatsim.simulator.src.debug import Logger
+from ..debug.logger import Logger
 
 
 class Heuristic:

@@ -1,4 +1,5 @@
 import random
+from .heuristic import Heuristic
 
 
 # Heuristic types-------------------------

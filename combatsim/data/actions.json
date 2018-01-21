@@ -1,6 +1,7 @@
 {
   "Short Sword": {
     "name": "Short Sword",
+    "serialized_name": "shsw",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
     "stat_bonus": "STR",
@@ -17,6 +18,7 @@
   },
   "Long Sword": {
     "name": "Long Sword",
+    "serialized_name": "lnsw",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
     "stat_bonus": "STR",
@@ -34,6 +36,7 @@
   },
   "Sneak Sword": {
     "name": "Sneak Sword",
+    "serialized_name": "l5ss",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
     "stat_bonus": "DEX",
@@ -51,6 +54,7 @@
   },
   "Spin Throw": {
     "name": "Spin Throw",
+    "serialized_name": "spth",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
     "stat_bonus": "STR",
@@ -67,6 +71,7 @@
   },
   "Armor Piercing Missile": {
     "name": "Armor Piercing Missile",
+    "serialized_name": "arpm",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
     "stat_bonus": "STR",
@@ -83,6 +88,7 @@
   },
   "Throw Rock": {
     "name": "Throw Rock",
+    "serialized_name": "thrk",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
     "stat_bonus": "STR",
@@ -99,6 +105,7 @@
   },
   "Mace Hit": {
     "name": "Mace Hit",
+    "serialized_name": "mcht",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
     "stat_bonus": "STR",
@@ -117,6 +124,7 @@
   },
   "Scorching Ray": {
     "name": "Scorching Ray",
+    "serialized_name": "scry",
     "action_type": "Single Target Spell Attack",
     "damage_type": "fire",
     "stat_bonus": "INT",
@@ -133,6 +141,7 @@
   },
   "Lightning Bolt": {
     "name": "Lightning Bolt",
+    "serialized_name": "lnbt",
     "action_type": "Single Target Spell Attack",
     "damage_type": "lightning",
     "stat_bonus": null,
@@ -152,6 +161,7 @@
   },
   "Magic Missile": {
     "name": "Magic Missile",
+    "serialized_name": "mami",
     "action_type": "Single Target Spell Attack",
     "damage_type": "force",
     "stat_bonus": "None",
@@ -168,6 +178,7 @@
   },
   "Acid Splash": {
     "name": "Acid Splash",
+    "serialized_name": "acsp",
     "action_type": "Single Target Spell Attack",
     "damage_type": "acid",
     "stat_bonus": null,
@@ -187,6 +198,7 @@
   },
   "Sacred Flame": {
     "name": "Sacred Flame",
+    "serialized_name": "scfl",
     "action_type": "Single Target Spell Attack",
     "damage_type": "radiant",
     "stat_bonus": null,
@@ -206,6 +218,7 @@
   },
   "Guiding Bolt": {
     "name": "Guiding Bolt",
+    "serialized_name": "gdbt",
     "action_type": "Single Target Spell Attack",
     "damage_type": "radiant",
     "stat_bonus": "WIS",
@@ -222,6 +235,7 @@
   },
   "Beak Strike": {
     "name": "Beak Strike",
+    "serialized_name": "bksk",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
     "stat_bonus": "STR",
@@ -238,6 +252,7 @@
   },
   "Claw Strike": {
     "name": "Claw Strike",
+    "serialized_name": "clsk",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
     "stat_bonus": "STR",
@@ -252,9 +267,51 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
+  "Griffon Combo": {
+    "name": "Griffon Combo",
+    "serialized_name": "grcm",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Beak Strike",
+        "serialized_name": "bksk",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "piercing",
+        "stat_bonus": "STR",
+        "save": null,
+        "dice": {
+          "8": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Claw Strike",
+        "serialized_name": "clsk",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": "STR",
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
   "Cure Wounds": {
     "action_type": "Heal",
     "name": "Cure Wounds",
+    "serialized_name": "cwnd",
     "dice": {
       "8": 1
     },
@@ -266,6 +323,7 @@
   "Prayer of Healing": {
     "action_type": "Heal",
     "name": "Prayer of Healing",
+    "serialized_name": "proh",
     "dice": {
       "8": 2
     },
@@ -277,6 +335,7 @@
   "Divine Heal": {
     "action_type": "Heal",
     "name": "Divine Heal",
+    "serialized_name": "dvhl",
     "dice": {
       "10": 1
     },

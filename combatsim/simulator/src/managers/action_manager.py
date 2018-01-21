@@ -34,3 +34,12 @@ class ActionManager:
 
         return ACTION_MAPPING[info['action_type']](effects=action_effects,
                                                    **build_action_info)
+
+    def load_action_from_serialized_name(self, shortened_name):
+        action = [a for a in self.action_info.values()
+                  if a['serialized_name'] == shortened_name]
+
+        if len(action) > 1:
+            raise RuntimeError("More than one action for shortened name:", shortened_name)
+        else:
+            return action[0]

@@ -57,6 +57,13 @@ const get = (sourceFunc, action, key) => (...args) => (dispatch) => {
 
 export const getAllCombatants = get(SimulatorSource.getCombatants, setAllCombatants)
 
+export const addCombatantToAllCombatants = (combatant) => (dispatch, getState) => {
+  let {allCombatants} = getState();
+
+  let updatedCombatants = allCombatants.concat(combatant);
+  dispatch(setAllCombatants(updatedCombatants))
+}
+
 export const updateT1Combatants = (newSet) => (dispatch, getState) => {
   let {team1Combatants, counter} = getState();
   // Must increment the counter each time to keep the appended values unique
