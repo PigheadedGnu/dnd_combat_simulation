@@ -1,4 +1,5 @@
 import axios from 'axios'
+axios.defaults.xsrfHeaderName = "X-CSRFToken";
 
 const argsToForm = (args) => {
   let data = new FormData()
@@ -16,7 +17,7 @@ const http = (url, method, args, returnData=true) => {
     method: method,
     url: url,
     data: data,
-    withCredentials: true,
+    withCredentials: false,
     headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'}
   })
 }

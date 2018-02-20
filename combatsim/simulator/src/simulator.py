@@ -1,8 +1,8 @@
 from copy import deepcopy
 
-from src.utils import d20
+from .utils import d20
 
-from combatsim.simulator.src.debug import Logger
+from .debug import Logger
 
 
 class Simulator:

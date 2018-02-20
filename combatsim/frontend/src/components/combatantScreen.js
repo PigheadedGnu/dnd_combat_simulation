@@ -5,10 +5,10 @@ import { connect } from 'react-redux'
 import * as actions from '../actions'
 import Grid from 'react-css-grid';
 import CombatantTable from './combatantTable'
-
+import '../index.css';
 
 const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1Update, team2Update,
-                         team1Add, team2Add}) => (
+                         team1Add, team2Add, runSimulation}) => (
   <div>
     <Grid width={320} gap={32}>
       <div className="section">
@@ -36,6 +36,7 @@ const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1
         <CombatantTable teamAddFunction={team2Add}/>
       </div>
     </Grid>
+    <button className="button" onClick={runSimulation} type="button">Fight!</button>
   </div>
 )
 
@@ -61,7 +62,8 @@ const mapDispatchToProps = (dispatch) => ({
   team1Update: (newSet) => dispatch(actions.updateT1Combatants(newSet)),
   team2Update: (newSet) => dispatch(actions.updateT2Combatants(newSet)),
   team1Add: (newSet) => dispatch(actions.addT1Combatant(newSet)),
-  team2Add: (newSet) => dispatch(actions.addT2Combatant(newSet))
+  team2Add: (newSet) => dispatch(actions.addT2Combatant(newSet)),
+  runSimulation: () => dispatch(actions.runSimulation())
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container)

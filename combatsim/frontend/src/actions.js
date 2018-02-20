@@ -10,11 +10,13 @@ export const SET_TEAM1_COMBATANTS = 'SET_TEAM1_COMBATANTS'
 export const SET_TEAM2_COMBATANTS = 'SET_TEAM2_COMBATANTS'
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
 export const SET_ALL_COMBATANTS = 'SET_ALL_COMBATANTS'
+export const SET_SIMULATION_RESULTS = 'SET_SIMULATION_RESULTS'
 
 export const setAllCombatants = setterAction(SET_ALL_COMBATANTS)
 export const setT1Combatants = setterAction(SET_TEAM1_COMBATANTS)
 export const setT2Combatants = setterAction(SET_TEAM2_COMBATANTS)
 export const setCounter = setterAction(INCREMENT_COUNTER)
+export const setSimulationResults = setterAction(SET_SIMULATION_RESULTS)
 
 
 function updateCombatantSet(counter, oldSet, newSet) {
@@ -93,3 +95,11 @@ export const addT2Combatant = (newCombatant) => (dispatch, getState) => {
   dispatch(setT2Combatants(addCombatantToSet(newCombatant, counter, team2Combatants)))
 };
 
+export const runSimulation = () => (dispatch, getState) => {
+  let {team1Combatants, team2Combatants} = getState();
+  SimulatorSource.runSimulation(
+    team1Combatants.map((x) => x.label),
+    team2Combatants.map((x) => x.label)).then(({data}) => {
+    dispatch(setSimulationResults(data))
+  })
+};
