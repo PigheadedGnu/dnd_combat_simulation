@@ -6,7 +6,7 @@ from .heuristics import target_selection_heuristics
 from .managers.combatant_manager import CombatantManager
 from .simulator import Simulator
 
-from .heuristics import HeuristicContainer
+from .heuristics.heuristic_container import HeuristicContainer
 
 heuristic_mapping = dict([(name, cls) for name, cls
                           in target_selection_heuristics.__dict__.items()

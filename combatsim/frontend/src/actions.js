@@ -3,6 +3,7 @@
  */
 import {setterAction} from './common'
 import SimulatorSource from './sources/simulatorSource'
+import combatantSelectionReducer from "./reducers/combatantSelection";
 
 
 /* Action types */
@@ -11,12 +12,16 @@ export const SET_TEAM2_COMBATANTS = 'SET_TEAM2_COMBATANTS'
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
 export const SET_ALL_COMBATANTS = 'SET_ALL_COMBATANTS'
 export const SET_SIMULATION_RESULTS = 'SET_SIMULATION_RESULTS'
+export const SET_ALL_ACTIONS = 'SET_ALL_ACTIONS'
+export const SET_COMBATANT_ACTIONS = 'SET_COMBATANT_ACTIONS'
 
 export const setAllCombatants = setterAction(SET_ALL_COMBATANTS)
+export const setAllActions = setterAction(SET_ALL_ACTIONS)
 export const setT1Combatants = setterAction(SET_TEAM1_COMBATANTS)
 export const setT2Combatants = setterAction(SET_TEAM2_COMBATANTS)
 export const setCounter = setterAction(INCREMENT_COUNTER)
 export const setSimulationResults = setterAction(SET_SIMULATION_RESULTS)
+export const setCombatantActions = setterAction(SET_COMBATANT_ACTIONS)
 
 
 function updateCombatantSet(counter, oldSet, newSet) {
@@ -58,6 +63,7 @@ const get = (sourceFunc, action, key) => (...args) => (dispatch) => {
 }
 
 export const getAllCombatants = get(SimulatorSource.getCombatants, setAllCombatants)
+export const getAllActions = get(SimulatorSource.getActions, setAllActions)
 
 export const updateT1Combatants = (newSet) => (dispatch, getState) => {
   let {team1Combatants, counter} = getState();
@@ -94,6 +100,27 @@ export const addT2Combatant = (newCombatant) => (dispatch, getState) => {
 
   dispatch(setT2Combatants(addCombatantToSet(newCombatant, counter, team2Combatants)))
 };
+
+export const addCombatantAction = (newAction) => (dispatch, getState) => {
+  /*
+   * Kind of a hacky way to insert into the list... thought the list should
+   * never be all that long so seems okay. Maybe revisit if this call ends up
+   * taking a lot of time.
+   */
+  let {combatantCreationReducer} = getState();
+  let {combatantActions} = combatantCreationReducer;
+  for (let key in combatantActions) {
+    if (combatantActions[key].value === newAction.value) {
+      return
+    }
+  }
+  dispatch(setCombatantActions(combatantActions.concat(newAction)));
+}
+
+export const updateCombatantActions = (newState) => (dispatch, getState) => {
+  {console.log("UPDATER:", newState)}
+  dispatch(setCombatantActions(newState));
+}
 
 export const runSimulation = () => (dispatch, getState) => {
   let {team1Combatants, team2Combatants} = getState();

@@ -1,9 +1,10 @@
 import json
 
-from core.settings import BASE_DIR
+from ..settings import BASE_DIR
 from .effect_manager import EffectManager
 from ..actions import ComboAttack, Heal, SpellSave, \
     SpellSingleAttack, PhysicalSingleAttack
+from ..utils import capitalize
 
 ACTION_MAPPING = {"Combo Attack": ComboAttack,
                   "Heal": Heal,
@@ -34,3 +35,20 @@ class ActionManager:
 
         return ACTION_MAPPING[info['action_type']](effects=action_effects,
                                                    **build_action_info)
+
+    def get_all_actions(self):
+        """ Get a list of all actions with attributes for frontend
+
+        Returns:
+           JSON-dictionary of all actions with the following attributes:
+            label: name of the actions
+            expectedDamage: the damage expected from the action
+        """
+        return_info = []
+        for a_info in self.action_info.values():
+            return_info.append({
+                "label": capitalize(a_info['name']),
+                "value": a_info['name'],
+                "actionType": a_info['action_type']
+            })
+        return return_info

@@ -1,4 +1,4 @@
-from ..debug import Logger
+from ..debug.logger import Logger
 
 
 class Heuristic:

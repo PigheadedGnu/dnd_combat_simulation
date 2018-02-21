@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = [
     path('combatants', get_combatants),
-    path('simulate', get_simulation_result)
+    path('simulate', get_simulation_result),
+    path('actions', get_all_actions)
 ]

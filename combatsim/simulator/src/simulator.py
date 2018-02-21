@@ -2,7 +2,7 @@ from copy import deepcopy
 
 from .utils import d20
 
-from .debug import Logger
+from .debug.logger import Logger
 
 
 class Simulator:
