@@ -50,7 +50,6 @@ class Container extends React.Component{
   render() {
     return <div>
       <CombatantScreen {...this.props} />
-      <ResultsScreen {...this.props}/>
     </div>
   }
 }

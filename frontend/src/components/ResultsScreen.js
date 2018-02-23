@@ -6,6 +6,7 @@ import * as actions from '../actions'
 import Grid from 'react-css-grid';
 import CombatantTable from './combatantTable'
 import '../index.css';
+import combatantSelectionReducer from "../reducers/combatantSelection";
 
 const ResultsScreen = ({results}) => (
   <div>
@@ -25,7 +26,7 @@ const ResultsScreen = ({results}) => (
 )
 
 const mapStateToProps = (state) => ({
-  results: state.simulationResults,
+  results: state.combatantSelectionReducer.simulationResults,
 })
 
 const mapDispatchToProps = (dispatch) => ({

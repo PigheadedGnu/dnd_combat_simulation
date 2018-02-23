@@ -6,7 +6,7 @@ import ResultsScreen from './components/ResultsScreen'
 import CombatantCreation from './components/combatantCreation'
 import { connect } from 'react-redux'
 
-const App = ({...props}) => (
+const SimulatorScreen = ({...props}) => (
   <div className="App">
     <CombatantScreen {...props}/>
     <ResultsScreen {...props}/>
@@ -24,12 +24,11 @@ const mapDispatchToProps = (dispatch) => ({
 const AppRouter = () => (
   <BrowserRouter>
     <div>
-      <Route path='/test/' render={<div/>}/>
-      <Route path='/simulator/' component={CombatantScreen}/>
+      <Route path='/simulator/' component={SimulatorScreen}/>
       <Route path='/creation/' component={CombatantCreation}/>
     </div>
   </BrowserRouter>
 )
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(AppRouter)
 
