@@ -7,9 +7,12 @@ from ..settings import BASE_DIR
 
 class CombatantManager:
     def __init__(self):
+        self.load_combatants()
+        self.action_manager = ActionManager()
+
+    def load_combatants(self):
         with open(BASE_DIR + '/data/combatants.json', 'r') as f:
             self.combatant_info = json.load(f)
-        self.action_manager = ActionManager()
 
     def create_combatant(self, combatant_name, hp, ac,
                          proficiency_bonus, saves, actions):
@@ -77,12 +80,15 @@ class CombatantManager:
 
         return Combatant(actions=combatant_actions, **build_combatant_info)
 
-    def get_all_combatants(self):
+    def get_all_combatants(self, reload=False):
         """ Gets a list of all of the combatants in a JSON dictionary
 
         Used to populate the combatants on the front-end
 
         """
+        if reload:
+            self.load_combatants()
+
         return_info = []
         for c_info in self.combatant_info.values():
             return_info.append({

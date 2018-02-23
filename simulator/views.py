@@ -38,15 +38,18 @@ def create_combatant(request):
     hp = request.POST.get("hp")
     ac = request.POST.get("ac")
     proficiency = request.POST.get("proficiency")
-    saves = {"STR": request.POST.get("STR"), "CON": request.POST.get("CON"),
-             "DEX": request.POST.get("DEX"), "WIS": request.POST.get("WIS"),
-             "INT": request.POST.get("INT"), "CHA": request.POST.get("CHA")}
+    saves = {"STR": request.POST.get("strength"),
+             "CON": request.POST.get("constitution"),
+             "DEX": request.POST.get("dexterity"),
+             "WIS": request.POST.get("wisdom"),
+             "INT": request.POST.get("intelligence"),
+             "CHA": request.POST.get("charisma")}
     actions = request.POST.get("actions").split(",")
     success, msg = cm.create_combatant(
         combatant_name, hp, ac, proficiency, saves, actions)
 
     if success:
-        return JsonResponse(cm.get_all_combatants(), safe=False)
+        return JsonResponse(cm.get_all_combatants(reload=True), safe=False)
     else:
         return error_response(400, msg)
 

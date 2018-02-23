@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import * as actions from '../actions'
 import Grid from 'react-css-grid';
 import CombatantTable from './combatantTable'
+import ResultsScreen from './ResultsScreen'
 import '../index.css';
 
 const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1Update, team2Update,
@@ -47,7 +48,10 @@ class Container extends React.Component{
   }
 
   render() {
-    return <CombatantScreen {...this.props} />
+    return <div>
+      <CombatantScreen {...this.props} />
+      <ResultsScreen {...this.props}/>
+    </div>
   }
 }
 

@@ -15,6 +15,17 @@ export const SET_SIMULATION_RESULTS = 'SET_SIMULATION_RESULTS'
 export const SET_ALL_ACTIONS = 'SET_ALL_ACTIONS'
 export const SET_COMBATANT_ACTIONS = 'SET_COMBATANT_ACTIONS'
 
+export const SET_COMBATANT_NAME = 'SET_COMBATANT_NAME'
+export const SET_COMBATANT_HP = 'SET_COMBATANT_HP'
+export const SET_COMBATANT_AC = 'SET_COMBATANT_AC'
+export const SET_COMBATANT_PROFICIENCY = 'SET_COMBATANT_PROFICIENCY'
+export const SET_COMBATANT_STRENGTH = 'SET_COMBATANT_STRENGTH'
+export const SET_COMBATANT_DEXTERITY = 'SET_COMBATANT_DEXTERITY'
+export const SET_COMBATANT_CONSTITUTION = 'SET_COMBATANT_CONSTITUTION'
+export const SET_COMBATANT_WISDOM = 'SET_COMBATANT_WISDOM'
+export const SET_COMBATANT_INTELLIGENCE = 'SET_COMBATANT_INTELLIGENCE'
+export const SET_COMBATANT_CHARISMA = 'SET_COMBATANT_CHARISMA'
+
 export const setAllCombatants = setterAction(SET_ALL_COMBATANTS)
 export const setAllActions = setterAction(SET_ALL_ACTIONS)
 export const setT1Combatants = setterAction(SET_TEAM1_COMBATANTS)
@@ -23,6 +34,23 @@ export const setCounter = setterAction(INCREMENT_COUNTER)
 export const setSimulationResults = setterAction(SET_SIMULATION_RESULTS)
 export const setCombatantActions = setterAction(SET_COMBATANT_ACTIONS)
 
+export const setCombatantName = setterAction(SET_COMBATANT_NAME)
+export const setCombatantHP = setterAction(SET_COMBATANT_HP)
+export const setCombatantAC = setterAction(SET_COMBATANT_AC)
+export const setCombatantProficiency = setterAction(SET_COMBATANT_PROFICIENCY)
+export const setCombatantStrength = setterAction(SET_COMBATANT_STRENGTH)
+export const setCombatantDexterity = setterAction(SET_COMBATANT_DEXTERITY)
+export const setCombatantConstitution = setterAction(SET_COMBATANT_CONSTITUTION)
+export const setCombatantWisdom = setterAction(SET_COMBATANT_WISDOM)
+export const setCombatantIntelligence = setterAction(SET_COMBATANT_INTELLIGENCE)
+export const setCombatantCharisma = setterAction(SET_COMBATANT_CHARISMA)
+
+const get = (sourceFunc, action, key) => (...args) => (dispatch) => {
+  sourceFunc(...args).then((res) => {
+    let data = key ? res.data[key] : res.data
+    dispatch(action(data))
+  })
+}
 
 function updateCombatantSet(counter, oldSet, newSet) {
   // Get the new item by seeing what changed from the previous state (filter and get the first item)
@@ -53,13 +81,6 @@ function addCombatantToSet(combatant, counter, set) {
   });
 
   return updatedSet
-}
-
-const get = (sourceFunc, action, key) => (...args) => (dispatch) => {
-  sourceFunc(...args).then((res) => {
-    let data = key ? res.data[key] : res.data
-    dispatch(action(data))
-  })
 }
 
 export const getAllCombatants = get(SimulatorSource.getCombatants, setAllCombatants)
@@ -118,15 +139,35 @@ export const addCombatantAction = (newAction) => (dispatch, getState) => {
 }
 
 export const updateCombatantActions = (newState) => (dispatch, getState) => {
-  {console.log("UPDATER:", newState)}
   dispatch(setCombatantActions(newState));
+}
+
+export const createCombatant = () => (dispatch, getState) => {
+  let {combatantCreationReducer} = getState();
+  let {combatantActions} = combatantCreationReducer;
+  SimulatorSource.createCombatant(
+    combatantCreationReducer.combatantName,
+    combatantCreationReducer.combatantHP,
+    combatantCreationReducer.combatantAC,
+    combatantCreationReducer.combatantProficiency,
+    combatantCreationReducer.combatantStrength,
+    combatantCreationReducer.combatantConstitution,
+    combatantCreationReducer.combatantDexterity,
+    combatantCreationReducer.combatantWisdom,
+    combatantCreationReducer.combatantIntelligence,
+    combatantCreationReducer.combatantCharisma,
+    combatantActions.map((a) => a.value).join(',')
+  ).then(({data}) => {
+    dispatch(setAllCombatants(data))
+  })
 }
 
 export const runSimulation = () => (dispatch, getState) => {
   let {team1Combatants, team2Combatants} = getState();
   SimulatorSource.runSimulation(
     team1Combatants.map((x) => x.label),
-    team2Combatants.map((x) => x.label)).then(({data}) => {
+    team2Combatants.map((x) => x.label)
+  ).then(({data}) => {
     dispatch(setSimulationResults(data))
   })
 };
