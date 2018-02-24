@@ -85,17 +85,17 @@ export const getAllCombatants = get(SimulatorSource.getCombatants, setAllCombata
 export const getAllActions = get(SimulatorSource.getActions, setAllActions)
 
 export const updateT1Combatants = (newSet) => (dispatch, getState) => {
-  let {team1Combatants, counter} = getState();
+  let {combatantSelectionReducer} = getState();
+  let {team1Combatants, counter} = combatantSelectionReducer;
   // Must increment the counter each time to keep the appended values unique
   dispatch(setCounter(counter + 1));
-
   let updatedSet = updateCombatantSet(counter, team1Combatants, newSet);
-
   dispatch(setT1Combatants(updatedSet))
 };
 
 export const updateT2Combatants = (newSet) => (dispatch, getState) => {
-  let {team2Combatants, counter} = getState();
+  let {combatantSelectionReducer} = getState();
+  let {team2Combatants, counter} = combatantSelectionReducer;
   // Must increment the counter each time to keep the appended values unique
   dispatch(setCounter(counter + 1));
 
@@ -105,7 +105,8 @@ export const updateT2Combatants = (newSet) => (dispatch, getState) => {
 };
 
 export const addT1Combatant = (newCombatant) => (dispatch, getState) => {
-  let {team1Combatants, counter} = getState();
+  let {combatantSelectionReducer} = getState();
+  let {team1Combatants, counter} = combatantSelectionReducer;
   // Must increment the counter each time to keep the appended values unique
   dispatch(setCounter(counter + 1));
 
@@ -113,7 +114,8 @@ export const addT1Combatant = (newCombatant) => (dispatch, getState) => {
 };
 
 export const addT2Combatant = (newCombatant) => (dispatch, getState) => {
-  let {team2Combatants, counter} = getState();
+  let {combatantSelectionReducer} = getState();
+  let {team2Combatants, counter} = combatantSelectionReducer;
   // Must increment the counter each time to keep the appended values unique
   dispatch(setCounter(counter + 1));
 
@@ -161,7 +163,8 @@ export const createCombatant = () => (dispatch, getState) => {
 }
 
 export const runSimulation = () => (dispatch, getState) => {
-  let {team1Combatants, team2Combatants} = getState();
+  let {combatantSelectionReducer} = getState();
+  let {team1Combatants, team2Combatants} = combatantSelectionReducer;
   SimulatorSource.runSimulation(
     team1Combatants.map((x) => x.label),
     team2Combatants.map((x) => x.label)
