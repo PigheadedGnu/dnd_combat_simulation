@@ -3,8 +3,6 @@
  */
 import {setterAction} from './common'
 import SimulatorSource from './sources/simulatorSource'
-import combatantSelectionReducer from "./reducers/combatantSelection";
-
 
 /* Action types */
 export const SET_TEAM1_COMBATANTS = 'SET_TEAM1_COMBATANTS'

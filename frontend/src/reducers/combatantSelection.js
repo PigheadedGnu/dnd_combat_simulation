@@ -1,6 +1,3 @@
-/**
- * Created by Andrew on 1/17/18.
- */
 import { combineReducers } from 'redux'
 import * as t from '../actions'
 import {setterReducer} from '../common'
@@ -21,10 +18,10 @@ const simulationResults = setterReducer(
 t.SET_SIMULATION_RESULTS);
 
 const reducer = combineReducers({
+  allCombatants,
   team1Combatants,
   team2Combatants,
   counter,
-  allCombatants,
   simulationResults
 })
 

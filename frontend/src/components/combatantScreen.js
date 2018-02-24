@@ -6,7 +6,6 @@ import * as actions from '../actions'
 import Grid from 'react-css-grid';
 import CombatantTable from './combatantTable'
 import '../index.css';
-import combatantSelectionReducer from "../reducers/combatantSelection";
 
 const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1Update, team2Update,
                          team1Add, team2Add, runSimulation}) => (
