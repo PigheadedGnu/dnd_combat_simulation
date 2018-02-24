@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 import { connect } from 'react-redux'
-import * as actions from '../actions'
 import Grid from 'react-css-grid';
-import CombatantTable from './combatantTable'
 import '../index.css';
-import combatantSelectionReducer from "../reducers/combatantSelection";
 
 const ResultsScreen = ({results}) => (
   <div>

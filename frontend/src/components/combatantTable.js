@@ -1,13 +1,8 @@
-/**
- * Created by Andrew on 1/15/18.
- */
-
 import React  from 'react';
 import '../App.css';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import { connect } from 'react-redux';
-import * as actions from '../actions'
 
 
 const CombatantTable = ({allCombatants, teamAddFunction}) => (
@@ -68,7 +63,7 @@ const CombatantTable = ({allCombatants, teamAddFunction}) => (
 )
 
 const mapStateToProps = (state) => ({
-  allCombatants: state.allCombatants,
+  allCombatants: state.combatantSelectionReducer.allCombatants,
 })
 
 const mapDispatchToProps = (dispatch) => ({

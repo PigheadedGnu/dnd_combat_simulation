@@ -5,8 +5,8 @@ import { connect } from 'react-redux'
 import * as actions from '../actions'
 import Grid from 'react-css-grid';
 import CombatantTable from './combatantTable'
-import ResultsScreen from './ResultsScreen'
 import '../index.css';
+import combatantSelectionReducer from "../reducers/combatantSelection";
 
 const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1Update, team2Update,
                          team1Add, team2Add, runSimulation}) => (
@@ -55,9 +55,9 @@ class Container extends React.Component{
 }
 
 const mapStateToProps = (state) => ({
-  team1Combatants: state.team1Combatants,
-  allCombatants: state.allCombatants,
-  team2Combatants: state.team2Combatants,
+  team1Combatants: state.combatantSelectionReducer.team1Combatants,
+  allCombatants: state.combatantSelectionReducer.allCombatants,
+  team2Combatants: state.combatantSelectionReducer.team2Combatants,
 })
 
 const mapDispatchToProps = (dispatch) => ({
