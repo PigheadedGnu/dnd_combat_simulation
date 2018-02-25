@@ -33,13 +33,13 @@ const CombatantCreation = ({allActions, combatantActions, updateCombatantActions
             <h4></h4>
             <input value={cr.combatantDexterity} placeholder="Dexterity" onChange={setCombatantDexterity} type="number" min="1"/>
             <h4></h4>
-            <input value={cr.combatantIntelligence} placeholder="Intelligence" onChange={setCombatantConstitution} type="number" min="1"/>
+            <input value={cr.combatantIntelligence} placeholder="Intelligence" onChange={setCombatantIntelligence} type="number" min="1"/>
           </div>
           <div className="section">
             <h4></h4>
-            <input value={cr.combatantConstitution} placeholder="Constitution" onChange={setCombatantWisdom} type="number" min="1"/>
+            <input value={cr.combatantConstitution} placeholder="Constitution" onChange={setCombatantConstitution} type="number" min="1"/>
             <h4></h4>
-            <input value={cr.combatantWisdom} placeholder="Wisdom" onChange={setCombatantIntelligence} type="number" min="1"/>
+            <input value={cr.combatantWisdom} placeholder="Wisdom" onChange={setCombatantWisdom} type="number" min="1"/>
             <h4></h4>
             <input value={cr.combatantCharisma} placeholder="Charisma" onChange={setCombatantCharisma} type="number" min="1"/>
           </div>
