@@ -4,13 +4,22 @@ from simulator.src.heuristics.heuristic_container import HeuristicContainer
 
 class Combatant:
     def __init__(self, name, hp, ac, proficiency, saves, actions,
-                 heuristics=HeuristicContainer(), applied_effects=None):
+                 heuristics=HeuristicContainer(), applied_effects=None,
+                 cr=None):
         """
-        :param hp: An integer of the creatures HP
-        :param ac: An integer of the creatures AC
-        :param saves: A dictionary of saves with each key being a 3-letter stat code
-        :param actions: A list of action objects defined in actions.py
-        :param heuristics: A list of strings that define heuristics for the creature
+
+        Args:
+            name: string for the name of the character
+            hp: integer for the number of hitpoints
+            ac: integer for the armor class
+            proficiency: integer denoting the proficiency, mostly useful for
+                characters that are added
+            saves: a dictionary of saves with each key being a 3-letter stat
+                code: STR, DEX, CON, WIS, INT, CHA
+            actions: a list of action objects defined in actions.py
+            heuristics: A list of strings that define heuristics for the creature
+            applied_effects: A list of effect objects as defined in effects.py
+            cr: The challenge rating of the creature or None for a character
         """
         self.name = name
         self.max_hp = hp
@@ -28,6 +37,7 @@ class Combatant:
         self.num_actions_available = 1  # All creatures start with 1 available action
         self.heuristics = heuristics
         self.applied_effects = applied_effects if applied_effects else []
+        self.cr = cr
 
     @staticmethod
     def choose_action(action_set):
@@ -115,7 +125,8 @@ class Combatant:
             "proficiency": self.proficiency,
             "saves": self.saves,
             "actions": [a.name for a in self.attacks] + [h.name for h in self.heals],
-            "applied_effects": self.applied_effects
+            "applied_effects": self.applied_effects,
+            "cr": self.cr
         }
         if write_to_file:
             write_json_to_file('combatants.json', combatant_info)

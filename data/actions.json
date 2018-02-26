@@ -1,107 +1,12 @@
 {
-  "Short Sword": {
-    "name": "Short Sword",
-    "action_type": "Single Target Physical Attack",
-    "damage_type": "slashing",
-    "stat_bonus": "STR",
-    "save": null,
-    "dice": {
-      "6": 1
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Long Sword": {
-    "name": "Long Sword",
-    "action_type": "Single Target Physical Attack",
-    "damage_type": "slashing",
-    "stat_bonus": "STR",
-    "save": null,
-    "dice": {
-      "8": 1,
-      "6": 2
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Sneak Sword": {
-    "name": "Sneak Sword",
-    "action_type": "Single Target Physical Attack",
-    "damage_type": "slashing",
-    "stat_bonus": "DEX",
-    "save": null,
-    "dice": {
-      "8": 1,
-      "6": 3
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Spin Throw": {
-    "name": "Spin Throw",
+  "Tentacle": {
+    "name": "Tentacle",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": "STR",
-    "save": null,
-    "dice": {
-      "6": 3
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Armor Piercing Missile": {
-    "name": "Armor Piercing Missile",
-    "action_type": "Single Target Physical Attack",
-    "damage_type": "piercing",
-    "stat_bonus": "STR",
-    "save": null,
-    "dice": {
-      "8": 5
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Throw Rock": {
-    "name": "Throw Rock",
-    "action_type": "Single Target Physical Attack",
-    "damage_type": "bludgeoning",
-    "stat_bonus": "STR",
-    "save": null,
-    "dice": {
-      "4": 1
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 1,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Mace Hit": {
-    "name": "Mace Hit",
-    "action_type": "Single Target Physical Attack",
-    "damage_type": "bludgeoning",
-    "stat_bonus": "STR",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
     "save": null,
     "dice": {
       "8": 1
@@ -111,37 +16,101 @@
     "aoe": false,
     "multi_attack": 1,
     "recharge_percentile": 0.0,
-    "effects": [
-      "mace_stun"
+    "effects": []
+  },
+  "Tail": {
+    "name": "Tail",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      7
+    ],
+    "save": null,
+    "dice": {
+      "8": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Aboleth - Multi-attack": {
+    "name": "Aboleth - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Tentacle",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Tentacle",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Tentacle",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
     ]
   },
-  "Scorching Ray": {
-    "name": "Scorching Ray",
-    "action_type": "Single Target Spell Attack",
-    "damage_type": "fire",
-    "stat_bonus": "INT",
+  "Club": {
+    "name": "Club",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      1
+    ],
     "save": null,
     "dice": {
-      "6": 2
-    },
-    "bonus_to_hit": 0,
-    "bonus_to_damage": 0,
-    "aoe": false,
-    "multi_attack": 3,
-    "recharge_percentile": 0.0,
-    "effects": []
-  },
-  "Lightning Bolt": {
-    "name": "Lightning Bolt",
-    "action_type": "Single Target Spell Attack",
-    "damage_type": "lightning",
-    "stat_bonus": null,
-    "save": {
-      "stat": "DEX",
-      "DC": 15
-    },
-    "dice": {
-      "6": 8
+      "4": 1
     },
     "bonus_to_hit": 0,
     "bonus_to_damage": 0,
@@ -150,31 +119,54 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Magic Missile": {
-    "name": "Magic Missile",
-    "action_type": "Single Target Spell Attack",
-    "damage_type": "force",
-    "stat_bonus": "None",
+  "Bite": {
+    "name": "Bite",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "cold",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
     "save": null,
     "dice": {
-      "4": 1
+      "10": 2,
+      "8": 1
     },
-    "bonus_to_hit": 1000,
-    "bonus_to_damage": 1,
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
     "aoe": false,
-    "multi_attack": 3,
+    "multi_attack": 1,
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Acid Splash": {
-    "name": "Acid Splash",
-    "action_type": "Single Target Spell Attack",
-    "damage_type": "acid",
-    "stat_bonus": null,
-    "save": {
-      "stat": "DEX",
-      "DC": 13
+  "Claw": {
+    "name": "Claw",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
     },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Slam": {
+    "name": "Slam",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      1
+    ],
+    "save": null,
     "dice": {
       "6": 1
     },
@@ -185,15 +177,223 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Sacred Flame": {
-    "name": "Sacred Flame",
-    "action_type": "Single Target Spell Attack",
-    "damage_type": "radiant",
-    "stat_bonus": null,
-    "save": {
-      "stat": "DEX",
-      "DC": 13
+  "Air Elemental - Multi-attack": {
+    "name": "Air Elemental - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "DEX",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "DEX",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Androsphinx - Multi-attack": {
+    "name": "Androsphinx - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Claw",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "10": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Claw",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "10": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Fist": {
+    "name": "Fist",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
     },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Rock": {
+    "name": "Rock",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      6
+    ],
+    "save": null,
+    "dice": {
+      "10": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Ape - Multi-attack": {
+    "name": "Ape - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Dagger": {
+    "name": "Dagger",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "one",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Shortsword": {
+    "name": "Shortsword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Light Crossbow": {
+    "name": "Light Crossbow",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "one",
+    "stat_bonus": [
+      "DEX",
+      1
+    ],
+    "save": null,
     "dice": {
       "8": 1
     },
@@ -204,11 +404,1178 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Guiding Bolt": {
-    "name": "Guiding Bolt",
+  "Assassin - Multi-attack": {
+    "name": "Assassin - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Shortsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "successful",
+        "stat_bonus": "STR",
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Shortsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "successful",
+        "stat_bonus": "STR",
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Rake": {
+    "name": "Rake",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "DEX",
+      -1
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Beak": {
+    "name": "Beak",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      0
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Warhammer": {
+    "name": "Warhammer",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "fire",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "8": 1,
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Longsword": {
+    "name": "Longsword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "two",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Whip": {
+    "name": "Whip",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "the",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Scimitar": {
+    "name": "Scimitar",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Barbed Devil - Hurl Flame": {
+    "name": "Barbed Devil - Hurl Flame",
     "action_type": "Single Target Spell Attack",
-    "damage_type": "radiant",
-    "stat_bonus": "WIS",
+    "damage_type": "fire",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Beard": {
+    "name": "Beard",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "1",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Glaive": {
+    "name": "Glaive",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "Medium",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "10": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Constrict": {
+    "name": "Constrict",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "DC",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Greataxe": {
+    "name": "Greataxe",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "12": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claws": {
+    "name": "Claws",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Pseudopod": {
+    "name": "Pseudopod",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "acid",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Tusk": {
+    "name": "Tusk",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Sting": {
+    "name": "Sting",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "1",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Morningstar": {
+    "name": "Morningstar",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Javelin": {
+    "name": "Javelin",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "one",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Tentacles": {
+    "name": "Tentacles",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Pike": {
+    "name": "Pike",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "10": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Hooves": {
+    "name": "Hooves",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Longbow": {
+    "name": "Longbow",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Chain": {
+    "name": "Chain",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Horns": {
+    "name": "Horns",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      10
+    ],
+    "save": null,
+    "dice": {
+      "10": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Pincer": {
+    "name": "Pincer",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "10": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Clay Golem - Multi-attack": {
+    "name": "Clay Golem - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "10": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "10": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Cloud Giant - Multi-attack": {
+    "name": "Cloud Giant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Morningstar",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "piercing",
+        "stat_bonus": [
+          "STR",
+          8
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Morningstar",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "piercing",
+        "stat_bonus": [
+          "STR",
+          8
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Crush": {
+    "name": "Crush",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "the",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Death Dog - Multi-attack": {
+    "name": "Death Dog - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Bite",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "piercing",
+        "stat_bonus": [
+          "STR",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Bite",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "piercing",
+        "stat_bonus": [
+          "STR",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "War Pick": {
+    "name": "War Pick",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "while",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Poisoned Dart": {
+    "name": "Poisoned Dart",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "1",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Mace": {
+    "name": "Mace",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Djinni - Multi-attack": {
+    "name": "Djinni - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Scimitar",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "(djinni's",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Scimitar",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "(djinni's",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Scimitar",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "(djinni's",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "6": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Hand Crossbow": {
+    "name": "Hand Crossbow",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Quarterstaff": {
+    "name": "Quarterstaff",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "two",
+    "stat_bonus": [
+      "STR",
+      0
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Talons": {
+    "name": "Talons",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "10": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Earth Elemental - Multi-attack": {
+    "name": "Earth Elemental - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Efreeti - Hurl Flame": {
+    "name": "Efreeti - Hurl Flame",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "fire",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 5
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Gore": {
+    "name": "Gore",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      6
+    ],
+    "save": null,
+    "dice": {
+      "8": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Stomp": {
+    "name": "Stomp",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      6
+    ],
+    "save": null,
+    "dice": {
+      "10": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Variant: Web Garrote": {
+    "name": "Variant: Web Garrote",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "DC",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Battleaxe": {
+    "name": "Battleaxe",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      5
+    ],
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Touch": {
+    "name": "Touch",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "fire",
+    "stat_bonus": [
+      "WIS",
+      0
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Fire Elemental - Multi-attack": {
+    "name": "Fire Elemental - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Touch",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "fire",
+        "stat_bonus": [
+          "DEX",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Touch",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "fire",
+        "stat_bonus": [
+          "DEX",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Greatsword": {
+    "name": "Greatsword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "WIS",
+      9
+    ],
+    "save": null,
+    "dice": {
+      "6": 6
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Fire Giant - Multi-attack": {
+    "name": "Fire Giant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Greatsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          7
+        ],
+        "save": null,
+        "dice": {
+          "6": 6
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Greatsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          7
+        ],
+        "save": null,
+        "dice": {
+          "6": 6
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Flesh Golem - Multi-attack": {
+    "name": "Flesh Golem - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Frost Giant - Multi-attack": {
+    "name": "Frost Giant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Greataxe",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "12": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Greataxe",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "12": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Withering Touch": {
+    "name": "Withering Touch",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "necrotic",
+    "stat_bonus": [
+      "CHA",
+      3
+    ],
     "save": null,
     "dice": {
       "6": 4
@@ -220,11 +1587,571 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Beak Strike": {
-    "name": "Beak Strike",
+  "Giant Ape - Multi-attack": {
+    "name": "Giant Ape - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "10": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "10": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Ram": {
+    "name": "Ram",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      1
+    ],
+    "save": null,
+    "dice": {
+      "4": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Bites": {
+    "name": "Bites",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "or",
+    "stat_bonus": [
+      "CON",
+      0
+    ],
+    "save": null,
+    "dice": {
+      "4": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Glabrezu - Multi-attack": {
+    "name": "Glabrezu - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Pincer",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": "STR",
+        "save": null,
+        "dice": {
+          "10": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Pincer",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": "STR",
+        "save": null,
+        "dice": {
+          "10": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "DEX",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "4": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "DEX",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "4": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Spear": {
+    "name": "Spear",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "one",
+    "stat_bonus": [
+      "STR",
+      1
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Shield Bash": {
+    "name": "Shield Bash",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "4": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Shortbow": {
+    "name": "Shortbow",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Spiked Bone Club": {
+    "name": "Spiked Bone Club",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
     "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Spit Poison": {
+    "name": "Spit Poison",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "successful",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 10
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Gynosphinx - Multi-attack": {
+    "name": "Gynosphinx - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Claw",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Claw",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Heavy Crossbow": {
+    "name": "Heavy Crossbow",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      1
+    ],
+    "save": null,
+    "dice": {
+      "10": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Greatclub": {
+    "name": "Greatclub",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      6
+    ],
+    "save": null,
+    "dice": {
+      "8": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Hill Giant - Multi-attack": {
+    "name": "Hill Giant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Greatclub",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Greatclub",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          5
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Fork": {
+    "name": "Fork",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Horned Devil - Hurl Flame": {
+    "name": "Horned Devil - Hurl Flame",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "fire",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Sting (Bite in Beast Form)": {
+    "name": "Sting (Bite in Beast Form)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "successful",
+    "stat_bonus": [
+      "DEX",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Invisible Stalker - Multi-attack": {
+    "name": "Invisible Stalker - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Sword": {
+    "name": "Sword",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      7
+    ],
+    "save": null,
+    "dice": {
+      "10": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Sling": {
+    "name": "Sling",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Lich - Paralyzing Touch": {
+    "name": "Lich - Paralyzing Touch",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "cold",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Heavy Club": {
+    "name": "Heavy Club",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Spiked Shield": {
+    "name": "Spiked Shield",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Tail Spike": {
+    "name": "Tail Spike",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
     "save": null,
     "dice": {
       "8": 1
@@ -236,10 +2163,523 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Claw Strike": {
-    "name": "Claw Strike",
+  "Snake Hair": {
+    "name": "Snake Hair",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "poison",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Harpoon": {
+    "name": "Harpoon",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "one",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Rotting Fist": {
+    "name": "Rotting Fist",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "necrotic",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 6
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claws (Hag Form Only)": {
+    "name": "Claws (Hag Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Rapier": {
+    "name": "Rapier",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      1
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claw (Oni Form Only)": {
+    "name": "Claw (Oni Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Tail Stinger": {
+    "name": "Tail Stinger",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "successful",
+    "stat_bonus": [
+      "STR",
+      9
+    ],
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claw (Bite in Beast Form)": {
+    "name": "Claw (Bite in Beast Form)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "1",
+    "stat_bonus": [
+      "DEX",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Rakshasa - Multi-attack": {
+    "name": "Rakshasa - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Claw",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "a",
+        "stat_bonus": [
+          "STR",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Claw",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "a",
+        "stat_bonus": [
+          "STR",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Strength Drain": {
+    "name": "Strength Drain",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "by",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Shield Guardian - Multi-attack": {
+    "name": "Shield Guardian - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Fist",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "6": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Slaying Longbow": {
+    "name": "Slaying Longbow",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "radiant",
+    "stat_bonus": [
+      "DEX",
+      6
+    ],
+    "save": null,
+    "dice": {
+      "8": 6
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Solar - Multi-attack": {
+    "name": "Solar - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Greatsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "radiant",
+        "stat_bonus": [
+          "STR",
+          8
+        ],
+        "save": null,
+        "dice": {
+          "6": 4,
+          "8": 6
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Greatsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "radiant",
+        "stat_bonus": [
+          "STR",
+          8
+        ],
+        "save": null,
+        "dice": {
+          "6": 4,
+          "8": 6
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Specter - Life Drain": {
+    "name": "Specter - Life Drain",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "necrotic",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Blood Drain": {
+    "name": "Blood Drain",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "the",
+    "stat_bonus": [
+      "DEX",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Stone Giant - Multi-attack": {
+    "name": "Stone Giant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Greatclub",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Greatclub",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Stone Golem - Multi-attack": {
+    "name": "Stone Golem - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "8": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Storm Giant - Multi-attack": {
+    "name": "Storm Giant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Greatsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "WIS",
+          9
+        ],
+        "save": null,
+        "dice": {
+          "6": 6
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Greatsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "slashing",
+        "stat_bonus": [
+          "WIS",
+          9
+        ],
+        "save": null,
+        "dice": {
+          "6": 6
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Claw (Fiend Form Only)": {
+    "name": "Claw (Fiend Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "DEX",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Beaks": {
+    "name": "Beaks",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "or",
     "stat_bonus": "STR",
     "save": null,
     "dice": {
@@ -252,37 +2692,557 @@
     "recharge_percentile": 0.0,
     "effects": []
   },
-  "Cure Wounds": {
-    "action_type": "Heal",
-    "name": "Cure Wounds",
+  "Treant - Multi-attack": {
+    "name": "Treant - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "6": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          6
+        ],
+        "save": null,
+        "dice": {
+          "6": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Horn": {
+    "name": "Horn",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
     "dice": {
       "8": 1
     },
-    "stat_bonus": "WIS",
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
     "recharge_percentile": 0.0,
-    "num_targets": 1,
     "effects": []
   },
-  "Prayer of Healing": {
-    "action_type": "Heal",
-    "name": "Prayer of Healing",
+  "Unarmed Strike (Vampire Form Only)": {
+    "name": "Unarmed Strike (Vampire Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Bite (Bat or Vampire Form Only)": {
+    "name": "Bite (Bat or Vampire Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "necrotic",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 3
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Rotting Touch": {
+    "name": "Rotting Touch",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "necrotic",
+    "stat_bonus": [
+      "CON",
+      0
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Water Elemental - Multi-attack": {
+    "name": "Water Elemental - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      },
+      {
+        "name": "Slam",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "bludgeoning",
+        "stat_bonus": [
+          "STR",
+          4
+        ],
+        "save": null,
+        "dice": {
+          "8": 2
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Bite (Bear or Hybrid Form Only)": {
+    "name": "Bite (Bear or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "10": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claw (Bear or Hybrid Form Only)": {
+    "name": "Claw (Bear or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
     "dice": {
       "8": 2
     },
-    "stat_bonus": "WIS",
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
     "recharge_percentile": 0.0,
-    "num_targets": 4,
     "effects": []
   },
-  "Divine Heal": {
-    "action_type": "Heal",
-    "name": "Divine Heal",
+  "Greataxe (Humanoid or Hybrid Form Only)": {
+    "name": "Greataxe (Humanoid or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "12": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Maul (Humanoid or Hybrid Form Only)": {
+    "name": "Maul (Humanoid or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "bludgeoning",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Tusks (Boar or Hybrid Form Only)": {
+    "name": "Tusks (Boar or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Bite (Rat or Hybrid Form Only).": {
+    "name": "Bite (Rat or Hybrid Form Only).",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Shortsword (Humanoid or Hybrid Form Only)": {
+    "name": "Shortsword (Humanoid or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Hand Crossbow (Humanoid or Hybrid Form Only)": {
+    "name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Bite (Tiger or Hybrid Form Only)": {
+    "name": "Bite (Tiger or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
     "dice": {
       "10": 1
     },
-    "stat_bonus": "WIS",
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
     "recharge_percentile": 0.0,
-    "num_targets": 2,
     "effects": []
+  },
+  "Claw (Tiger or Hybrid Form Only)": {
+    "name": "Claw (Tiger or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Scimitar (Humanoid or Hybrid Form Only)": {
+    "name": "Scimitar (Humanoid or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Longbow (Humanoid or Hybrid Form Only)": {
+    "name": "Longbow (Humanoid or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "DEX",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Bite (Wolf or Hybrid Form Only)": {
+    "name": "Bite (Wolf or Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Claws (Hybrid Form Only)": {
+    "name": "Claws (Hybrid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "slashing",
+    "stat_bonus": [
+      "STR",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "4": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Spear (Humanoid Form Only)": {
+    "name": "Spear (Humanoid Form Only)",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "one",
+    "stat_bonus": "STR",
+    "save": null,
+    "dice": {
+      "6": 1
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Life Drain": {
+    "name": "Life Drain",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "necrotic",
+    "stat_bonus": [
+      "DEX",
+      3
+    ],
+    "save": null,
+    "dice": {
+      "8": 4
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Wight - Multi-attack": {
+    "name": "Wight - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Longsword",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "two",
+        "stat_bonus": [
+          "STR",
+          2
+        ],
+        "save": null,
+        "dice": {
+          "8": 1
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
+  },
+  "Will-o'-Wisp - Shock": {
+    "name": "Will-o'-Wisp - Shock",
+    "action_type": "Single Target Spell Attack",
+    "damage_type": "lightning",
+    "stat_bonus": [
+      "WIS",
+      2
+    ],
+    "save": null,
+    "dice": {
+      "8": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Stinger": {
+    "name": "Stinger",
+    "action_type": "Single Target Physical Attack",
+    "damage_type": "piercing",
+    "stat_bonus": [
+      "STR",
+      4
+    ],
+    "save": null,
+    "dice": {
+      "6": 2
+    },
+    "bonus_to_hit": 0,
+    "bonus_to_damage": 0,
+    "aoe": false,
+    "multi_attack": 1,
+    "recharge_percentile": 0.0,
+    "effects": []
+  },
+  "Xorn - Multi-attack": {
+    "name": "Xorn - Multi-attack",
+    "action_type": "Combo Attack",
+    "attacks": [
+      {
+        "name": "Bite",
+        "action_type": "Single Target Physical Attack",
+        "damage_type": "piercing",
+        "stat_bonus": [
+          "STR",
+          3
+        ],
+        "save": null,
+        "dice": {
+          "6": 3
+        },
+        "bonus_to_hit": 0,
+        "bonus_to_damage": 0,
+        "aoe": false,
+        "multi_attack": 1,
+        "recharge_percentile": 0.0,
+        "effects": []
+      }
+    ]
   }
 }

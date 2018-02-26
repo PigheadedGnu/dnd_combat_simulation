@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+# Project files
+data/source_monsters.json
+
+
 #Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

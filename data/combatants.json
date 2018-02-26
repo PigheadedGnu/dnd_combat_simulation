@@ -1,120 +1,3260 @@
 {
-  "Marshall": {
-    "name": "Marshall",
-    "hp": 42,
+  "Aboleth": {
+    "name": "Aboleth",
+    "hp": 135,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 6,
+      "WIS": 6,
+      "INT": 8,
+      "CHA": 4
+    },
+    "actions": [
+      "Aboleth - Multi-attack",
+      "Tail",
+      "Tentacle"
+    ],
+    "applied_effects": [],
+    "cr": 10
+  },
+  "Acolyte": {
+    "name": "Acolyte",
+    "hp": 9,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "WIS": 2,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Club"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Adult Black Dragon": {
+    "name": "Adult Black Dragon",
+    "hp": 195,
+    "ac": 19,
+    "proficiency": 5,
+    "saves": {
+      "STR": 6,
+      "DEX": 7,
+      "CON": 10,
+      "WIS": 6,
+      "INT": 2,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 14
+  },
+  "Adult Blue Dracolich": {
+    "name": "Adult Blue Dracolich",
+    "hp": 225,
+    "ac": 19,
+    "proficiency": 6,
+    "saves": {
+      "STR": 7,
+      "DEX": 0,
+      "CON": 6,
+      "WIS": 2,
+      "INT": 3,
+      "CHA": 4
+    },
+    "actions": [
+      "Bite",
+      "Tail",
+      "Tail",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 17
+  },
+  "Adult Blue Dragon": {
+    "name": "Adult Blue Dragon",
+    "hp": 225,
+    "ac": 19,
+    "proficiency": 5,
+    "saves": {
+      "STR": 7,
+      "DEX": 5,
+      "CON": 11,
+      "WIS": 7,
+      "INT": 3,
+      "CHA": 9
+    },
+    "actions": [
+      "Tail",
+      "Tail",
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 16
+  },
+  "Adult Brass Dragon": {
+    "name": "Adult Brass Dragon",
+    "hp": 172,
     "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 6,
+      "DEX": 5,
+      "CON": 10,
+      "WIS": 6,
+      "INT": 2,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Tail",
+      "Tail",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 13
+  },
+  "Adult Bronze Dragon": {
+    "name": "Adult Bronze Dragon",
+    "hp": 212,
+    "ac": 19,
+    "proficiency": 5,
+    "saves": {
+      "STR": 7,
+      "DEX": 5,
+      "CON": 11,
+      "WIS": 7,
+      "INT": 3,
+      "CHA": 9
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 15
+  },
+  "Adult Copper Dragon": {
+    "name": "Adult Copper Dragon",
+    "hp": 184,
+    "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 6,
+      "DEX": 6,
+      "CON": 10,
+      "WIS": 7,
+      "INT": 4,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 14
+  },
+  "Adult Gold Dragon": {
+    "name": "Adult Gold Dragon",
+    "hp": 256,
+    "ac": 19,
+    "proficiency": 6,
+    "saves": {
+      "STR": 8,
+      "DEX": 8,
+      "CON": 13,
+      "WIS": 8,
+      "INT": 3,
+      "CHA": 13
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 17
+  },
+  "Adult Green Dragon": {
+    "name": "Adult Green Dragon",
+    "hp": 207,
+    "ac": 19,
+    "proficiency": 5,
+    "saves": {
+      "STR": 6,
+      "DEX": 6,
+      "CON": 10,
+      "WIS": 7,
+      "INT": 4,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 15
+  },
+  "Adult Red Dragon": {
+    "name": "Adult Red Dragon",
+    "hp": 256,
+    "ac": 19,
+    "proficiency": 6,
+    "saves": {
+      "STR": 8,
+      "DEX": 6,
+      "CON": 13,
+      "WIS": 7,
+      "INT": 3,
+      "CHA": 11
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 17
+  },
+  "Adult Silver Dragon": {
+    "name": "Adult Silver Dragon",
+    "hp": 243,
+    "ac": 19,
+    "proficiency": 5,
+    "saves": {
+      "STR": 8,
+      "DEX": 5,
+      "CON": 12,
+      "WIS": 6,
+      "INT": 3,
+      "CHA": 10
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 16
+  },
+  "Adult White Dragon": {
+    "name": "Adult White Dragon",
+    "hp": 200,
+    "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 6,
+      "DEX": 5,
+      "CON": 11,
+      "WIS": 6,
+      "INT": -1,
+      "CHA": 6
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 13
+  },
+  "Air Elemental": {
+    "name": "Air Elemental",
+    "hp": 90,
+    "ac": 15,
     "proficiency": 3,
     "saves": {
       "STR": 2,
+      "DEX": 5,
       "CON": 2,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Air Elemental - Multi-attack",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Ancient Black Dragon": {
+    "name": "Ancient Black Dragon",
+    "hp": 367,
+    "ac": 22,
+    "proficiency": 7,
+    "saves": {
+      "STR": 8,
+      "DEX": 9,
+      "CON": 14,
+      "WIS": 9,
+      "INT": 3,
+      "CHA": 11
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 21
+  },
+  "Ancient Blue Dragon": {
+    "name": "Ancient Blue Dragon",
+    "hp": 481,
+    "ac": 22,
+    "proficiency": 7,
+    "saves": {
+      "STR": 9,
+      "DEX": 7,
+      "CON": 15,
+      "WIS": 10,
+      "INT": 4,
+      "CHA": 12
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 23
+  },
+  "Ancient Brass Dragon": {
+    "name": "Ancient Brass Dragon",
+    "hp": 297,
+    "ac": 20,
+    "proficiency": 6,
+    "saves": {
+      "STR": 8,
+      "DEX": 6,
+      "CON": 13,
+      "WIS": 8,
+      "INT": 3,
+      "CHA": 10
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 20
+  },
+  "Ancient Bronze Dragon": {
+    "name": "Ancient Bronze Dragon",
+    "hp": 444,
+    "ac": 22,
+    "proficiency": 7,
+    "saves": {
+      "STR": 9,
+      "DEX": 7,
+      "CON": 15,
+      "WIS": 10,
+      "INT": 4,
+      "CHA": 12
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 22
+  },
+  "Ancient Copper Dragon": {
+    "name": "Ancient Copper Dragon",
+    "hp": 350,
+    "ac": 21,
+    "proficiency": 7,
+    "saves": {
+      "STR": 8,
+      "DEX": 8,
+      "CON": 14,
+      "WIS": 10,
+      "INT": 5,
+      "CHA": 11
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 21
+  },
+  "Ancient Gold Dragon": {
+    "name": "Ancient Gold Dragon",
+    "hp": 546,
+    "ac": 22,
+    "proficiency": 7,
+    "saves": {
+      "STR": 10,
+      "DEX": 9,
+      "CON": 16,
+      "WIS": 10,
+      "INT": 4,
+      "CHA": 16
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 24
+  },
+  "Ancient Green Dragon": {
+    "name": "Ancient Green Dragon",
+    "hp": 385,
+    "ac": 21,
+    "proficiency": 7,
+    "saves": {
+      "STR": 8,
+      "DEX": 8,
+      "CON": 14,
+      "WIS": 10,
+      "INT": 5,
+      "CHA": 11
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Tail",
+      "Tail",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 22
+  },
+  "Ancient Red Dragon": {
+    "name": "Ancient Red Dragon",
+    "hp": 546,
+    "ac": 22,
+    "proficiency": 7,
+    "saves": {
+      "STR": 10,
+      "DEX": 7,
+      "CON": 16,
+      "WIS": 9,
+      "INT": 4,
+      "CHA": 13
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Tail",
+      "Tail",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 24
+  },
+  "Ancient Silver Dragon": {
+    "name": "Ancient Silver Dragon",
+    "hp": 487,
+    "ac": 22,
+    "proficiency": 7,
+    "saves": {
+      "STR": 10,
+      "DEX": 7,
+      "CON": 16,
+      "WIS": 9,
+      "INT": 4,
+      "CHA": 13
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 23
+  },
+  "Ancient White Dragon": {
+    "name": "Ancient White Dragon",
+    "hp": 333,
+    "ac": 20,
+    "proficiency": 6,
+    "saves": {
+      "STR": 8,
+      "DEX": 6,
+      "CON": 14,
+      "WIS": 7,
+      "INT": 0,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 20
+  },
+  "Androsphinx": {
+    "name": "Androsphinx",
+    "hp": 199,
+    "ac": 17,
+    "proficiency": 6,
+    "saves": {
+      "STR": 6,
+      "DEX": 6,
+      "CON": 11,
+      "WIS": 10,
+      "INT": 9,
+      "CHA": 6
+    },
+    "actions": [
+      "Androsphinx - Multi-attack",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 17
+  },
+  "Animated Armor": {
+    "name": "Animated Armor",
+    "hp": 33,
+    "ac": 18,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": -4,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Ankheg": {
+    "name": "Ankheg",
+    "hp": 39,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -5,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Ape": {
+    "name": "Ape",
+    "hp": 19,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Ape - Multi-attack",
+      "Fist",
+      "Rock"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Archmage": {
+    "name": "Archmage",
+    "hp": 99,
+    "ac": 12,
+    "proficiency": 4,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 6,
+      "INT": 9,
+      "CHA": 3
+    },
+    "actions": [
+      "Dagger"
+    ],
+    "applied_effects": [],
+    "cr": 12
+  },
+  "Assassin": {
+    "name": "Assassin",
+    "hp": 78,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 0,
+      "DEX": 6,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 4,
+      "CHA": 0
+    },
+    "actions": [
+      "Assassin - Multi-attack",
+      "Light Crossbow",
+      "Shortsword"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Awakened Shrub": {
+    "name": "Awakened Shrub",
+    "hp": 10,
+    "ac": 9,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": -1,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -2
+    },
+    "actions": [
+      "Rake"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Awakened Tree": {
+    "name": "Awakened Tree",
+    "hp": 59,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": -2,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -2
+    },
+    "actions": [
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Axe Beak": {
+    "name": "Axe Beak",
+    "hp": 19,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
       "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Azer": {
+    "name": "Azer",
+    "hp": 39,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 4,
+      "WIS": 1,
       "INT": 1,
+      "CHA": 0
+    },
+    "actions": [
+      "Warhammer"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Baboon": {
+    "name": "Baboon",
+    "hp": 3,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -3,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Badger": {
+    "name": "Badger",
+    "hp": 3,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Balor": {
+    "name": "Balor",
+    "hp": 262,
+    "ac": 19,
+    "proficiency": 6,
+    "saves": {
+      "STR": 14,
+      "DEX": 2,
+      "CON": 12,
+      "WIS": 9,
+      "INT": 5,
+      "CHA": 12
+    },
+    "actions": [
+      "Longsword",
+      "Whip"
+    ],
+    "applied_effects": [],
+    "cr": 19
+  },
+  "Bandit": {
+    "name": "Bandit",
+    "hp": 11,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Light Crossbow",
+      "Light Crossbow",
+      "Scimitar"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Bandit Captain": {
+    "name": "Bandit Captain",
+    "hp": 65,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 5,
+      "CON": 2,
       "WIS": 2,
+      "INT": 2,
+      "CHA": 2
+    },
+    "actions": [
+      "Scimitar",
+      "Scimitar",
+      "Dagger",
+      "Dagger"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Barbed Devil": {
+    "name": "Barbed Devil",
+    "hp": 110,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 6,
+      "DEX": 3,
+      "CON": 7,
+      "WIS": 5,
+      "INT": 1,
+      "CHA": 5
+    },
+    "actions": [
+      "Claw",
+      "Tail",
+      "Barbed Devil - Hurl Flame",
+      "Tail",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Basilisk": {
+    "name": "Basilisk",
+    "hp": 52,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": -1,
+      "CON": 2,
+      "WIS": -1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Bat": {
+    "name": "Bat",
+    "hp": 1,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 2,
+      "CON": -1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Bearded Devil": {
+    "name": "Bearded Devil",
+    "hp": 52,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 5,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 2,
+      "INT": -1,
+      "CHA": 0
+    },
+    "actions": [
+      "Glaive",
+      "Beard"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Behir": {
+    "name": "Behir",
+    "hp": 168,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": 3,
+      "CON": 4,
+      "WIS": 2,
+      "INT": -2,
       "CHA": 1
     },
     "actions": [
-      "Guiding Bolt",
-      "Mace Hit",
-      "Prayer of Healing",
-      "Divine Heal",
-      "Cure Wounds"
+      "Bite",
+      "Constrict",
+      "Bite"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 11
   },
-  "Max": {
-    "name": "Max",
-    "hp": 32,
+  "Berserker": {
+    "name": "Berserker",
+    "hp": 67,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": -1
+    },
+    "actions": [
+      "Greataxe"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Black Bear": {
+    "name": "Black Bear",
+    "hp": 19,
     "ac": 11,
-    "proficiency": 3,
+    "proficiency": 2,
     "saves": {
       "STR": 2,
+      "DEX": 0,
       "CON": 2,
-      "DEX": 2,
-      "INT": 2,
-      "WIS": 2,
-      "CHA": 2
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
     },
     "actions": [
-      "Lightning Bolt",
-      "Scorching Ray",
-      "Magic Missile",
-      "Acid Splash"
+      "Bite",
+      "Bite",
+      "Claws"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 0.5
   },
-  "Johnny": {
-    "name": "Johnny",
-    "hp": 40,
-    "ac": 14,
-    "proficiency": 3,
+  "Black Dragon Wyrmling": {
+    "name": "Black Dragon Wyrmling",
+    "hp": 33,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 4,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 0,
+      "CHA": 3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Black Pudding": {
+    "name": "Black Pudding",
+    "hp": 85,
+    "ac": 7,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": -3,
+      "CON": 3,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Pseudopod"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Blink Dog": {
+    "name": "Blink Dog",
+    "hp": 22,
+    "ac": 13,
+    "proficiency": 2,
     "saves": {
       "STR": 1,
+      "DEX": 3,
       "CON": 1,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Blood Hawk": {
+    "name": "Blood Hawk",
+    "hp": 7,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
       "DEX": 2,
-      "INT": 2,
+      "CON": 0,
       "WIS": 2,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Beak",
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Blue Dragon Wyrmling": {
+    "name": "Blue Dragon Wyrmling",
+    "hp": 52,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Boar": {
+    "name": "Boar",
+    "hp": 11,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": -1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Tusk"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Bone Devil": {
+    "name": "Bone Devil",
+    "hp": 142,
+    "ac": 19,
+    "proficiency": 4,
+    "saves": {
+      "STR": 4,
+      "DEX": 3,
+      "CON": 4,
+      "WIS": 6,
+      "INT": 5,
+      "CHA": 7
+    },
+    "actions": [
+      "Sting",
+      "Sting",
+      "Claw",
+      "Claw",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 12
+  },
+  "Brass Dragon Wyrmling": {
+    "name": "Brass Dragon Wyrmling",
+    "hp": 16,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 0,
+      "CHA": 3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Bronze Dragon Wyrmling": {
+    "name": "Bronze Dragon Wyrmling",
+    "hp": 32,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Brown Bear": {
+    "name": "Brown Bear",
+    "hp": 34,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Bugbear": {
+    "name": "Bugbear",
+    "hp": 27,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": -1
+    },
+    "actions": [
+      "Morningstar",
+      "Javelin"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Bulette": {
+    "name": "Bulette",
+    "hp": 94,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Camel": {
+    "name": "Camel",
+    "hp": 15,
+    "ac": 9,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": -1,
+      "CON": 2,
+      "WIS": -1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Carrion Crawler": {
+    "name": "Carrion Crawler",
+    "hp": 51,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -5,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Tentacles",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Cat": {
+    "name": "Cat",
+    "hp": 2,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Cave Bear": {
+    "name": "Cave Bear",
+    "hp": 42,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 5,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Claws",
+      "Claws",
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Centaur": {
+    "name": "Centaur",
+    "hp": 45,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -1,
+      "CHA": 0
+    },
+    "actions": [
+      "Pike",
+      "Hooves",
+      "Longbow"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Chain Devil": {
+    "name": "Chain Devil",
+    "hp": 85,
+    "ac": 16,
+    "proficiency": 4,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 1,
+      "INT": 0,
       "CHA": 2
     },
     "actions": [
-      "Sneak Sword"
+      "Chain"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 11
   },
-  "Freddy": {
-    "name": "Freddy",
-    "hp": 38,
+  "Chimera": {
+    "name": "Chimera",
+    "hp": 114,
     "ac": 14,
     "proficiency": 3,
     "saves": {
       "STR": 4,
-      "CON": 1,
-      "DEX": 2,
-      "INT": 2,
+      "DEX": 0,
+      "CON": 4,
       "WIS": 2,
+      "INT": -4,
+      "CHA": 0
+    },
+    "actions": [
+      "Horns",
+      "Bite",
+      "Claws",
+      "Claws",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Chuul": {
+    "name": "Chuul",
+    "hp": 93,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -3,
+      "CHA": -3
+    },
+    "actions": [
+      "Pincer",
+      "Tentacles"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Clay Golem": {
+    "name": "Clay Golem",
+    "hp": 133,
+    "ac": 14,
+    "proficiency": 4,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 4,
+      "WIS": -1,
+      "INT": -4,
+      "CHA": -5
+    },
+    "actions": [
+      "Clay Golem - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Cloaker": {
+    "name": "Cloaker",
+    "hp": 78,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 1,
       "CHA": 2
     },
     "actions": [
-      "Armor Piercing Missile",
-      "Spin Throw",
-      "Throw Rock"
+      "Bite",
+      "Bite",
+      "Tail",
+      "Tail"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Cloud Giant": {
+    "name": "Cloud Giant",
+    "hp": 200,
+    "ac": 14,
+    "proficiency": 4,
+    "saves": {
+      "STR": 8,
+      "DEX": 0,
+      "CON": 10,
+      "WIS": 7,
+      "INT": 1,
+      "CHA": 7
+    },
+    "actions": [
+      "Cloud Giant - Multi-attack",
+      "Rock",
+      "Morningstar",
+      "Morningstar",
+      "Rock"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Cockatrice": {
+    "name": "Cockatrice",
+    "hp": 27,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Commoner": {
+    "name": "Commoner",
+    "hp": 4,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Club",
+      "Club"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Constrictor Snake": {
+    "name": "Constrictor Snake",
+    "hp": 13,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Constrict",
+      "Constrict",
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Copper Dragon Wyrmling": {
+    "name": "Copper Dragon Wyrmling",
+    "hp": 22,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 3,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 2,
+      "CHA": 3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Couatl": {
+    "name": "Couatl",
+    "hp": 97,
+    "ac": 19,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 5,
+      "WIS": 7,
+      "INT": 4,
+      "CHA": 6
+    },
+    "actions": [
+      "Bite",
+      "Constrict",
+      "Constrict",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Crab": {
+    "name": "Crab",
+    "hp": 2,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 0,
+      "CON": 0,
+      "WIS": -1,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Crocodile": {
+    "name": "Crocodile",
+    "hp": 19,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Cult Fanatic": {
+    "name": "Cult Fanatic",
+    "hp": 22,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Dagger",
+      "Dagger"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Cultist": {
+    "name": "Cultist",
+    "hp": 9,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Scimitar",
+      "Scimitar"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Darkmantle": {
+    "name": "Darkmantle",
+    "hp": 22,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Crush"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Death Dog": {
+    "name": "Death Dog",
+    "hp": 39,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Death Dog - Multi-attack",
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Deep Gnome (Svirfneblin)": {
+    "name": "Deep Gnome (Svirfneblin)",
+    "hp": 16,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 1,
+      "CHA": -1
+    },
+    "actions": [
+      "War Pick",
+      "Poisoned Dart"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Deer": {
+    "name": "Deer",
+    "hp": 4,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 2,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Deva": {
+    "name": "Deva",
+    "hp": 136,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 4,
+      "DEX": 4,
+      "CON": 4,
+      "WIS": 9,
+      "INT": 3,
+      "CHA": 9
+    },
+    "actions": [
+      "Mace"
+    ],
+    "applied_effects": [],
+    "cr": 10
+  },
+  "Dire Wolf": {
+    "name": "Dire Wolf",
+    "hp": 37,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Djinni": {
+    "name": "Djinni",
+    "hp": 161,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 5,
+      "DEX": 6,
+      "CON": 6,
+      "WIS": 7,
+      "INT": 2,
+      "CHA": 9
+    },
+    "actions": [
+      "Djinni - Multi-attack",
+      "Scimitar",
+      "Scimitar"
+    ],
+    "applied_effects": [],
+    "cr": 11
+  },
+  "Doppelganger": {
+    "name": "Doppelganger",
+    "hp": 52,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 4,
+      "CON": 2,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Draft Horse": {
+    "name": "Draft Horse",
+    "hp": 19,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Dragon Turtle": {
+    "name": "Dragon Turtle",
+    "hp": 341,
+    "ac": 20,
+    "proficiency": 6,
+    "saves": {
+      "STR": 7,
+      "DEX": 6,
+      "CON": 11,
+      "WIS": 7,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Bite",
+      "Tail",
+      "Claw",
+      "Bite",
+      "Claw",
+      "Tail"
+    ],
+    "applied_effects": [],
+    "cr": 17
+  },
+  "Dretch": {
+    "name": "Dretch",
+    "hp": 18,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": -1,
+      "INT": -3,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Drider": {
+    "name": "Drider",
+    "hp": 123,
+    "ac": 19,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 3,
+      "CON": 4,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 1
+    },
+    "actions": [
+      "Longsword",
+      "Longsword",
+      "Longbow",
+      "Longbow",
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Drow": {
+    "name": "Drow",
+    "hp": 13,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Shortsword",
+      "Shortsword",
+      "Hand Crossbow"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Druid": {
+    "name": "Druid",
+    "hp": 27,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 0
+    },
+    "actions": [
+      "Quarterstaff"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Dryad": {
+    "name": "Dryad",
+    "hp": 22,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 2,
+      "INT": 2,
+      "CHA": 4
+    },
+    "actions": [
+      "Club",
+      "Club"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Duergar": {
+    "name": "Duergar",
+    "hp": 26,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -1
+    },
+    "actions": [
+      "Javelin",
+      "War Pick",
+      "War Pick",
+      "Javelin"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Dust Mephit": {
+    "name": "Dust Mephit",
+    "hp": 17,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": 0
+    },
+    "actions": [
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Eagle": {
+    "name": "Eagle",
+    "hp": 3,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 2,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Talons"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Earth Elemental": {
+    "name": "Earth Elemental",
+    "hp": 126,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -3,
+      "CHA": -3
+    },
+    "actions": [
+      "Earth Elemental - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Efreeti": {
+    "name": "Efreeti",
+    "hp": 200,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": 1,
+      "CON": 7,
+      "WIS": 6,
+      "INT": 7,
+      "CHA": 7
+    },
+    "actions": [
+      "Efreeti - Hurl Flame",
+      "Scimitar",
+      "Scimitar"
+    ],
+    "applied_effects": [],
+    "cr": 11
+  },
+  "Elephant": {
+    "name": "Elephant",
+    "hp": 76,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 6,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Stomp",
+      "Gore"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Elk": {
+    "name": "Elk",
+    "hp": 13,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Erinyes": {
+    "name": "Erinyes",
+    "hp": 153,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 4,
+      "DEX": 7,
+      "CON": 8,
+      "WIS": 6,
+      "INT": 2,
+      "CHA": 8
+    },
+    "actions": [
+      "Longsword",
+      "Longbow",
+      "Longsword",
+      "Longbow"
+    ],
+    "applied_effects": [],
+    "cr": 12
+  },
+  "Ettercap": {
+    "name": "Ettercap",
+    "hp": 44,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Bite",
+      "Claws",
+      "Variant: Web Garrote"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Ettin": {
+    "name": "Ettin",
+    "hp": 85,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Morningstar",
+      "Battleaxe",
+      "Morningstar"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Fire Elemental": {
+    "name": "Fire Elemental",
+    "hp": 102,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 0,
+      "DEX": 3,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Fire Elemental - Multi-attack",
+      "Touch"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Fire Giant": {
+    "name": "Fire Giant",
+    "hp": 162,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 7,
+      "DEX": 3,
+      "CON": 10,
+      "WIS": 2,
+      "INT": 0,
+      "CHA": 5
+    },
+    "actions": [
+      "Fire Giant - Multi-attack",
+      "Rock",
+      "Rock",
+      "Greatsword"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Flesh Golem": {
+    "name": "Flesh Golem",
+    "hp": 93,
+    "ac": 9,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": -1,
+      "CON": 4,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -3
+    },
+    "actions": [
+      "Flesh Golem - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Flying Snake": {
+    "name": "Flying Snake",
+    "hp": 5,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 4,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Flying Sword": {
+    "name": "Flying Sword",
+    "hp": 17,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 4,
+      "CON": 0,
+      "WIS": -3,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Longsword",
+      "Longsword"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Frost Giant": {
+    "name": "Frost Giant",
+    "hp": 138,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 6,
+      "DEX": -1,
+      "CON": 8,
+      "WIS": 3,
+      "INT": -1,
+      "CHA": 4
+    },
+    "actions": [
+      "Frost Giant - Multi-attack",
+      "Rock",
+      "Rock",
+      "Greataxe",
+      "Greataxe"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Gargoyle": {
+    "name": "Gargoyle",
+    "hp": 52,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Gelatinous Cube": {
+    "name": "Gelatinous Cube",
+    "hp": 84,
+    "ac": 6,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": -4,
+      "CON": 5,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Pseudopod",
+      "Pseudopod"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Ghast": {
+    "name": "Ghast",
+    "hp": 36,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Ghost": {
+    "name": "Ghost",
+    "hp": 45,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 3
+    },
+    "actions": [
+      "Withering Touch"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Ghoul": {
+    "name": "Ghoul",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Ape": {
+    "name": "Giant Ape",
+    "hp": 157,
+    "ac": 12,
+    "proficiency": 3,
+    "saves": {
+      "STR": 6,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Giant Ape - Multi-attack",
+      "Rock",
+      "Rock",
+      "Fist",
+      "Fist"
+    ],
+    "applied_effects": [],
+    "cr": 7
+  },
+  "Giant Badger": {
+    "name": "Giant Badger",
+    "hp": 13,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Bat": {
+    "name": "Giant Bat",
+    "hp": 22,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Boar": {
+    "name": "Giant Boar",
+    "hp": 42,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": -2,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Tusk",
+      "Tusk"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Giant Centipede": {
+    "name": "Giant Centipede",
+    "hp": 4,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Constrictor Snake": {
+    "name": "Giant Constrictor Snake",
+    "hp": 60,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Constrict",
+      "Bite",
+      "Constrict",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Giant Crab": {
+    "name": "Giant Crab",
+    "hp": 13,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": -1,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Giant Crocodile": {
+    "name": "Giant Crocodile",
+    "hp": 85,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Tail",
+      "Bite",
+      "Tail",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Giant Eagle": {
+    "name": "Giant Eagle",
+    "hp": 26,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 3,
+      "CON": 1,
+      "WIS": 2,
+      "INT": -1,
+      "CHA": 0
+    },
+    "actions": [
+      "Talons",
+      "Beak",
+      "Beak",
+      "Talons"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Elk": {
+    "name": "Giant Elk",
+    "hp": 42,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 3,
+      "CON": 2,
+      "WIS": 2,
+      "INT": -2,
+      "CHA": 0
+    },
+    "actions": [
+      "Hooves",
+      "Ram",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Giant Fire Beetle": {
+    "name": "Giant Fire Beetle",
+    "hp": 4,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Giant Frog": {
+    "name": "Giant Frog",
+    "hp": 18,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Goat": {
+    "name": "Giant Goat",
+    "hp": 19,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Ram",
+      "Ram"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Giant Hyena": {
+    "name": "Giant Hyena",
+    "hp": 45,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Lizard": {
+    "name": "Giant Lizard",
+    "hp": 19,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Octopus": {
+    "name": "Giant Octopus",
+    "hp": 52,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -3,
+      "CHA": -3
+    },
+    "actions": [
+      "Tentacles",
+      "Tentacles"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Owl": {
+    "name": "Giant Owl",
+    "hp": 19,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -1,
+      "CHA": 0
+    },
+    "actions": [
+      "Talons",
+      "Talons"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Poisonous Snake": {
+    "name": "Giant Poisonous Snake",
+    "hp": 11,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 4,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Giant Rat": {
+    "name": "Giant Rat",
+    "hp": 7,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Giant Rat (Diseased)": {
+    "name": "Giant Rat (Diseased)",
+    "hp": 7,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Giant Scorpion": {
+    "name": "Giant Scorpion",
+    "hp": 52,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": -1,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Sting",
+      "Sting",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Giant Sea Horse": {
+    "name": "Giant Sea Horse",
+    "hp": 16,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Ram",
+      "Ram"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Giant Shark": {
+    "name": "Giant Shark",
+    "hp": 126,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 6,
+      "DEX": 0,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Giant Spider": {
+    "name": "Giant Spider",
+    "hp": 26,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 3,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Toad": {
+    "name": "Giant Toad",
+    "hp": 39,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Vulture": {
+    "name": "Giant Vulture",
+    "hp": 22,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Talons",
+      "Talons",
+      "Beak",
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Giant Wasp": {
+    "name": "Giant Wasp",
+    "hp": 13,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Sting",
+      "Sting"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Giant Weasel": {
+    "name": "Giant Weasel",
+    "hp": 9,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -3,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Giant Wolf Spider": {
+    "name": "Giant Wolf Spider",
+    "hp": 11,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 3,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Gibbering Mouther": {
+    "name": "Gibbering Mouther",
+    "hp": 67,
+    "ac": 9,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Glabrezu": {
+    "name": "Glabrezu",
+    "hp": 157,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 9,
+      "DEX": 2,
+      "CON": 9,
+      "WIS": 7,
+      "INT": 4,
+      "CHA": 7
+    },
+    "actions": [
+      "Glabrezu - Multi-attack",
+      "Fist",
+      "Pincer",
+      "Pincer",
+      "Fist"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Gladiator": {
+    "name": "Gladiator",
+    "hp": 112,
+    "ac": 16,
+    "proficiency": 3,
+    "saves": {
+      "STR": 7,
+      "DEX": 5,
+      "CON": 6,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Spear",
+      "Shield Bash"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Gnoll": {
+    "name": "Gnoll",
+    "hp": 22,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Longbow",
+      "Spear",
+      "Longbow",
+      "Bite",
+      "Spear",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Goat": {
+    "name": "Goat",
+    "hp": 4,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Ram",
+      "Ram"
+    ],
+    "applied_effects": [],
+    "cr": 0
   },
   "Goblin": {
     "name": "Goblin",
     "hp": 7,
-    "ac": 14,
-    "proficiency": 1,
+    "ac": 15,
+    "proficiency": 2,
     "saves": {
-      "STR": 1,
-      "CON": 1,
-      "DEX": 1,
-      "INT": 1,
-      "WIS": 1,
-      "CHA": 1
+      "STR": -1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": -1,
+      "INT": 0,
+      "CHA": -1
     },
     "actions": [
-      "Short Sword"
+      "Scimitar",
+      "Scimitar",
+      "Shortbow"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 0.25
   },
-  "Hobgoblin": {
-    "name": "Hobgoblin",
-    "hp": 11,
-    "ac": 18,
+  "Gold Dragon Wyrmling": {
+    "name": "Gold Dragon Wyrmling",
+    "hp": 60,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 4,
+      "CON": 5,
+      "WIS": 2,
+      "INT": 2,
+      "CHA": 5
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Gorgon": {
+    "name": "Gorgon",
+    "hp": 114,
+    "ac": 19,
+    "proficiency": 3,
+    "saves": {
+      "STR": 5,
+      "DEX": 0,
+      "CON": 4,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Hooves",
+      "Gore",
+      "Gore",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Gray Ooze": {
+    "name": "Gray Ooze",
+    "hp": 22,
+    "ac": 8,
     "proficiency": 2,
     "saves": {
       "STR": 1,
-      "CON": 1,
-      "DEX": 1,
-      "INT": 1,
-      "WIS": 1,
-      "CHA": 1
+      "DEX": -2,
+      "CON": 3,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -4
     },
     "actions": [
-      "Long Sword"
+      "Pseudopod",
+      "Pseudopod"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Green Dragon Wyrmling": {
+    "name": "Green Dragon Wyrmling",
+    "hp": 38,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 3,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 2,
+      "CHA": 3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Green Hag": {
+    "name": "Green Hag",
+    "hp": 82,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 1,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 2
+    },
+    "actions": [
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Grick": {
+    "name": "Grick",
+    "hp": 27,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 2,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Tentacles",
+      "Tentacles",
+      "Beak",
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 2
   },
   "Griffon": {
     "name": "Griffon",
@@ -123,15 +3263,3461 @@
     "proficiency": 2,
     "saves": {
       "STR": 4,
-      "CON": 3,
       "DEX": 2,
-      "INT": -4,
+      "CON": 3,
       "WIS": 1,
+      "INT": -4,
       "CHA": -1
     },
     "actions": [
-      "Griffon Combo"
+      "Claws",
+      "Claws",
+      "Beak",
+      "Beak"
     ],
-    "applied_effects": []
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Grimlock": {
+    "name": "Grimlock",
+    "hp": 11,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": -1,
+      "INT": -1,
+      "CHA": -2
+    },
+    "actions": [
+      "Spiked Bone Club"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Guard": {
+    "name": "Guard",
+    "hp": 11,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Spear",
+      "Spear"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Guardian Naga": {
+    "name": "Guardian Naga",
+    "hp": 127,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 4,
+      "DEX": 8,
+      "CON": 7,
+      "WIS": 8,
+      "INT": 7,
+      "CHA": 8
+    },
+    "actions": [
+      "Spit Poison",
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 10
+  },
+  "Gynosphinx": {
+    "name": "Gynosphinx",
+    "hp": 136,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 4,
+      "INT": 4,
+      "CHA": 4
+    },
+    "actions": [
+      "Gynosphinx - Multi-attack",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 11
+  },
+  "Half-Red Dragon Veteran": {
+    "name": "Half-Red Dragon Veteran",
+    "hp": 65,
+    "ac": 18,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Heavy Crossbow",
+      "Longsword",
+      "Longsword",
+      "Shortsword",
+      "Shortsword"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Harpy": {
+    "name": "Harpy",
+    "hp": 38,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": 1
+    },
+    "actions": [
+      "Claws",
+      "Claws",
+      "Club",
+      "Club"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Hawk": {
+    "name": "Hawk",
+    "hp": 1,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 3,
+      "CON": -1,
+      "WIS": 2,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Talons"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Hell Hound": {
+    "name": "Hell Hound",
+    "hp": 45,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Hezrou": {
+    "name": "Hezrou",
+    "hp": 136,
+    "ac": 16,
+    "proficiency": 3,
+    "saves": {
+      "STR": 7,
+      "DEX": 3,
+      "CON": 8,
+      "WIS": 4,
+      "INT": -3,
+      "CHA": 1
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Hill Giant": {
+    "name": "Hill Giant",
+    "hp": 105,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 4,
+      "WIS": -1,
+      "INT": -3,
+      "CHA": -2
+    },
+    "actions": [
+      "Hill Giant - Multi-attack",
+      "Rock",
+      "Rock",
+      "Greatclub"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Hippogriff": {
+    "name": "Hippogriff",
+    "hp": 19,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -1
+    },
+    "actions": [
+      "Beak",
+      "Claws",
+      "Claws",
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Hobgoblin": {
+    "name": "Hobgoblin",
+    "hp": 11,
+    "ac": 18,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -1
+    },
+    "actions": [
+      "Longsword",
+      "Longsword",
+      "Longbow",
+      "Longbow"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Homunculus": {
+    "name": "Homunculus",
+    "hp": 5,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Horned Devil": {
+    "name": "Horned Devil",
+    "hp": 148,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 10,
+      "DEX": 7,
+      "CON": 5,
+      "WIS": 7,
+      "INT": 1,
+      "CHA": 7
+    },
+    "actions": [
+      "Horned Devil - Hurl Flame",
+      "Fork",
+      "Tail",
+      "Tail"
+    ],
+    "applied_effects": [],
+    "cr": 11
+  },
+  "Hunter Shark": {
+    "name": "Hunter Shark",
+    "hp": 45,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Hydra": {
+    "name": "Hydra",
+    "hp": 172,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Hyena": {
+    "name": "Hyena",
+    "hp": 5,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Ice Devil": {
+    "name": "Ice Devil",
+    "hp": 180,
+    "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 5,
+      "DEX": 7,
+      "CON": 9,
+      "WIS": 7,
+      "INT": 4,
+      "CHA": 9
+    },
+    "actions": [
+      "Claws",
+      "Bite",
+      "Tail",
+      "Claws",
+      "Tail",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 14
+  },
+  "Ice Mephit": {
+    "name": "Ice Mephit",
+    "hp": 21,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": 1
+    },
+    "actions": [
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Imp": {
+    "name": "Imp",
+    "hp": 10,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 3,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Sting (Bite in Beast Form)"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Invisible Stalker": {
+    "name": "Invisible Stalker",
+    "hp": 104,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 4,
+      "CON": 2,
+      "WIS": 2,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Invisible Stalker - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Iron Golem": {
+    "name": "Iron Golem",
+    "hp": 210,
+    "ac": 20,
+    "proficiency": 5,
+    "saves": {
+      "STR": 7,
+      "DEX": -1,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -5
+    },
+    "actions": [
+      "Sword",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 16
+  },
+  "Jackal": {
+    "name": "Jackal",
+    "hp": 3,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Killer Whale": {
+    "name": "Killer Whale",
+    "hp": 90,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Knight": {
+    "name": "Knight",
+    "hp": 52,
+    "ac": 18,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 4,
+      "WIS": 2,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Greatsword",
+      "Heavy Crossbow",
+      "Heavy Crossbow",
+      "Greatsword"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Kobold": {
+    "name": "Kobold",
+    "hp": 5,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": -1,
+      "WIS": -2,
+      "INT": -1,
+      "CHA": -1
+    },
+    "actions": [
+      "Dagger",
+      "Dagger",
+      "Sling"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Kraken": {
+    "name": "Kraken",
+    "hp": 472,
+    "ac": 18,
+    "proficiency": 7,
+    "saves": {
+      "STR": 17,
+      "DEX": 7,
+      "CON": 14,
+      "WIS": 11,
+      "INT": 13,
+      "CHA": 5
+    },
+    "actions": [
+      "Bite",
+      "Tentacle",
+      "Tentacle",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 23
+  },
+  "Lamia": {
+    "name": "Lamia",
+    "hp": 97,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 2,
+      "INT": 2,
+      "CHA": 3
+    },
+    "actions": [
+      "Claws",
+      "Claws",
+      "Dagger",
+      "Dagger"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Lemure": {
+    "name": "Lemure",
+    "hp": 13,
+    "ac": 7,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": -3,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Fist",
+      "Fist"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Lich": {
+    "name": "Lich",
+    "hp": 135,
+    "ac": 17,
+    "proficiency": 7,
+    "saves": {
+      "STR": 0,
+      "DEX": 3,
+      "CON": 10,
+      "WIS": 9,
+      "INT": 12,
+      "CHA": 3
+    },
+    "actions": [
+      "Lich - Paralyzing Touch"
+    ],
+    "applied_effects": [],
+    "cr": 21
+  },
+  "Lion": {
+    "name": "Lion",
+    "hp": 26,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Claw",
+      "Bite",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Lizard": {
+    "name": "Lizard",
+    "hp": 2,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 0,
+      "CON": 0,
+      "WIS": -1,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Lizardfolk": {
+    "name": "Lizardfolk",
+    "hp": 22,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Heavy Club",
+      "Javelin",
+      "Javelin",
+      "Spiked Shield"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Mage": {
+    "name": "Mage",
+    "hp": 40,
+    "ac": 12,
+    "proficiency": 3,
+    "saves": {
+      "STR": -1,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 4,
+      "INT": 6,
+      "CHA": 0
+    },
+    "actions": [
+      "Dagger",
+      "Dagger"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Magma Mephit": {
+    "name": "Magma Mephit",
+    "hp": 22,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": 0
+    },
+    "actions": [
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Magmin": {
+    "name": "Magmin",
+    "hp": 9,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": 0
+    },
+    "actions": [
+      "Touch",
+      "Touch"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Mammoth": {
+    "name": "Mammoth",
+    "hp": 126,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 7,
+      "DEX": -1,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Stomp",
+      "Gore",
+      "Stomp",
+      "Gore"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Manticore": {
+    "name": "Manticore",
+    "hp": 68,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 3,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Tail Spike",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Marilith": {
+    "name": "Marilith",
+    "hp": 189,
+    "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 9,
+      "DEX": 5,
+      "CON": 10,
+      "WIS": 8,
+      "INT": 4,
+      "CHA": 10
+    },
+    "actions": [
+      "Tail",
+      "Longsword",
+      "Tail",
+      "Longsword"
+    ],
+    "applied_effects": [],
+    "cr": 16
+  },
+  "Mastiff": {
+    "name": "Mastiff",
+    "hp": 5,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Medusa": {
+    "name": "Medusa",
+    "hp": 127,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 1,
+      "INT": 1,
+      "CHA": 2
+    },
+    "actions": [
+      "Longbow",
+      "Longbow",
+      "Shortsword",
+      "Shortsword",
+      "Snake Hair"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Merfolk": {
+    "name": "Merfolk",
+    "hp": 11,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Spear",
+      "Spear"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Merrow": {
+    "name": "Merrow",
+    "hp": 45,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": -1
+    },
+    "actions": [
+      "Harpoon",
+      "Bite",
+      "Bite",
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Mimic": {
+    "name": "Mimic",
+    "hp": 58,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -3,
+      "CHA": -1
+    },
+    "actions": [
+      "Pseudopod",
+      "Bite",
+      "Bite",
+      "Pseudopod"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Minotaur": {
+    "name": "Minotaur",
+    "hp": 76,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 3,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Greataxe",
+      "Gore",
+      "Greataxe",
+      "Gore"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Minotaur Skeleton": {
+    "name": "Minotaur Skeleton",
+    "hp": 67,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": -1,
+      "INT": -2,
+      "CHA": -3
+    },
+    "actions": [
+      "Greataxe",
+      "Greataxe",
+      "Gore",
+      "Gore"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Mule": {
+    "name": "Mule",
+    "hp": 11,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Mummy": {
+    "name": "Mummy",
+    "hp": 58,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": -1,
+      "CON": 2,
+      "WIS": 2,
+      "INT": -2,
+      "CHA": 1
+    },
+    "actions": [
+      "Rotting Fist"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Mummy Lord": {
+    "name": "Mummy Lord",
+    "hp": 97,
+    "ac": 17,
+    "proficiency": 5,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 8,
+      "WIS": 9,
+      "INT": 5,
+      "CHA": 8
+    },
+    "actions": [
+      "Rotting Fist",
+      "Rotting Fist"
+    ],
+    "applied_effects": [],
+    "cr": 15
+  },
+  "Nalfeshnee": {
+    "name": "Nalfeshnee",
+    "hp": 184,
+    "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 5,
+      "DEX": 0,
+      "CON": 11,
+      "WIS": 6,
+      "INT": 9,
+      "CHA": 7
+    },
+    "actions": [
+      "Bite",
+      "Claw",
+      "Bite",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 13
+  },
+  "Night Hag": {
+    "name": "Night Hag",
+    "hp": 112,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 3,
+      "CHA": 3
+    },
+    "actions": [
+      "Claws (Hag Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Nightmare": {
+    "name": "Nightmare",
+    "hp": 68,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Noble": {
+    "name": "Noble",
+    "hp": 9,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 3
+    },
+    "actions": [
+      "Rapier"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Ochre Jelly": {
+    "name": "Ochre Jelly",
+    "hp": 45,
+    "ac": 8,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": -2,
+      "CON": 2,
+      "WIS": -2,
+      "INT": -4,
+      "CHA": -5
+    },
+    "actions": [
+      "Pseudopod",
+      "Pseudopod"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Octopus": {
+    "name": "Octopus",
+    "hp": 3,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Tentacles"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Ogre": {
+    "name": "Ogre",
+    "hp": 59,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": -2,
+      "INT": -3,
+      "CHA": -2
+    },
+    "actions": [
+      "Greatclub",
+      "Greatclub",
+      "Javelin",
+      "Javelin"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Ogre Zombie": {
+    "name": "Ogre Zombie",
+    "hp": 85,
+    "ac": 8,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": -2,
+      "CON": 4,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Morningstar",
+      "Morningstar"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Oni": {
+    "name": "Oni",
+    "hp": 110,
+    "ac": 16,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 3,
+      "CON": 6,
+      "WIS": 4,
+      "INT": 2,
+      "CHA": 5
+    },
+    "actions": [
+      "Glaive",
+      "Glaive",
+      "Claw (Oni Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 7
+  },
+  "Orc": {
+    "name": "Orc",
+    "hp": 15,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": 0
+    },
+    "actions": [
+      "Greataxe",
+      "Greataxe",
+      "Javelin",
+      "Javelin"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Otyugh": {
+    "name": "Otyugh",
+    "hp": 114,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 7,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Tentacle",
+      "Tentacle"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Owl": {
+    "name": "Owl",
+    "hp": 1,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 1,
+      "CON": -1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Talons"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Owlbear": {
+    "name": "Owlbear",
+    "hp": 59,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 5,
+      "DEX": 1,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Claws",
+      "Beak",
+      "Beak",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Panther": {
+    "name": "Panther",
+    "hp": 13,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 2,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Claw",
+      "Bite",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Pegasus": {
+    "name": "Pegasus",
+    "hp": 59,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 4,
+      "CON": 3,
+      "WIS": 4,
+      "INT": 0,
+      "CHA": 3
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Phase Spider": {
+    "name": "Phase Spider",
+    "hp": 32,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Pit Fiend": {
+    "name": "Pit Fiend",
+    "hp": 300,
+    "ac": 19,
+    "proficiency": 6,
+    "saves": {
+      "STR": 8,
+      "DEX": 8,
+      "CON": 13,
+      "WIS": 10,
+      "INT": 6,
+      "CHA": 7
+    },
+    "actions": [
+      "Mace",
+      "Tail",
+      "Bite",
+      "Tail",
+      "Claw",
+      "Bite",
+      "Mace",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 20
+  },
+  "Planetar": {
+    "name": "Planetar",
+    "hp": 200,
+    "ac": 19,
+    "proficiency": 5,
+    "saves": {
+      "STR": 7,
+      "DEX": 5,
+      "CON": 12,
+      "WIS": 11,
+      "INT": 4,
+      "CHA": 12
+    },
+    "actions": [
+      "Greatsword",
+      "Greatsword"
+    ],
+    "applied_effects": [],
+    "cr": 16
+  },
+  "Plesiosaurus": {
+    "name": "Plesiosaurus",
+    "hp": 68,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Poisonous Snake": {
+    "name": "Poisonous Snake",
+    "hp": 2,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Polar Bear": {
+    "name": "Polar Bear",
+    "hp": 42,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 5,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Claws",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Pony": {
+    "name": "Pony",
+    "hp": 11,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Priest": {
+    "name": "Priest",
+    "hp": 27,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 3,
+      "INT": 1,
+      "CHA": 1
+    },
+    "actions": [
+      "Mace",
+      "Mace"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Pseudodragon": {
+    "name": "Pseudodragon",
+    "hp": 7,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Bite",
+      "Sting",
+      "Bite",
+      "Sting"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Purple Worm": {
+    "name": "Purple Worm",
+    "hp": 247,
+    "ac": 18,
+    "proficiency": 5,
+    "saves": {
+      "STR": 9,
+      "DEX": -2,
+      "CON": 11,
+      "WIS": 4,
+      "INT": -5,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Tail Stinger",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 15
+  },
+  "Quasit": {
+    "name": "Quasit",
+    "hp": 7,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": 0
+    },
+    "actions": [
+      "Claw (Bite in Beast Form)"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Quipper": {
+    "name": "Quipper",
+    "hp": 1,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 3,
+      "CON": -1,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Rakshasa": {
+    "name": "Rakshasa",
+    "hp": 110,
+    "ac": 16,
+    "proficiency": 5,
+    "saves": {
+      "STR": 2,
+      "DEX": 3,
+      "CON": 4,
+      "WIS": 3,
+      "INT": 1,
+      "CHA": 5
+    },
+    "actions": [
+      "Rakshasa - Multi-attack",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 13
+  },
+  "Rat": {
+    "name": "Rat",
+    "hp": 1,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 0,
+      "CON": -1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Raven": {
+    "name": "Raven",
+    "hp": 1,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 2,
+      "CON": -1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Red Dragon Wyrmling": {
+    "name": "Red Dragon Wyrmling",
+    "hp": 75,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 5,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Reef Shark": {
+    "name": "Reef Shark",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Remorhaz": {
+    "name": "Remorhaz",
+    "hp": 195,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 7,
+      "DEX": 1,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -3,
+      "CHA": -3
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 11
+  },
+  "Rhinoceros": {
+    "name": "Rhinoceros",
+    "hp": 45,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 5,
+      "DEX": -1,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Gore",
+      "Gore"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Riding Horse": {
+    "name": "Riding Horse",
+    "hp": 13,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Roc": {
+    "name": "Roc",
+    "hp": 248,
+    "ac": 15,
+    "proficiency": 4,
+    "saves": {
+      "STR": 9,
+      "DEX": 4,
+      "CON": 9,
+      "WIS": 4,
+      "INT": -4,
+      "CHA": 3
+    },
+    "actions": [
+      "Beak",
+      "Talons",
+      "Beak",
+      "Talons"
+    ],
+    "applied_effects": [],
+    "cr": 11
+  },
+  "Roper": {
+    "name": "Roper",
+    "hp": 93,
+    "ac": 20,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 3,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Rust Monster": {
+    "name": "Rust Monster",
+    "hp": 27,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Saber-Toothed Tiger": {
+    "name": "Saber-Toothed Tiger",
+    "hp": 52,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Claw",
+      "Claw",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Sahuagin": {
+    "name": "Sahuagin",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 1,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Claws",
+      "Spear",
+      "Spear",
+      "Bite",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Salamander": {
+    "name": "Salamander",
+    "hp": 90,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Tail",
+      "Spear",
+      "Tail",
+      "Spear"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Satyr": {
+    "name": "Satyr",
+    "hp": 31,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 1,
+      "CHA": 2
+    },
+    "actions": [
+      "Ram",
+      "Shortsword",
+      "Shortsword",
+      "Shortbow",
+      "Shortbow",
+      "Ram"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Scorpion": {
+    "name": "Scorpion",
+    "hp": 1,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 0,
+      "CON": -1,
+      "WIS": -1,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Sting"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Scout": {
+    "name": "Scout",
+    "hp": 16,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Longbow",
+      "Longbow",
+      "Shortsword",
+      "Shortsword"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Sea Hag": {
+    "name": "Sea Hag",
+    "hp": 52,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 3,
+      "WIS": 1,
+      "INT": 1,
+      "CHA": 1
+    },
+    "actions": [
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Shadow": {
+    "name": "Shadow",
+    "hp": 16,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Strength Drain"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Shambling Mound": {
+    "name": "Shambling Mound",
+    "hp": 136,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -3,
+      "CHA": -3
+    },
+    "actions": [
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Shield Guardian": {
+    "name": "Shield Guardian",
+    "hp": 142,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": -1,
+      "CON": 4,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -4
+    },
+    "actions": [
+      "Shield Guardian - Multi-attack",
+      "Fist",
+      "Fist"
+    ],
+    "applied_effects": [],
+    "cr": 7
+  },
+  "Silver Dragon Wyrmling": {
+    "name": "Silver Dragon Wyrmling",
+    "hp": 45,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 5,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 4
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Skeleton": {
+    "name": "Skeleton",
+    "hp": 13,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": -1,
+      "INT": -2,
+      "CHA": -3
+    },
+    "actions": [
+      "Shortsword",
+      "Shortsword",
+      "Shortbow",
+      "Shortbow"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Solar": {
+    "name": "Solar",
+    "hp": 243,
+    "ac": 21,
+    "proficiency": 7,
+    "saves": {
+      "STR": 8,
+      "DEX": 6,
+      "CON": 8,
+      "WIS": 14,
+      "INT": 14,
+      "CHA": 17
+    },
+    "actions": [
+      "Solar - Multi-attack",
+      "Greatsword",
+      "Greatsword",
+      "Slaying Longbow"
+    ],
+    "applied_effects": [],
+    "cr": 21
+  },
+  "Specter": {
+    "name": "Specter",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -5,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Specter - Life Drain"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Spider": {
+    "name": "Spider",
+    "hp": 1,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 2,
+      "CON": -1,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Spirit Naga": {
+    "name": "Spirit Naga",
+    "hp": 75,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 6,
+      "CON": 5,
+      "WIS": 5,
+      "INT": 3,
+      "CHA": 6
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Sprite": {
+    "name": "Sprite",
+    "hp": 2,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 4,
+      "CON": 0,
+      "WIS": 1,
+      "INT": 2,
+      "CHA": 0
+    },
+    "actions": [
+      "Longsword"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Spy": {
+    "name": "Spy",
+    "hp": 27,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 3
+    },
+    "actions": [
+      "Shortsword",
+      "Shortsword",
+      "Hand Crossbow",
+      "Hand Crossbow"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Steam Mephit": {
+    "name": "Steam Mephit",
+    "hp": 21,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 0,
+      "CON": 0,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Claws",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Stirge": {
+    "name": "Stirge",
+    "hp": 2,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 3,
+      "CON": 0,
+      "WIS": -1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Blood Drain"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Stone Giant": {
+    "name": "Stone Giant",
+    "hp": 126,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 6,
+      "DEX": 5,
+      "CON": 8,
+      "WIS": 4,
+      "INT": 0,
+      "CHA": -1
+    },
+    "actions": [
+      "Stone Giant - Multi-attack",
+      "Rock",
+      "Rock",
+      "Greatclub",
+      "Greatclub"
+    ],
+    "applied_effects": [],
+    "cr": 7
+  },
+  "Stone Golem": {
+    "name": "Stone Golem",
+    "hp": 178,
+    "ac": 17,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": -1,
+      "CON": 5,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -5
+    },
+    "actions": [
+      "Stone Golem - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 10
+  },
+  "Storm Giant": {
+    "name": "Storm Giant",
+    "hp": 230,
+    "ac": 16,
+    "proficiency": 5,
+    "saves": {
+      "STR": 14,
+      "DEX": 2,
+      "CON": 10,
+      "WIS": 9,
+      "INT": 3,
+      "CHA": 9
+    },
+    "actions": [
+      "Greatsword",
+      "Storm Giant - Multi-attack",
+      "Rock",
+      "Rock",
+      "Greatsword"
+    ],
+    "applied_effects": [],
+    "cr": 13
+  },
+  "Succubus/Incubus": {
+    "name": "Succubus/Incubus",
+    "hp": 66,
+    "ac": 15,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 3,
+      "CON": 1,
+      "WIS": 1,
+      "INT": 2,
+      "CHA": 5
+    },
+    "actions": [
+      "Claw (Fiend Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Swarm of Bats": {
+    "name": "Swarm of Bats",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -3,
+      "DEX": 2,
+      "CON": 0,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Swarm of Beetles": {
+    "name": "Swarm of Beetles",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Swarm of Centipedes": {
+    "name": "Swarm of Centipedes",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Swarm of Insects": {
+    "name": "Swarm of Insects",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Swarm of Poisonous Snakes": {
+    "name": "Swarm of Poisonous Snakes",
+    "hp": 36,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 4,
+      "CON": 0,
+      "WIS": 0,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Swarm of Quippers": {
+    "name": "Swarm of Quippers",
+    "hp": 28,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 3,
+      "CON": -1,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -4
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Swarm of Rats": {
+    "name": "Swarm of Rats",
+    "hp": 24,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": -1,
+      "DEX": 0,
+      "CON": -1,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -4
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Swarm of Ravens": {
+    "name": "Swarm of Ravens",
+    "hp": 24,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 2,
+      "CON": -1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Beaks"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Swarm of Spiders": {
+    "name": "Swarm of Spiders",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Swarm of Wasps": {
+    "name": "Swarm of Wasps",
+    "hp": 22,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 1,
+      "CON": 0,
+      "WIS": -2,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Bites",
+      "Bites"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Tarrasque": {
+    "name": "Tarrasque",
+    "hp": 676,
+    "ac": 25,
+    "proficiency": 9,
+    "saves": {
+      "STR": 10,
+      "DEX": 0,
+      "CON": 10,
+      "WIS": 9,
+      "INT": 5,
+      "CHA": 9
+    },
+    "actions": [
+      "Bite",
+      "Horns",
+      "Claw",
+      "Tail",
+      "Horns",
+      "Claw",
+      "Tail",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 30
+  },
+  "Thug": {
+    "name": "Thug",
+    "hp": 32,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Heavy Crossbow",
+      "Heavy Crossbow",
+      "Mace",
+      "Mace"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Tiger": {
+    "name": "Tiger",
+    "hp": 37,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Claw",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 1
+  },
+  "Treant": {
+    "name": "Treant",
+    "hp": 138,
+    "ac": 16,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": -1,
+      "CON": 5,
+      "WIS": 3,
+      "INT": 1,
+      "CHA": 1
+    },
+    "actions": [
+      "Rock",
+      "Rock",
+      "Treant - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Tribal Warrior": {
+    "name": "Tribal Warrior",
+    "hp": 11,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -1,
+      "CHA": -1
+    },
+    "actions": [
+      "Spear",
+      "Spear"
+    ],
+    "applied_effects": [],
+    "cr": 0.125
+  },
+  "Triceratops": {
+    "name": "Triceratops",
+    "hp": 95,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 6,
+      "DEX": -1,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Stomp",
+      "Gore",
+      "Stomp",
+      "Gore"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Troll": {
+    "name": "Troll",
+    "hp": 84,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 1,
+      "CON": 5,
+      "WIS": -1,
+      "INT": -2,
+      "CHA": -2
+    },
+    "actions": [
+      "Claw",
+      "Bite",
+      "Claw",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Tyrannosaurus Rex": {
+    "name": "Tyrannosaurus Rex",
+    "hp": 136,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 7,
+      "DEX": 0,
+      "CON": 4,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Tail",
+      "Tail",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Unicorn": {
+    "name": "Unicorn",
+    "hp": 67,
+    "ac": 12,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 2,
+      "WIS": 3,
+      "INT": 0,
+      "CHA": 3
+    },
+    "actions": [
+      "Hooves",
+      "Horn",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Vampire": {
+    "name": "Vampire",
+    "hp": 144,
+    "ac": 16,
+    "proficiency": 5,
+    "saves": {
+      "STR": 4,
+      "DEX": 9,
+      "CON": 4,
+      "WIS": 7,
+      "INT": 3,
+      "CHA": 9
+    },
+    "actions": [
+      "Bite (Bat or Vampire Form Only)",
+      "Unarmed Strike (Vampire Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 13
+  },
+  "Vampire Spawn": {
+    "name": "Vampire Spawn",
+    "hp": 82,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 6,
+      "CON": 3,
+      "WIS": 3,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Veteran": {
+    "name": "Veteran",
+    "hp": 58,
+    "ac": 17,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Longsword",
+      "Heavy Crossbow",
+      "Heavy Crossbow",
+      "Longsword",
+      "Shortsword",
+      "Shortsword"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Violet Fungus": {
+    "name": "Violet Fungus",
+    "hp": 18,
+    "ac": 5,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": -5,
+      "CON": 0,
+      "WIS": -4,
+      "INT": -5,
+      "CHA": -5
+    },
+    "actions": [
+      "Rotting Touch"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Vrock": {
+    "name": "Vrock",
+    "hp": 104,
+    "ac": 15,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 5,
+      "CON": 4,
+      "WIS": 4,
+      "INT": -1,
+      "CHA": 2
+    },
+    "actions": [
+      "Beak",
+      "Talons",
+      "Talons",
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Vulture": {
+    "name": "Vulture",
+    "hp": 5,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": -2,
+      "DEX": 0,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Beak",
+      "Beak"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Warhorse": {
+    "name": "Warhorse",
+    "hp": 19,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Warhorse Skeleton": {
+    "name": "Warhorse Skeleton",
+    "hp": 22,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": -1,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Hooves",
+      "Hooves"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Water Elemental": {
+    "name": "Water Elemental",
+    "hp": 114,
+    "ac": 14,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 0,
+      "INT": -3,
+      "CHA": -1
+    },
+    "actions": [
+      "Water Elemental - Multi-attack",
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Weasel": {
+    "name": "Weasel",
+    "hp": 1,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": -4,
+      "DEX": 3,
+      "CON": -1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -4
+    },
+    "actions": [
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0
+  },
+  "Werebear": {
+    "name": "Werebear",
+    "hp": 135,
+    "ac": 10,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 1
+    },
+    "actions": [
+      "Bite (Bear or Hybrid Form Only)",
+      "Claw (Bear or Hybrid Form Only)",
+      "Greataxe (Humanoid or Hybrid Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Wereboar": {
+    "name": "Wereboar",
+    "hp": 78,
+    "ac": 10,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -1
+    },
+    "actions": [
+      "Maul (Humanoid or Hybrid Form Only)",
+      "Tusks (Boar or Hybrid Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Wererat": {
+    "name": "Wererat",
+    "hp": 33,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": -1
+    },
+    "actions": [
+      "Shortsword (Humanoid or Hybrid Form Only)",
+      "Hand Crossbow (Humanoid or Hybrid Form Only)",
+      "Bite (Rat or Hybrid Form Only)."
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Weretiger": {
+    "name": "Weretiger",
+    "hp": 120,
+    "ac": 12,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Bite (Tiger or Hybrid Form Only)",
+      "Claw (Tiger or Hybrid Form Only)",
+      "Longbow (Humanoid or Hybrid Form Only)",
+      "Scimitar (Humanoid or Hybrid Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 4
+  },
+  "Werewolf": {
+    "name": "Werewolf",
+    "hp": 58,
+    "ac": 11,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Bite (Wolf or Hybrid Form Only)",
+      "Claws (Hybrid Form Only)",
+      "Spear (Humanoid Form Only)"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "White Dragon Wyrmling": {
+    "name": "White Dragon Wyrmling",
+    "hp": 32,
+    "ac": 16,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 4,
+      "WIS": 2,
+      "INT": -3,
+      "CHA": 2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Wight": {
+    "name": "Wight",
+    "hp": 45,
+    "ac": 14,
+    "proficiency": 2,
+    "saves": {
+      "STR": 2,
+      "DEX": 2,
+      "CON": 3,
+      "WIS": 1,
+      "INT": 0,
+      "CHA": 2
+    },
+    "actions": [
+      "Longsword",
+      "Longsword",
+      "Longbow",
+      "Longbow",
+      "Wight - Multi-attack",
+      "Life Drain"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Will-o'-Wisp": {
+    "name": "Will-o'-Wisp",
+    "hp": 22,
+    "ac": 19,
+    "proficiency": 2,
+    "saves": {
+      "STR": -5,
+      "DEX": 9,
+      "CON": 0,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 0
+    },
+    "actions": [
+      "Will-o'-Wisp - Shock"
+    ],
+    "applied_effects": [],
+    "cr": 2
+  },
+  "Winter Wolf": {
+    "name": "Winter Wolf",
+    "hp": 75,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 4,
+      "DEX": 1,
+      "CON": 2,
+      "WIS": 1,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 3
+  },
+  "Wolf": {
+    "name": "Wolf",
+    "hp": 11,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": 2,
+      "CON": 1,
+      "WIS": 1,
+      "INT": -4,
+      "CHA": -2
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
+  },
+  "Worg": {
+    "name": "Worg",
+    "hp": 26,
+    "ac": 13,
+    "proficiency": 2,
+    "saves": {
+      "STR": 3,
+      "DEX": 1,
+      "CON": 1,
+      "WIS": 0,
+      "INT": -2,
+      "CHA": -1
+    },
+    "actions": [
+      "Bite",
+      "Bite"
+    ],
+    "applied_effects": [],
+    "cr": 0.5
+  },
+  "Wraith": {
+    "name": "Wraith",
+    "hp": 67,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": -2,
+      "DEX": 3,
+      "CON": 3,
+      "WIS": 2,
+      "INT": 1,
+      "CHA": 2
+    },
+    "actions": [
+      "Life Drain",
+      "Life Drain"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Wyvern": {
+    "name": "Wyvern",
+    "hp": 110,
+    "ac": 13,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 0,
+      "CON": 3,
+      "WIS": 1,
+      "INT": -3,
+      "CHA": -2
+    },
+    "actions": [
+      "Claws",
+      "Bite",
+      "Bite",
+      "Stinger",
+      "Claws"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Xorn": {
+    "name": "Xorn",
+    "hp": 73,
+    "ac": 19,
+    "proficiency": 3,
+    "saves": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 6,
+      "WIS": 0,
+      "INT": 0,
+      "CHA": 0
+    },
+    "actions": [
+      "Bite",
+      "Xorn - Multi-attack",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 5
+  },
+  "Young Black Dragon": {
+    "name": "Young Black Dragon",
+    "hp": 127,
+    "ac": 18,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 5,
+      "CON": 6,
+      "WIS": 3,
+      "INT": 1,
+      "CHA": 5
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 7
+  },
+  "Young Blue Dragon": {
+    "name": "Young Blue Dragon",
+    "hp": 152,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 5,
+      "DEX": 4,
+      "CON": 8,
+      "WIS": 5,
+      "INT": 2,
+      "CHA": 7
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Young Brass Dragon": {
+    "name": "Young Brass Dragon",
+    "hp": 110,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 3,
+      "CON": 6,
+      "WIS": 3,
+      "INT": 1,
+      "CHA": 5
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Young Bronze Dragon": {
+    "name": "Young Bronze Dragon",
+    "hp": 142,
+    "ac": 18,
+    "proficiency": 3,
+    "saves": {
+      "STR": 5,
+      "DEX": 3,
+      "CON": 7,
+      "WIS": 4,
+      "INT": 2,
+      "CHA": 6
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Young Copper Dragon": {
+    "name": "Young Copper Dragon",
+    "hp": 119,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 4,
+      "CON": 6,
+      "WIS": 4,
+      "INT": 3,
+      "CHA": 5
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 7
+  },
+  "Young Gold Dragon": {
+    "name": "Young Gold Dragon",
+    "hp": 178,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": 6,
+      "CON": 9,
+      "WIS": 5,
+      "INT": 3,
+      "CHA": 9
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 10
+  },
+  "Young Green Dragon": {
+    "name": "Young Green Dragon",
+    "hp": 136,
+    "ac": 18,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 4,
+      "CON": 6,
+      "WIS": 4,
+      "INT": 3,
+      "CHA": 5
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 8
+  },
+  "Young Red Dragon": {
+    "name": "Young Red Dragon",
+    "hp": 178,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": 4,
+      "CON": 9,
+      "WIS": 4,
+      "INT": 2,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 10
+  },
+  "Young Silver Dragon": {
+    "name": "Young Silver Dragon",
+    "hp": 168,
+    "ac": 18,
+    "proficiency": 4,
+    "saves": {
+      "STR": 6,
+      "DEX": 4,
+      "CON": 9,
+      "WIS": 4,
+      "INT": 2,
+      "CHA": 8
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 9
+  },
+  "Young White Dragon": {
+    "name": "Young White Dragon",
+    "hp": 133,
+    "ac": 17,
+    "proficiency": 3,
+    "saves": {
+      "STR": 4,
+      "DEX": 3,
+      "CON": 7,
+      "WIS": 3,
+      "INT": -2,
+      "CHA": 4
+    },
+    "actions": [
+      "Bite",
+      "Bite",
+      "Claw",
+      "Claw"
+    ],
+    "applied_effects": [],
+    "cr": 6
+  },
+  "Zombie": {
+    "name": "Zombie",
+    "hp": 22,
+    "ac": 8,
+    "proficiency": 2,
+    "saves": {
+      "STR": 1,
+      "DEX": -2,
+      "CON": 3,
+      "WIS": 0,
+      "INT": -4,
+      "CHA": -3
+    },
+    "actions": [
+      "Slam",
+      "Slam"
+    ],
+    "applied_effects": [],
+    "cr": 0.25
   }
 }

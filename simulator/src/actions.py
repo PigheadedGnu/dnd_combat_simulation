@@ -113,7 +113,7 @@ class PhysicalSingleAttack(SingleAttack):
 
     def do_damage(self, attacker, target):
         damage = 0
-        hit_check = d20() + attacker.saves[self.stat_bonus] + self.bonus_to_hit
+        hit_check = d20() + attacker.saves[self.stat_bonus] + self.bonus_to_hit + attacker.proficiency
         if hit_check >= target.ac:
             damage = calc_roll(self.dice) + attacker.saves[self.stat_bonus] + self.bonus_to_damage
 
@@ -276,6 +276,7 @@ class ComboAttack(Attack):
 
     def jsonify(self, write_to_file=True):
         attack_info = {
+            "name": self.name,
             "action_type": "Combo Attack",
             "attacks": [a.jsonify() for a in self.attacks]
         }
