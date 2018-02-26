@@ -26,15 +26,22 @@ class ActionManager:
             raise RuntimeError("Action with name {0} "
                                "could not be found.".format(action_name))
 
-        action_effects = []
-        for effect_name in info['effects']:
-            action_effects.append(self.effect_manager.load_effect(effect_name))
-
         build_action_info = {k: v for k, v in info.items()
                              if k not in ['effects', 'action_type']}
 
-        return ACTION_MAPPING[info['action_type']](effects=action_effects,
-                                                   **build_action_info)
+        if info['action_type'] == "Combo Attack":
+            if info['action_type'] == "Combo Attack":
+                build_action_info['attacks'] = [self.load_action(a['name'])
+                                                for a in
+                                                build_action_info['attacks']]
+            return ACTION_MAPPING['Combo Attack'](**build_action_info)
+        else:
+            action_effects = []
+            for effect_name in info['effects']:
+                action_effects.append(
+                    self.effect_manager.load_effect(effect_name))
+            return ACTION_MAPPING[info['action_type']](effects=action_effects,
+                                                       **build_action_info)
 
     def get_all_actions(self):
         """ Get a list of all actions with attributes for frontend
