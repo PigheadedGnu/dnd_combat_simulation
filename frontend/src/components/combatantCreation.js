@@ -14,7 +14,6 @@ const CombatantCreation = ({allActions, combatantActions, updateCombatantActions
                            setCombatantWisdom, setCombatantIntelligence, setCombatantCharisma,
                            createCombatant}) => (
   <div>
-    <h1> Create a combatant:</h1>
     <Grid width={320} gap={32}>
       <div className="section">
         <h4>Combatant Name:</h4>

@@ -1,10 +1,12 @@
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+    background-color: #E7DFC6;
 }
-.button {
-    background-color: #555555; /* Green */
+button {
+    background-color: #555555;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -12,4 +14,10 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+button:disabled {
+    background-color: #dddddd;
+}
+.react-tabs__tab--selected {
+    background: #cfc8b2;
 }

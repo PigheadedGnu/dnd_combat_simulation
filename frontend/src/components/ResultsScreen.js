@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import { Line } from 'rc-progress';
 import 'react-select/dist/react-select.css';
 import { connect } from 'react-redux'
 import Grid from 'react-css-grid';
 import '../index.css';
 
-const ResultsScreen = ({results}) => (
+const ResultsScreen = ({results, test}) => (
   <div>
     <Grid width={320} gap={32}>
       <div className="section">
         <h4>Average Number of Rounds: {results.avg_num_rounds}</h4>
         <h4>Percent of times Team 1 won: {results.perc_time_t1_won}</h4>
+          <Line percent={results.perc_time_t1_won * 100} strokeWidth="4" trailWidth="4" strokeColor="#255F85" trailColor="#A62639"/>
         <h4>Number of Times at least 1 Team 1 member died: {results.num_times_at_least_one_t1_death}</h4>
       </div>
       <div className="section">

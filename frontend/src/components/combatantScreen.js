@@ -8,7 +8,7 @@ import CombatantTable from './combatantTable'
 import '../index.css';
 
 const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1Update, team2Update,
-                         team1Add, team2Add, runSimulation}) => (
+                         team1Add, team2Add, runSimulation, buttonText}) => (
   <div>
     <Grid width={320} gap={32}>
       <div className="section">
@@ -36,7 +36,7 @@ const CombatantScreen = ({team1Combatants, team2Combatants, allCombatants, team1
         <CombatantTable teamAddFunction={team2Add}/>
       </div>
     </Grid>
-    <button className="button" onClick={runSimulation} type="button">Fight!</button>
+    <button id="combatButton" className="button" onClick={runSimulation} type="button">{buttonText}</button>
   </div>
 )
 
@@ -46,9 +46,21 @@ class Container extends React.Component{
     props.getAllCombatants()
   }
 
+  buttonDisabled() {
+    return this.props.team1Combatants.length === 0 || this.props.team2Combatants.length === 0;
+  }
+
   render() {
+    let btn = document.getElementById("combatButton");
+    let buttonText = "A Team is Empty!";
+    if (btn) {
+        btn.disabled = this.buttonDisabled();
+        if (!this.buttonDisabled()){
+          buttonText = "Fight!"
+        }
+    }
     return <div>
-      <CombatantScreen {...this.props} />
+      <CombatantScreen {...this.props} buttonText={buttonText} />
     </div>
   }
 }
