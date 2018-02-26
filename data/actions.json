@@ -3,10 +3,7 @@
     "name": "Tentacle",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -22,10 +19,7 @@
     "name": "Tail",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      7
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 3
@@ -45,10 +39,7 @@
         "name": "Tentacle",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -64,10 +55,7 @@
         "name": "Tentacle",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -83,10 +71,7 @@
         "name": "Tentacle",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -104,10 +89,7 @@
     "name": "Club",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      1
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "4": 1
@@ -123,10 +105,7 @@
     "name": "Bite",
     "action_type": "Single Target Physical Attack",
     "damage_type": "cold",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 2,
@@ -143,10 +122,7 @@
     "name": "Claw",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -162,10 +138,7 @@
     "name": "Slam",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      1
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -185,10 +158,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "DEX",
-          5
-        ],
+        "stat_bonus": "DEX",
         "save": null,
         "dice": {
           "8": 2
@@ -204,10 +174,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "DEX",
-          5
-        ],
+        "stat_bonus": "DEX",
         "save": null,
         "dice": {
           "8": 2
@@ -229,10 +196,7 @@
         "name": "Claw",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "10": 2
@@ -248,10 +212,7 @@
         "name": "Claw",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "10": 2
@@ -269,10 +230,7 @@
     "name": "Fist",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -288,10 +246,7 @@
     "name": "Rock",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      6
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 4
@@ -311,10 +266,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          3
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -330,10 +282,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          3
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -351,10 +300,7 @@
     "name": "Dagger",
     "action_type": "Single Target Physical Attack",
     "damage_type": "one",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -370,10 +316,7 @@
     "name": "Shortsword",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -389,10 +332,7 @@
     "name": "Light Crossbow",
     "action_type": "Single Target Physical Attack",
     "damage_type": "one",
-    "stat_bonus": [
-      "DEX",
-      1
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "8": 1
@@ -446,10 +386,7 @@
     "name": "Rake",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "DEX",
-      -1
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -465,10 +402,7 @@
     "name": "Beak",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      0
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -484,10 +418,7 @@
     "name": "Warhammer",
     "action_type": "Single Target Physical Attack",
     "damage_type": "fire",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1,
@@ -504,10 +435,7 @@
     "name": "Longsword",
     "action_type": "Single Target Physical Attack",
     "damage_type": "two",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -539,10 +467,7 @@
     "name": "Scimitar",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 1
@@ -574,10 +499,7 @@
     "name": "Beard",
     "action_type": "Single Target Physical Attack",
     "damage_type": "1",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "8": 1
@@ -593,10 +515,7 @@
     "name": "Glaive",
     "action_type": "Single Target Physical Attack",
     "damage_type": "Medium",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 2
@@ -612,10 +531,7 @@
     "name": "Constrict",
     "action_type": "Single Target Physical Attack",
     "damage_type": "DC",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 2
@@ -631,10 +547,7 @@
     "name": "Greataxe",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "12": 1
@@ -650,10 +563,7 @@
     "name": "Claws",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 2
@@ -669,10 +579,7 @@
     "name": "Pseudopod",
     "action_type": "Single Target Physical Attack",
     "damage_type": "acid",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -688,10 +595,7 @@
     "name": "Tusk",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -707,10 +611,7 @@
     "name": "Sting",
     "action_type": "Single Target Physical Attack",
     "damage_type": "1",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -726,10 +627,7 @@
     "name": "Morningstar",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 2
@@ -745,10 +643,7 @@
     "name": "Javelin",
     "action_type": "Single Target Physical Attack",
     "damage_type": "one",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -764,10 +659,7 @@
     "name": "Tentacles",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -783,10 +675,7 @@
     "name": "Pike",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 1
@@ -802,10 +691,7 @@
     "name": "Hooves",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -821,10 +707,7 @@
     "name": "Longbow",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -840,10 +723,7 @@
     "name": "Chain",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -859,10 +739,7 @@
     "name": "Horns",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      10
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 4
@@ -898,10 +775,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "10": 2
@@ -917,10 +791,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "10": 2
@@ -942,10 +813,7 @@
         "name": "Morningstar",
         "action_type": "Single Target Physical Attack",
         "damage_type": "piercing",
-        "stat_bonus": [
-          "STR",
-          8
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -961,10 +829,7 @@
         "name": "Morningstar",
         "action_type": "Single Target Physical Attack",
         "damage_type": "piercing",
-        "stat_bonus": [
-          "STR",
-          8
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -982,10 +847,7 @@
     "name": "Crush",
     "action_type": "Single Target Physical Attack",
     "damage_type": "the",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -1005,10 +867,7 @@
         "name": "Bite",
         "action_type": "Single Target Physical Attack",
         "damage_type": "piercing",
-        "stat_bonus": [
-          "STR",
-          2
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -1024,10 +883,7 @@
         "name": "Bite",
         "action_type": "Single Target Physical Attack",
         "damage_type": "piercing",
-        "stat_bonus": [
-          "STR",
-          2
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -1045,10 +901,7 @@
     "name": "War Pick",
     "action_type": "Single Target Physical Attack",
     "damage_type": "while",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -1064,10 +917,7 @@
     "name": "Poisoned Dart",
     "action_type": "Single Target Physical Attack",
     "damage_type": "1",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "4": 1
@@ -1083,10 +933,7 @@
     "name": "Mace",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -1106,10 +953,7 @@
         "name": "Scimitar",
         "action_type": "Single Target Physical Attack",
         "damage_type": "(djinni's",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -1125,10 +969,7 @@
         "name": "Scimitar",
         "action_type": "Single Target Physical Attack",
         "damage_type": "(djinni's",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -1144,10 +985,7 @@
         "name": "Scimitar",
         "action_type": "Single Target Physical Attack",
         "damage_type": "(djinni's",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 1
@@ -1165,10 +1003,7 @@
     "name": "Hand Crossbow",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 1
@@ -1184,10 +1019,7 @@
     "name": "Quarterstaff",
     "action_type": "Single Target Physical Attack",
     "damage_type": "two",
-    "stat_bonus": [
-      "STR",
-      0
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -1203,10 +1035,7 @@
     "name": "Talons",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 2
@@ -1226,10 +1055,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -1245,10 +1071,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -1282,10 +1105,7 @@
     "name": "Gore",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      6
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 4
@@ -1301,10 +1121,7 @@
     "name": "Stomp",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      6
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 3
@@ -1320,10 +1137,7 @@
     "name": "Variant: Web Garrote",
     "action_type": "Single Target Physical Attack",
     "damage_type": "DC",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "4": 1
@@ -1339,10 +1153,7 @@
     "name": "Battleaxe",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      5
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 2
@@ -1358,10 +1169,7 @@
     "name": "Touch",
     "action_type": "Single Target Physical Attack",
     "damage_type": "fire",
-    "stat_bonus": [
-      "WIS",
-      0
-    ],
+    "stat_bonus": "WIS",
     "save": null,
     "dice": {
       "6": 2
@@ -1381,10 +1189,7 @@
         "name": "Touch",
         "action_type": "Single Target Physical Attack",
         "damage_type": "fire",
-        "stat_bonus": [
-          "DEX",
-          3
-        ],
+        "stat_bonus": "DEX",
         "save": null,
         "dice": {
           "6": 2
@@ -1400,10 +1205,7 @@
         "name": "Touch",
         "action_type": "Single Target Physical Attack",
         "damage_type": "fire",
-        "stat_bonus": [
-          "DEX",
-          3
-        ],
+        "stat_bonus": "DEX",
         "save": null,
         "dice": {
           "6": 2
@@ -1421,10 +1223,7 @@
     "name": "Greatsword",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "WIS",
-      9
-    ],
+    "stat_bonus": "WIS",
     "save": null,
     "dice": {
       "6": 6
@@ -1444,10 +1243,7 @@
         "name": "Greatsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          7
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 6
@@ -1463,10 +1259,7 @@
         "name": "Greatsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          7
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 6
@@ -1488,10 +1281,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -1507,10 +1297,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -1532,10 +1319,7 @@
         "name": "Greataxe",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "12": 3
@@ -1551,10 +1335,7 @@
         "name": "Greataxe",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "12": 3
@@ -1572,10 +1353,7 @@
     "name": "Withering Touch",
     "action_type": "Single Target Physical Attack",
     "damage_type": "necrotic",
-    "stat_bonus": [
-      "CHA",
-      3
-    ],
+    "stat_bonus": "CHA",
     "save": null,
     "dice": {
       "6": 4
@@ -1595,10 +1373,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "10": 3
@@ -1614,10 +1389,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "10": 3
@@ -1635,10 +1407,7 @@
     "name": "Ram",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      1
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "4": 2
@@ -1654,10 +1423,7 @@
     "name": "Bites",
     "action_type": "Single Target Physical Attack",
     "damage_type": "or",
-    "stat_bonus": [
-      "CON",
-      0
-    ],
+    "stat_bonus": "CON",
     "save": null,
     "dice": {
       "4": 4
@@ -1709,10 +1475,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "DEX",
-          2
-        ],
+        "stat_bonus": "DEX",
         "save": null,
         "dice": {
           "4": 2
@@ -1728,10 +1491,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "DEX",
-          2
-        ],
+        "stat_bonus": "DEX",
         "save": null,
         "dice": {
           "4": 2
@@ -1749,10 +1509,7 @@
     "name": "Spear",
     "action_type": "Single Target Physical Attack",
     "damage_type": "one",
-    "stat_bonus": [
-      "STR",
-      1
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -1784,10 +1541,7 @@
     "name": "Shortbow",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 1
@@ -1839,10 +1593,7 @@
         "name": "Claw",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -1858,10 +1609,7 @@
         "name": "Claw",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -1879,10 +1627,7 @@
     "name": "Heavy Crossbow",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      1
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "10": 1
@@ -1898,10 +1643,7 @@
     "name": "Greatclub",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      6
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 3
@@ -1921,10 +1663,7 @@
         "name": "Greatclub",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -1940,10 +1679,7 @@
         "name": "Greatclub",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          5
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -1993,10 +1729,7 @@
     "name": "Sting (Bite in Beast Form)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "successful",
-    "stat_bonus": [
-      "DEX",
-      3
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -2016,10 +1749,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          3
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -2035,10 +1765,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          3
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -2056,10 +1783,7 @@
     "name": "Sword",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      7
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 3
@@ -2075,10 +1799,7 @@
     "name": "Sling",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -2110,10 +1831,7 @@
     "name": "Heavy Club",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -2129,10 +1847,7 @@
     "name": "Spiked Shield",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -2148,10 +1863,7 @@
     "name": "Tail Spike",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -2167,10 +1879,7 @@
     "name": "Snake Hair",
     "action_type": "Single Target Physical Attack",
     "damage_type": "poison",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -2186,10 +1895,7 @@
     "name": "Harpoon",
     "action_type": "Single Target Physical Attack",
     "damage_type": "one",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -2205,10 +1911,7 @@
     "name": "Rotting Fist",
     "action_type": "Single Target Physical Attack",
     "damage_type": "necrotic",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 6
@@ -2224,10 +1927,7 @@
     "name": "Claws (Hag Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 2
@@ -2243,10 +1943,7 @@
     "name": "Rapier",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      1
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "8": 1
@@ -2262,10 +1959,7 @@
     "name": "Claw (Oni Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -2281,10 +1975,7 @@
     "name": "Tail Stinger",
     "action_type": "Single Target Physical Attack",
     "damage_type": "successful",
-    "stat_bonus": [
-      "STR",
-      9
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 3
@@ -2300,10 +1991,7 @@
     "name": "Claw (Bite in Beast Form)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "1",
-    "stat_bonus": [
-      "DEX",
-      3
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -2323,10 +2011,7 @@
         "name": "Claw",
         "action_type": "Single Target Physical Attack",
         "damage_type": "a",
-        "stat_bonus": [
-          "STR",
-          2
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -2342,10 +2027,7 @@
         "name": "Claw",
         "action_type": "Single Target Physical Attack",
         "damage_type": "a",
-        "stat_bonus": [
-          "STR",
-          2
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -2363,10 +2045,7 @@
     "name": "Strength Drain",
     "action_type": "Single Target Physical Attack",
     "damage_type": "by",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 2
@@ -2386,10 +2065,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -2405,10 +2081,7 @@
         "name": "Fist",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 2
@@ -2426,10 +2099,7 @@
     "name": "Slaying Longbow",
     "action_type": "Single Target Physical Attack",
     "damage_type": "radiant",
-    "stat_bonus": [
-      "DEX",
-      6
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "8": 6
@@ -2449,10 +2119,7 @@
         "name": "Greatsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "radiant",
-        "stat_bonus": [
-          "STR",
-          8
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 4,
@@ -2469,10 +2136,7 @@
         "name": "Greatsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "radiant",
-        "stat_bonus": [
-          "STR",
-          8
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 4,
@@ -2510,10 +2174,7 @@
     "name": "Blood Drain",
     "action_type": "Single Target Physical Attack",
     "damage_type": "the",
-    "stat_bonus": [
-      "DEX",
-      3
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -2533,10 +2194,7 @@
         "name": "Greatclub",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -2552,10 +2210,7 @@
         "name": "Greatclub",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -2577,10 +2232,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -2596,10 +2248,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 3
@@ -2621,10 +2270,7 @@
         "name": "Greatsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "WIS",
-          9
-        ],
+        "stat_bonus": "WIS",
         "save": null,
         "dice": {
           "6": 6
@@ -2640,10 +2286,7 @@
         "name": "Greatsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "slashing",
-        "stat_bonus": [
-          "WIS",
-          9
-        ],
+        "stat_bonus": "WIS",
         "save": null,
         "dice": {
           "6": 6
@@ -2661,10 +2304,7 @@
     "name": "Claw (Fiend Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "DEX",
-      3
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 1
@@ -2700,10 +2340,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 3
@@ -2719,10 +2356,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          6
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 3
@@ -2740,10 +2374,7 @@
     "name": "Horn",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -2759,10 +2390,7 @@
     "name": "Unarmed Strike (Vampire Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -2778,10 +2406,7 @@
     "name": "Bite (Bat or Vampire Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "necrotic",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 3
@@ -2797,10 +2422,7 @@
     "name": "Rotting Touch",
     "action_type": "Single Target Physical Attack",
     "damage_type": "necrotic",
-    "stat_bonus": [
-      "CON",
-      0
-    ],
+    "stat_bonus": "CON",
     "save": null,
     "dice": {
       "8": 1
@@ -2820,10 +2442,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -2839,10 +2458,7 @@
         "name": "Slam",
         "action_type": "Single Target Physical Attack",
         "damage_type": "bludgeoning",
-        "stat_bonus": [
-          "STR",
-          4
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 2
@@ -2860,10 +2476,7 @@
     "name": "Bite (Bear or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 2
@@ -2879,10 +2492,7 @@
     "name": "Claw (Bear or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 2
@@ -2898,10 +2508,7 @@
     "name": "Greataxe (Humanoid or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "12": 1
@@ -2917,10 +2524,7 @@
     "name": "Maul (Humanoid or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "bludgeoning",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -2936,10 +2540,7 @@
     "name": "Tusks (Boar or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -2955,10 +2556,7 @@
     "name": "Bite (Rat or Hybrid Form Only).",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "4": 1
@@ -2974,10 +2572,7 @@
     "name": "Shortsword (Humanoid or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 1
@@ -2993,10 +2588,7 @@
     "name": "Hand Crossbow (Humanoid or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "6": 1
@@ -3012,10 +2604,7 @@
     "name": "Bite (Tiger or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "10": 1
@@ -3031,10 +2620,7 @@
     "name": "Claw (Tiger or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -3050,10 +2636,7 @@
     "name": "Scimitar (Humanoid or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      3
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 1
@@ -3069,10 +2652,7 @@
     "name": "Longbow (Humanoid or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "DEX",
-      2
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "8": 1
@@ -3088,10 +2668,7 @@
     "name": "Bite (Wolf or Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "8": 1
@@ -3107,10 +2684,7 @@
     "name": "Claws (Hybrid Form Only)",
     "action_type": "Single Target Physical Attack",
     "damage_type": "slashing",
-    "stat_bonus": [
-      "STR",
-      2
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "4": 2
@@ -3142,10 +2716,7 @@
     "name": "Life Drain",
     "action_type": "Single Target Physical Attack",
     "damage_type": "necrotic",
-    "stat_bonus": [
-      "DEX",
-      3
-    ],
+    "stat_bonus": "DEX",
     "save": null,
     "dice": {
       "8": 4
@@ -3165,10 +2736,7 @@
         "name": "Longsword",
         "action_type": "Single Target Physical Attack",
         "damage_type": "two",
-        "stat_bonus": [
-          "STR",
-          2
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "8": 1
@@ -3205,10 +2773,7 @@
     "name": "Stinger",
     "action_type": "Single Target Physical Attack",
     "damage_type": "piercing",
-    "stat_bonus": [
-      "STR",
-      4
-    ],
+    "stat_bonus": "STR",
     "save": null,
     "dice": {
       "6": 2
@@ -3228,10 +2793,7 @@
         "name": "Bite",
         "action_type": "Single Target Physical Attack",
         "damage_type": "piercing",
-        "stat_bonus": [
-          "STR",
-          3
-        ],
+        "stat_bonus": "STR",
         "save": null,
         "dice": {
           "6": 3

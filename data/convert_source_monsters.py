@@ -85,8 +85,8 @@ def create_attack(action_entry, creature_name, creature_cr, creature_saves):
         # based on a stat held by the monster plus some proficiency, but this
         # can be separated via the damage bonus, which is only based on the stat
         which_stat = [x for x in creature_saves.items() if x[1] == damage_bonus]
-        stat_for_bonus = which_stat[0] if which_stat else "STR"
-        action = PhysicalSingleAttack(
+        stat_for_bonus = which_stat[0][0] if which_stat else "STR"
+        created_action = PhysicalSingleAttack(
             name=action_name,
             stat_bonus=stat_for_bonus,  # Little hacky...
             # Descriptions are: "... bludgeoning damage." Want 2nd to last word
@@ -99,7 +99,7 @@ def create_attack(action_entry, creature_name, creature_cr, creature_saves):
                       if x[1] == attack_bonus - proficiency_mapping[creature_cr]]
         stat_for_bonus = which_stat[0] if which_stat else "STR"
 
-        action = SpellSingleAttack(
+        created_action = SpellSingleAttack(
             name=creature_name + " - " + action_name,
             stat_bonus=stat_for_bonus,
             damage_type=pull_out_damage_type(action_entry['desc']),
@@ -108,7 +108,7 @@ def create_attack(action_entry, creature_name, creature_cr, creature_saves):
         )
     else:
         return None
-    return action
+    return created_action
 
 
 def create_multiattack(creature_name, attack_description, other_actions):
