@@ -87,7 +87,7 @@ def create_attack(action_entry, creature_name, creature_cr, creature_saves):
         which_stat = [x for x in creature_saves.items() if x[1] == damage_bonus]
         stat_for_bonus = which_stat[0][0] if which_stat else "STR"
         created_action = PhysicalSingleAttack(
-            name=action_name,
+            name=creature_name + " - " + action_name,
             stat_bonus=stat_for_bonus,  # Little hacky...
             # Descriptions are: "... bludgeoning damage." Want 2nd to last word
             damage_type=pull_out_damage_type(action_entry['desc']),
@@ -131,7 +131,8 @@ def create_multiattack(creature_name, attack_description, other_actions):
             clause = clause.strip()
             try:
                 space_split = clause.split(" ")
-                attack = action_name_mapping[space_split[-1][:-1]]
+                action_map = creature_name + " - " + space_split[-1][:-1]
+                attack = action_name_mapping[action_map.lower()]
                 count = count_mapping[space_split[0]]
                 for _ in range(count):
                     attacks.append(attack)
@@ -141,7 +142,8 @@ def create_multiattack(creature_name, attack_description, other_actions):
         attacks = []
         try:
             space_split = attack_description.split(" ")
-            attack = action_name_mapping[space_split[-2]]
+            action_map = creature_name + " - " + space_split[-2]
+            attack = action_name_mapping[action_map.lower()]
             count = count_mapping[space_split[-3]]
             for _ in range(count):
                 attacks.append(attack)
@@ -194,8 +196,6 @@ for entry in source:
         print(name)
         continue
     for action in entry['actions']:
-        if action['name'] in am.action_info:
-            combatant_actions.append(am.load_action(action['name']))
         if action['name'] == "Multiattack":
             multi_attack_description = action['desc']
         elif action['attack_bonus'] == 0:

@@ -14,8 +14,8 @@
     },
     "actions": [
       "Aboleth - Multi-attack",
-      "Tail",
-      "Tentacle"
+      "Aboleth - Tail",
+      "Aboleth - Tentacle"
     ],
     "applied_effects": [],
     "cr": 10
@@ -34,7 +34,7 @@
       "CHA": 0
     },
     "actions": [
-      "Club"
+      "Acolyte - Club"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -53,10 +53,9 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw"
+      "Adult Black Dragon - Bite",
+      "Adult Black Dragon - Tail",
+      "Adult Black Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 14
@@ -75,12 +74,9 @@
       "CHA": 4
     },
     "actions": [
-      "Bite",
-      "Tail",
-      "Tail",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Adult Blue Dracolich - Tail",
+      "Adult Blue Dracolich - Bite",
+      "Adult Blue Dracolich - Claw"
     ],
     "applied_effects": [],
     "cr": 17
@@ -99,12 +95,9 @@
       "CHA": 9
     },
     "actions": [
-      "Tail",
-      "Tail",
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Adult Blue Dragon - Tail",
+      "Adult Blue Dragon - Bite",
+      "Adult Blue Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 16
@@ -123,12 +116,9 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Tail",
-      "Tail",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Adult Brass Dragon - Bite",
+      "Adult Brass Dragon - Tail",
+      "Adult Brass Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 13
@@ -147,12 +137,9 @@
       "CHA": 9
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult Bronze Dragon - Bite",
+      "Adult Bronze Dragon - Tail",
+      "Adult Bronze Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 15
@@ -171,12 +158,9 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult Copper Dragon - Bite",
+      "Adult Copper Dragon - Tail",
+      "Adult Copper Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 14
@@ -195,12 +179,9 @@
       "CHA": 13
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult Gold Dragon - Bite",
+      "Adult Gold Dragon - Tail",
+      "Adult Gold Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 17
@@ -219,12 +200,9 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult Green Dragon - Bite",
+      "Adult Green Dragon - Tail",
+      "Adult Green Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 15
@@ -243,12 +221,9 @@
       "CHA": 11
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult Red Dragon - Bite",
+      "Adult Red Dragon - Tail",
+      "Adult Red Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 17
@@ -267,12 +242,9 @@
       "CHA": 10
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult Silver Dragon - Bite",
+      "Adult Silver Dragon - Tail",
+      "Adult Silver Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 16
@@ -291,12 +263,9 @@
       "CHA": 6
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Adult White Dragon - Bite",
+      "Adult White Dragon - Tail",
+      "Adult White Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 13
@@ -316,7 +285,7 @@
     },
     "actions": [
       "Air Elemental - Multi-attack",
-      "Slam"
+      "Air Elemental - Slam"
     ],
     "applied_effects": [],
     "cr": 5
@@ -335,12 +304,9 @@
       "CHA": 11
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Black Dragon - Bite",
+      "Ancient Black Dragon - Tail",
+      "Ancient Black Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 21
@@ -359,12 +325,9 @@
       "CHA": 12
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Blue Dragon - Bite",
+      "Ancient Blue Dragon - Tail",
+      "Ancient Blue Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 23
@@ -383,12 +346,9 @@
       "CHA": 10
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Brass Dragon - Bite",
+      "Ancient Brass Dragon - Tail",
+      "Ancient Brass Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 20
@@ -407,11 +367,8 @@
       "CHA": 12
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Bronze Dragon - Bite",
+      "Ancient Bronze Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 22
@@ -430,12 +387,9 @@
       "CHA": 11
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Copper Dragon - Bite",
+      "Ancient Copper Dragon - Tail",
+      "Ancient Copper Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 21
@@ -454,12 +408,9 @@
       "CHA": 16
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Gold Dragon - Bite",
+      "Ancient Gold Dragon - Tail",
+      "Ancient Gold Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 24
@@ -478,12 +429,9 @@
       "CHA": 11
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Tail",
-      "Tail",
-      "Claw"
+      "Ancient Green Dragon - Bite",
+      "Ancient Green Dragon - Claw",
+      "Ancient Green Dragon - Tail"
     ],
     "applied_effects": [],
     "cr": 22
@@ -502,12 +450,9 @@
       "CHA": 13
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Tail",
-      "Tail",
-      "Claw"
+      "Ancient Red Dragon - Bite",
+      "Ancient Red Dragon - Tail",
+      "Ancient Red Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 24
@@ -526,12 +471,9 @@
       "CHA": 13
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient Silver Dragon - Bite",
+      "Ancient Silver Dragon - Tail",
+      "Ancient Silver Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 23
@@ -550,12 +492,9 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail",
-      "Claw",
-      "Claw"
+      "Ancient White Dragon - Bite",
+      "Ancient White Dragon - Tail",
+      "Ancient White Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 20
@@ -575,8 +514,7 @@
     },
     "actions": [
       "Androsphinx - Multi-attack",
-      "Claw",
-      "Claw"
+      "Androsphinx - Claw"
     ],
     "applied_effects": [],
     "cr": 17
@@ -595,8 +533,7 @@
       "CHA": -5
     },
     "actions": [
-      "Slam",
-      "Slam"
+      "Animated Armor - Slam"
     ],
     "applied_effects": [],
     "cr": 1
@@ -615,8 +552,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Ankheg - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -636,8 +572,8 @@
     },
     "actions": [
       "Ape - Multi-attack",
-      "Fist",
-      "Rock"
+      "Ape - Fist",
+      "Ape - Rock"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -656,7 +592,7 @@
       "CHA": 3
     },
     "actions": [
-      "Dagger"
+      "Archmage - Dagger"
     ],
     "applied_effects": [],
     "cr": 12
@@ -676,8 +612,8 @@
     },
     "actions": [
       "Assassin - Multi-attack",
-      "Light Crossbow",
-      "Shortsword"
+      "Assassin - Light Crossbow",
+      "Assassin - Shortsword"
     ],
     "applied_effects": [],
     "cr": 8
@@ -696,7 +632,7 @@
       "CHA": -2
     },
     "actions": [
-      "Rake"
+      "Awakened Shrub - Rake"
     ],
     "applied_effects": [],
     "cr": 0
@@ -715,8 +651,7 @@
       "CHA": -2
     },
     "actions": [
-      "Slam",
-      "Slam"
+      "Awakened Tree - Slam"
     ],
     "applied_effects": [],
     "cr": 2
@@ -735,7 +670,7 @@
       "CHA": -3
     },
     "actions": [
-      "Beak"
+      "Axe Beak - Beak"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -754,7 +689,7 @@
       "CHA": 0
     },
     "actions": [
-      "Warhammer"
+      "Azer - Warhammer"
     ],
     "applied_effects": [],
     "cr": 2
@@ -773,27 +708,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
-  },
-  "Badger": {
-    "name": "Badger",
-    "hp": 3,
-    "ac": 10,
-    "proficiency": 2,
-    "saves": {
-      "STR": -3,
-      "DEX": 0,
-      "CON": 1,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -3
-    },
-    "actions": [
-      "Bite"
+      "Baboon - Bite"
     ],
     "applied_effects": [],
     "cr": 0
@@ -812,8 +727,8 @@
       "CHA": 12
     },
     "actions": [
-      "Longsword",
-      "Whip"
+      "Balor - Longsword",
+      "Balor - Whip"
     ],
     "applied_effects": [],
     "cr": 19
@@ -832,9 +747,8 @@
       "CHA": 0
     },
     "actions": [
-      "Light Crossbow",
-      "Light Crossbow",
-      "Scimitar"
+      "Bandit - Light Crossbow",
+      "Bandit - Scimitar"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -853,10 +767,8 @@
       "CHA": 2
     },
     "actions": [
-      "Scimitar",
-      "Scimitar",
-      "Dagger",
-      "Dagger"
+      "Bandit Captain - Scimitar",
+      "Bandit Captain - Dagger"
     ],
     "applied_effects": [],
     "cr": 2
@@ -875,11 +787,9 @@
       "CHA": 5
     },
     "actions": [
-      "Claw",
-      "Tail",
       "Barbed Devil - Hurl Flame",
-      "Tail",
-      "Claw"
+      "Barbed Devil - Tail",
+      "Barbed Devil - Claw"
     ],
     "applied_effects": [],
     "cr": 5
@@ -898,30 +808,10 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Basilisk - Bite"
     ],
     "applied_effects": [],
     "cr": 3
-  },
-  "Bat": {
-    "name": "Bat",
-    "hp": 1,
-    "ac": 12,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 2,
-      "CON": -1,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -3
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Bearded Devil": {
     "name": "Bearded Devil",
@@ -937,8 +827,8 @@
       "CHA": 0
     },
     "actions": [
-      "Glaive",
-      "Beard"
+      "Bearded Devil - Glaive",
+      "Bearded Devil - Beard"
     ],
     "applied_effects": [],
     "cr": 3
@@ -957,9 +847,8 @@
       "CHA": 1
     },
     "actions": [
-      "Bite",
-      "Constrict",
-      "Bite"
+      "Behir - Bite",
+      "Behir - Constrict"
     ],
     "applied_effects": [],
     "cr": 11
@@ -978,7 +867,7 @@
       "CHA": -1
     },
     "actions": [
-      "Greataxe"
+      "Berserker - Greataxe"
     ],
     "applied_effects": [],
     "cr": 2
@@ -997,9 +886,8 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claws"
+      "Black Bear - Bite",
+      "Black Bear - Claws"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -1018,8 +906,7 @@
       "CHA": 3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Black Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -1038,7 +925,7 @@
       "CHA": -5
     },
     "actions": [
-      "Pseudopod"
+      "Black Pudding - Pseudopod"
     ],
     "applied_effects": [],
     "cr": 4
@@ -1057,8 +944,7 @@
       "CHA": 0
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Blink Dog - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -1077,8 +963,7 @@
       "CHA": -3
     },
     "actions": [
-      "Beak",
-      "Beak"
+      "Blood Hawk - Beak"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -1097,8 +982,7 @@
       "CHA": 4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Blue Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 3
@@ -1117,7 +1001,7 @@
       "CHA": -3
     },
     "actions": [
-      "Tusk"
+      "Boar - Tusk"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -1136,12 +1020,10 @@
       "CHA": 7
     },
     "actions": [
-      "Sting",
-      "Sting",
-      "Claw",
-      "Claw",
-      "Claw",
-      "Claw"
+      "Bone Devil - Sting",
+      "Bone Devil - Sting",
+      "Bone Devil - Claw",
+      "Bone Devil - Claw"
     ],
     "applied_effects": [],
     "cr": 12
@@ -1160,8 +1042,7 @@
       "CHA": 3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Brass Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1180,8 +1061,7 @@
       "CHA": 4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Bronze Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -1200,10 +1080,8 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Bite",
-      "Claws"
+      "Brown Bear - Claws",
+      "Brown Bear - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1222,8 +1100,8 @@
       "CHA": -1
     },
     "actions": [
-      "Morningstar",
-      "Javelin"
+      "Bugbear - Morningstar",
+      "Bugbear - Javelin"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1242,8 +1120,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Bulette - Bite"
     ],
     "applied_effects": [],
     "cr": 5
@@ -1262,8 +1139,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Camel - Bite"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -1282,31 +1158,11 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Tentacles",
-      "Bite"
+      "Carrion Crawler - Bite",
+      "Carrion Crawler - Tentacles"
     ],
     "applied_effects": [],
     "cr": 2
-  },
-  "Cat": {
-    "name": "Cat",
-    "hp": 2,
-    "ac": 12,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 2,
-      "CON": 0,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -2
-    },
-    "actions": [
-      "Claws"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Cave Bear": {
     "name": "Cave Bear",
@@ -1322,10 +1178,8 @@
       "CHA": -2
     },
     "actions": [
-      "Claws",
-      "Claws",
-      "Bite",
-      "Bite"
+      "Cave Bear - Claws",
+      "Cave Bear - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -1344,9 +1198,9 @@
       "CHA": 0
     },
     "actions": [
-      "Pike",
-      "Hooves",
-      "Longbow"
+      "Centaur - Pike",
+      "Centaur - Hooves",
+      "Centaur - Longbow"
     ],
     "applied_effects": [],
     "cr": 2
@@ -1365,7 +1219,7 @@
       "CHA": 2
     },
     "actions": [
-      "Chain"
+      "Chain Devil - Chain"
     ],
     "applied_effects": [],
     "cr": 11
@@ -1384,11 +1238,9 @@
       "CHA": 0
     },
     "actions": [
-      "Horns",
-      "Bite",
-      "Claws",
-      "Claws",
-      "Bite"
+      "Chimera - Horns",
+      "Chimera - Bite",
+      "Chimera - Claws"
     ],
     "applied_effects": [],
     "cr": 6
@@ -1407,8 +1259,7 @@
       "CHA": -3
     },
     "actions": [
-      "Pincer",
-      "Tentacles"
+      "Chuul - Pincer"
     ],
     "applied_effects": [],
     "cr": 4
@@ -1428,8 +1279,7 @@
     },
     "actions": [
       "Clay Golem - Multi-attack",
-      "Slam",
-      "Slam"
+      "Clay Golem - Slam"
     ],
     "applied_effects": [],
     "cr": 9
@@ -1448,10 +1298,8 @@
       "CHA": 2
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tail",
-      "Tail"
+      "Cloaker - Bite",
+      "Cloaker - Tail"
     ],
     "applied_effects": [],
     "cr": 8
@@ -1471,10 +1319,8 @@
     },
     "actions": [
       "Cloud Giant - Multi-attack",
-      "Rock",
-      "Morningstar",
-      "Morningstar",
-      "Rock"
+      "Cloud Giant - Rock",
+      "Cloud Giant - Morningstar"
     ],
     "applied_effects": [],
     "cr": 9
@@ -1493,8 +1339,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Cockatrice - Bite"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -1513,8 +1358,7 @@
       "CHA": 0
     },
     "actions": [
-      "Club",
-      "Club"
+      "Commoner - Club"
     ],
     "applied_effects": [],
     "cr": 0
@@ -1533,10 +1377,8 @@
       "CHA": -4
     },
     "actions": [
-      "Constrict",
-      "Constrict",
-      "Bite",
-      "Bite"
+      "Constrictor Snake - Constrict",
+      "Constrictor Snake - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -1555,8 +1397,7 @@
       "CHA": 3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Copper Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1575,32 +1416,11 @@
       "CHA": 6
     },
     "actions": [
-      "Bite",
-      "Constrict",
-      "Constrict",
-      "Bite"
+      "Couatl - Constrict",
+      "Couatl - Bite"
     ],
     "applied_effects": [],
     "cr": 4
-  },
-  "Crab": {
-    "name": "Crab",
-    "hp": 2,
-    "ac": 11,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 0,
-      "CON": 0,
-      "WIS": -1,
-      "INT": -5,
-      "CHA": -4
-    },
-    "actions": [
-      "Claw"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Crocodile": {
     "name": "Crocodile",
@@ -1616,8 +1436,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Crocodile - Bite"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -1636,8 +1455,7 @@
       "CHA": 2
     },
     "actions": [
-      "Dagger",
-      "Dagger"
+      "Cult Fanatic - Dagger"
     ],
     "applied_effects": [],
     "cr": 2
@@ -1656,8 +1474,7 @@
       "CHA": 0
     },
     "actions": [
-      "Scimitar",
-      "Scimitar"
+      "Cultist - Scimitar"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -1676,7 +1493,7 @@
       "CHA": -3
     },
     "actions": [
-      "Crush"
+      "Darkmantle - Crush"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -1696,8 +1513,7 @@
     },
     "actions": [
       "Death Dog - Multi-attack",
-      "Bite",
-      "Bite"
+      "Death Dog - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1716,8 +1532,8 @@
       "CHA": -1
     },
     "actions": [
-      "War Pick",
-      "Poisoned Dart"
+      "Deep Gnome (Svirfneblin) - War Pick",
+      "Deep Gnome (Svirfneblin) - Poisoned Dart"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -1736,8 +1552,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Deer - Bite"
     ],
     "applied_effects": [],
     "cr": 0
@@ -1756,7 +1571,7 @@
       "CHA": 9
     },
     "actions": [
-      "Mace"
+      "Deva - Mace"
     ],
     "applied_effects": [],
     "cr": 10
@@ -1775,8 +1590,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Dire Wolf - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1796,8 +1610,7 @@
     },
     "actions": [
       "Djinni - Multi-attack",
-      "Scimitar",
-      "Scimitar"
+      "Djinni - Scimitar"
     ],
     "applied_effects": [],
     "cr": 11
@@ -1816,8 +1629,7 @@
       "CHA": 2
     },
     "actions": [
-      "Slam",
-      "Slam"
+      "Doppelganger - Slam"
     ],
     "applied_effects": [],
     "cr": 3
@@ -1836,8 +1648,7 @@
       "CHA": -2
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Draft Horse - Hooves"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -1856,12 +1667,9 @@
       "CHA": 1
     },
     "actions": [
-      "Bite",
-      "Tail",
-      "Claw",
-      "Bite",
-      "Claw",
-      "Tail"
+      "Dragon Turtle - Bite",
+      "Dragon Turtle - Tail",
+      "Dragon Turtle - Claw"
     ],
     "applied_effects": [],
     "cr": 17
@@ -1880,10 +1688,8 @@
       "CHA": -4
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Bite",
-      "Claws"
+      "Dretch - Bite",
+      "Dretch - Claws"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -1902,12 +1708,9 @@
       "CHA": 1
     },
     "actions": [
-      "Longsword",
-      "Longsword",
-      "Longbow",
-      "Longbow",
-      "Bite",
-      "Bite"
+      "Drider - Longsword",
+      "Drider - Longbow",
+      "Drider - Bite"
     ],
     "applied_effects": [],
     "cr": 6
@@ -1926,9 +1729,8 @@
       "CHA": 1
     },
     "actions": [
-      "Shortsword",
-      "Shortsword",
-      "Hand Crossbow"
+      "Drow - Shortsword",
+      "Drow - Hand Crossbow"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -1947,7 +1749,7 @@
       "CHA": 0
     },
     "actions": [
-      "Quarterstaff"
+      "Druid - Quarterstaff"
     ],
     "applied_effects": [],
     "cr": 2
@@ -1966,8 +1768,7 @@
       "CHA": 4
     },
     "actions": [
-      "Club",
-      "Club"
+      "Dryad - Club"
     ],
     "applied_effects": [],
     "cr": 1
@@ -1986,10 +1787,8 @@
       "CHA": -1
     },
     "actions": [
-      "Javelin",
-      "War Pick",
-      "War Pick",
-      "Javelin"
+      "Duergar - War Pick",
+      "Duergar - Javelin"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2008,8 +1807,7 @@
       "CHA": 0
     },
     "actions": [
-      "Claws",
-      "Claws"
+      "Dust Mephit - Claws"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -2028,7 +1826,7 @@
       "CHA": -2
     },
     "actions": [
-      "Talons"
+      "Eagle - Talons"
     ],
     "applied_effects": [],
     "cr": 0
@@ -2048,8 +1846,7 @@
     },
     "actions": [
       "Earth Elemental - Multi-attack",
-      "Slam",
-      "Slam"
+      "Earth Elemental - Slam"
     ],
     "applied_effects": [],
     "cr": 5
@@ -2069,8 +1866,7 @@
     },
     "actions": [
       "Efreeti - Hurl Flame",
-      "Scimitar",
-      "Scimitar"
+      "Efreeti - Scimitar"
     ],
     "applied_effects": [],
     "cr": 11
@@ -2089,30 +1885,11 @@
       "CHA": -2
     },
     "actions": [
-      "Stomp",
-      "Gore"
+      "Elephant - Stomp",
+      "Elephant - Gore"
     ],
     "applied_effects": [],
     "cr": 4
-  },
-  "Elk": {
-    "name": "Elk",
-    "hp": 13,
-    "ac": 10,
-    "proficiency": 2,
-    "saves": {
-      "STR": 3,
-      "DEX": 0,
-      "CON": 1,
-      "WIS": 0,
-      "INT": -4,
-      "CHA": -2
-    },
-    "actions": [
-      "Hooves"
-    ],
-    "applied_effects": [],
-    "cr": 0.25
   },
   "Erinyes": {
     "name": "Erinyes",
@@ -2128,10 +1905,8 @@
       "CHA": 8
     },
     "actions": [
-      "Longsword",
-      "Longbow",
-      "Longsword",
-      "Longbow"
+      "Erinyes - Longsword",
+      "Erinyes - Longbow"
     ],
     "applied_effects": [],
     "cr": 12
@@ -2150,11 +1925,9 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Bite",
-      "Claws",
-      "Variant: Web Garrote"
+      "Ettercap - Bite",
+      "Ettercap - Claws",
+      "Ettercap - Variant: Web Garrote"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2173,9 +1946,8 @@
       "CHA": -1
     },
     "actions": [
-      "Morningstar",
-      "Battleaxe",
-      "Morningstar"
+      "Ettin - Battleaxe",
+      "Ettin - Morningstar"
     ],
     "applied_effects": [],
     "cr": 4
@@ -2195,7 +1967,7 @@
     },
     "actions": [
       "Fire Elemental - Multi-attack",
-      "Touch"
+      "Fire Elemental - Touch"
     ],
     "applied_effects": [],
     "cr": 5
@@ -2215,9 +1987,8 @@
     },
     "actions": [
       "Fire Giant - Multi-attack",
-      "Rock",
-      "Rock",
-      "Greatsword"
+      "Fire Giant - Rock",
+      "Fire Giant - Greatsword"
     ],
     "applied_effects": [],
     "cr": 9
@@ -2237,30 +2008,10 @@
     },
     "actions": [
       "Flesh Golem - Multi-attack",
-      "Slam",
-      "Slam"
+      "Flesh Golem - Slam"
     ],
     "applied_effects": [],
     "cr": 5
-  },
-  "Flying Snake": {
-    "name": "Flying Snake",
-    "hp": 5,
-    "ac": 14,
-    "proficiency": 2,
-    "saves": {
-      "STR": -3,
-      "DEX": 4,
-      "CON": 0,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -3
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0.125
   },
   "Flying Sword": {
     "name": "Flying Sword",
@@ -2276,8 +2027,7 @@
       "CHA": -5
     },
     "actions": [
-      "Longsword",
-      "Longsword"
+      "Flying Sword - Longsword"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2297,10 +2047,8 @@
     },
     "actions": [
       "Frost Giant - Multi-attack",
-      "Rock",
-      "Rock",
-      "Greataxe",
-      "Greataxe"
+      "Frost Giant - Rock",
+      "Frost Giant - Greataxe"
     ],
     "applied_effects": [],
     "cr": 8
@@ -2319,10 +2067,8 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claws",
-      "Claws"
+      "Gargoyle - Bite",
+      "Gargoyle - Claws"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2341,8 +2087,7 @@
       "CHA": -5
     },
     "actions": [
-      "Pseudopod",
-      "Pseudopod"
+      "Gelatinous Cube - Pseudopod"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2361,10 +2106,8 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Bite",
-      "Claws"
+      "Ghast - Bite",
+      "Ghast - Claws"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2383,7 +2126,7 @@
       "CHA": 3
     },
     "actions": [
-      "Withering Touch"
+      "Ghost - Withering Touch"
     ],
     "applied_effects": [],
     "cr": 4
@@ -2402,9 +2145,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claws"
+      "Ghoul - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2424,10 +2165,8 @@
     },
     "actions": [
       "Giant Ape - Multi-attack",
-      "Rock",
-      "Rock",
-      "Fist",
-      "Fist"
+      "Giant Ape - Rock",
+      "Giant Ape - Fist"
     ],
     "applied_effects": [],
     "cr": 7
@@ -2446,10 +2185,8 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Bite",
-      "Claws"
+      "Giant Badger - Bite",
+      "Giant Badger - Claws"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2468,8 +2205,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Bat - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2488,8 +2224,7 @@
       "CHA": -3
     },
     "actions": [
-      "Tusk",
-      "Tusk"
+      "Giant Boar - Tusk"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2508,8 +2243,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Centipede - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2528,10 +2262,8 @@
       "CHA": -4
     },
     "actions": [
-      "Constrict",
-      "Bite",
-      "Constrict",
-      "Bite"
+      "Giant Constrictor Snake - Constrict",
+      "Giant Constrictor Snake - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2550,8 +2282,7 @@
       "CHA": -4
     },
     "actions": [
-      "Claw",
-      "Claw"
+      "Giant Crab - Claw"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -2570,10 +2301,8 @@
       "CHA": -2
     },
     "actions": [
-      "Tail",
-      "Bite",
-      "Tail",
-      "Bite"
+      "Giant Crocodile - Bite",
+      "Giant Crocodile - Tail"
     ],
     "applied_effects": [],
     "cr": 5
@@ -2592,10 +2321,8 @@
       "CHA": 0
     },
     "actions": [
-      "Talons",
-      "Beak",
-      "Beak",
-      "Talons"
+      "Giant Eagle - Talons",
+      "Giant Eagle - Beak"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2614,9 +2341,8 @@
       "CHA": 0
     },
     "actions": [
-      "Hooves",
-      "Ram",
-      "Hooves"
+      "Giant Elk - Hooves",
+      "Giant Elk - Ram"
     ],
     "applied_effects": [],
     "cr": 2
@@ -2635,8 +2361,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Fire Beetle - Bite"
     ],
     "applied_effects": [],
     "cr": 0
@@ -2655,8 +2380,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Frog - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2675,8 +2399,7 @@
       "CHA": -2
     },
     "actions": [
-      "Ram",
-      "Ram"
+      "Giant Goat - Ram"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -2695,8 +2418,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Hyena - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2715,8 +2437,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Lizard - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2735,8 +2456,7 @@
       "CHA": -3
     },
     "actions": [
-      "Tentacles",
-      "Tentacles"
+      "Giant Octopus - Tentacles"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2755,8 +2475,7 @@
       "CHA": 0
     },
     "actions": [
-      "Talons",
-      "Talons"
+      "Giant Owl - Talons"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2775,8 +2494,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Poisonous Snake - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -2795,8 +2513,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Rat - Bite"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -2815,8 +2532,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Rat (Diseased) - Bite"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -2835,10 +2551,8 @@
       "CHA": -4
     },
     "actions": [
-      "Sting",
-      "Sting",
-      "Claw",
-      "Claw"
+      "Giant Scorpion - Sting",
+      "Giant Scorpion - Claw"
     ],
     "applied_effects": [],
     "cr": 3
@@ -2857,8 +2571,7 @@
       "CHA": -3
     },
     "actions": [
-      "Ram",
-      "Ram"
+      "Giant Sea Horse - Ram"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -2877,8 +2590,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Shark - Bite"
     ],
     "applied_effects": [],
     "cr": 5
@@ -2897,8 +2609,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Spider - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2917,8 +2628,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Toad - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2937,10 +2647,8 @@
       "CHA": -2
     },
     "actions": [
-      "Talons",
-      "Talons",
-      "Beak",
-      "Beak"
+      "Giant Vulture - Talons",
+      "Giant Vulture - Beak"
     ],
     "applied_effects": [],
     "cr": 1
@@ -2959,8 +2667,7 @@
       "CHA": -4
     },
     "actions": [
-      "Sting",
-      "Sting"
+      "Giant Wasp - Sting"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -2979,8 +2686,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Weasel - Bite"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -2999,8 +2705,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Giant Wolf Spider - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -3019,7 +2724,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bites"
+      "Gibbering Mouther - Bites"
     ],
     "applied_effects": [],
     "cr": 2
@@ -3039,10 +2744,8 @@
     },
     "actions": [
       "Glabrezu - Multi-attack",
-      "Fist",
-      "Pincer",
-      "Pincer",
-      "Fist"
+      "Glabrezu - Pincer",
+      "Glabrezu - Fist"
     ],
     "applied_effects": [],
     "cr": 9
@@ -3061,8 +2764,8 @@
       "CHA": 2
     },
     "actions": [
-      "Spear",
-      "Shield Bash"
+      "Gladiator - Spear",
+      "Gladiator - Shield Bash"
     ],
     "applied_effects": [],
     "cr": 5
@@ -3081,12 +2784,9 @@
       "CHA": -2
     },
     "actions": [
-      "Longbow",
-      "Spear",
-      "Longbow",
-      "Bite",
-      "Spear",
-      "Bite"
+      "Gnoll - Longbow",
+      "Gnoll - Spear",
+      "Gnoll - Bite"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -3105,8 +2805,7 @@
       "CHA": -3
     },
     "actions": [
-      "Ram",
-      "Ram"
+      "Goat - Ram"
     ],
     "applied_effects": [],
     "cr": 0
@@ -3125,9 +2824,8 @@
       "CHA": -1
     },
     "actions": [
-      "Scimitar",
-      "Scimitar",
-      "Shortbow"
+      "Goblin - Scimitar",
+      "Goblin - Shortbow"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -3146,8 +2844,7 @@
       "CHA": 5
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Gold Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 3
@@ -3166,10 +2863,8 @@
       "CHA": -2
     },
     "actions": [
-      "Hooves",
-      "Gore",
-      "Gore",
-      "Hooves"
+      "Gorgon - Gore",
+      "Gorgon - Hooves"
     ],
     "applied_effects": [],
     "cr": 5
@@ -3188,8 +2883,7 @@
       "CHA": -4
     },
     "actions": [
-      "Pseudopod",
-      "Pseudopod"
+      "Gray Ooze - Pseudopod"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -3208,8 +2902,7 @@
       "CHA": 3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Green Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -3228,8 +2921,7 @@
       "CHA": 2
     },
     "actions": [
-      "Claws",
-      "Claws"
+      "Green Hag - Claws"
     ],
     "applied_effects": [],
     "cr": 3
@@ -3248,10 +2940,8 @@
       "CHA": -3
     },
     "actions": [
-      "Tentacles",
-      "Tentacles",
-      "Beak",
-      "Beak"
+      "Grick - Tentacles",
+      "Grick - Beak"
     ],
     "applied_effects": [],
     "cr": 2
@@ -3270,10 +2960,8 @@
       "CHA": -1
     },
     "actions": [
-      "Claws",
-      "Claws",
-      "Beak",
-      "Beak"
+      "Griffon - Claws",
+      "Griffon - Beak"
     ],
     "applied_effects": [],
     "cr": 2
@@ -3292,7 +2980,7 @@
       "CHA": -2
     },
     "actions": [
-      "Spiked Bone Club"
+      "Grimlock - Spiked Bone Club"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -3311,8 +2999,7 @@
       "CHA": 0
     },
     "actions": [
-      "Spear",
-      "Spear"
+      "Guard - Spear"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -3331,9 +3018,8 @@
       "CHA": 8
     },
     "actions": [
-      "Spit Poison",
-      "Bite",
-      "Bite"
+      "Guardian Naga - Spit Poison",
+      "Guardian Naga - Bite"
     ],
     "applied_effects": [],
     "cr": 10
@@ -3353,8 +3039,7 @@
     },
     "actions": [
       "Gynosphinx - Multi-attack",
-      "Claw",
-      "Claw"
+      "Gynosphinx - Claw"
     ],
     "applied_effects": [],
     "cr": 11
@@ -3373,11 +3058,9 @@
       "CHA": 0
     },
     "actions": [
-      "Heavy Crossbow",
-      "Longsword",
-      "Longsword",
-      "Shortsword",
-      "Shortsword"
+      "Half-Red Dragon Veteran - Heavy Crossbow",
+      "Half-Red Dragon Veteran - Longsword",
+      "Half-Red Dragon Veteran - Shortsword"
     ],
     "applied_effects": [],
     "cr": 5
@@ -3396,32 +3079,11 @@
       "CHA": 1
     },
     "actions": [
-      "Claws",
-      "Claws",
-      "Club",
-      "Club"
+      "Harpy - Claws",
+      "Harpy - Club"
     ],
     "applied_effects": [],
     "cr": 1
-  },
-  "Hawk": {
-    "name": "Hawk",
-    "hp": 1,
-    "ac": 13,
-    "proficiency": 2,
-    "saves": {
-      "STR": -3,
-      "DEX": 3,
-      "CON": -1,
-      "WIS": 2,
-      "INT": -4,
-      "CHA": -2
-    },
-    "actions": [
-      "Talons"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Hell Hound": {
     "name": "Hell Hound",
@@ -3437,8 +3099,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Hell Hound - Bite"
     ],
     "applied_effects": [],
     "cr": 3
@@ -3457,10 +3118,8 @@
       "CHA": 1
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Bite",
-      "Claws"
+      "Hezrou - Bite",
+      "Hezrou - Claws"
     ],
     "applied_effects": [],
     "cr": 8
@@ -3480,9 +3139,8 @@
     },
     "actions": [
       "Hill Giant - Multi-attack",
-      "Rock",
-      "Rock",
-      "Greatclub"
+      "Hill Giant - Rock",
+      "Hill Giant - Greatclub"
     ],
     "applied_effects": [],
     "cr": 5
@@ -3501,10 +3159,8 @@
       "CHA": -1
     },
     "actions": [
-      "Beak",
-      "Claws",
-      "Claws",
-      "Beak"
+      "Hippogriff - Beak",
+      "Hippogriff - Claws"
     ],
     "applied_effects": [],
     "cr": 1
@@ -3523,32 +3179,11 @@
       "CHA": -1
     },
     "actions": [
-      "Longsword",
-      "Longsword",
-      "Longbow",
-      "Longbow"
+      "Hobgoblin - Longsword",
+      "Hobgoblin - Longbow"
     ],
     "applied_effects": [],
     "cr": 0.5
-  },
-  "Homunculus": {
-    "name": "Homunculus",
-    "hp": 5,
-    "ac": 13,
-    "proficiency": 2,
-    "saves": {
-      "STR": -3,
-      "DEX": 2,
-      "CON": 0,
-      "WIS": 0,
-      "INT": 0,
-      "CHA": -2
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Horned Devil": {
     "name": "Horned Devil",
@@ -3565,9 +3200,8 @@
     },
     "actions": [
       "Horned Devil - Hurl Flame",
-      "Fork",
-      "Tail",
-      "Tail"
+      "Horned Devil - Fork",
+      "Horned Devil - Tail"
     ],
     "applied_effects": [],
     "cr": 11
@@ -3586,8 +3220,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Hunter Shark - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -3606,8 +3239,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Hydra - Bite"
     ],
     "applied_effects": [],
     "cr": 8
@@ -3626,8 +3258,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Hyena - Bite"
     ],
     "applied_effects": [],
     "cr": 0
@@ -3646,12 +3277,9 @@
       "CHA": 9
     },
     "actions": [
-      "Claws",
-      "Bite",
-      "Tail",
-      "Claws",
-      "Tail",
-      "Bite"
+      "Ice Devil - Claws",
+      "Ice Devil - Bite",
+      "Ice Devil - Tail"
     ],
     "applied_effects": [],
     "cr": 14
@@ -3670,8 +3298,7 @@
       "CHA": 1
     },
     "actions": [
-      "Claws",
-      "Claws"
+      "Ice Mephit - Claws"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -3690,7 +3317,7 @@
       "CHA": 2
     },
     "actions": [
-      "Sting (Bite in Beast Form)"
+      "Imp - Sting (Bite in Beast Form)"
     ],
     "applied_effects": [],
     "cr": 1
@@ -3710,8 +3337,7 @@
     },
     "actions": [
       "Invisible Stalker - Multi-attack",
-      "Slam",
-      "Slam"
+      "Invisible Stalker - Slam"
     ],
     "applied_effects": [],
     "cr": 6
@@ -3730,9 +3356,8 @@
       "CHA": -5
     },
     "actions": [
-      "Sword",
-      "Slam",
-      "Slam"
+      "Iron Golem - Sword",
+      "Iron Golem - Slam"
     ],
     "applied_effects": [],
     "cr": 16
@@ -3751,30 +3376,10 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Jackal - Bite"
     ],
     "applied_effects": [],
     "cr": 0
-  },
-  "Killer Whale": {
-    "name": "Killer Whale",
-    "hp": 90,
-    "ac": 12,
-    "proficiency": 2,
-    "saves": {
-      "STR": 4,
-      "DEX": 0,
-      "CON": 1,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -2
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 3
   },
   "Knight": {
     "name": "Knight",
@@ -3790,10 +3395,8 @@
       "CHA": 2
     },
     "actions": [
-      "Greatsword",
-      "Heavy Crossbow",
-      "Heavy Crossbow",
-      "Greatsword"
+      "Knight - Heavy Crossbow",
+      "Knight - Greatsword"
     ],
     "applied_effects": [],
     "cr": 3
@@ -3812,9 +3415,8 @@
       "CHA": -1
     },
     "actions": [
-      "Dagger",
-      "Dagger",
-      "Sling"
+      "Kobold - Dagger",
+      "Kobold - Sling"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -3833,10 +3435,8 @@
       "CHA": 5
     },
     "actions": [
-      "Bite",
-      "Tentacle",
-      "Tentacle",
-      "Bite"
+      "Kraken - Bite",
+      "Kraken - Tentacle"
     ],
     "applied_effects": [],
     "cr": 23
@@ -3855,10 +3455,8 @@
       "CHA": 3
     },
     "actions": [
-      "Claws",
-      "Claws",
-      "Dagger",
-      "Dagger"
+      "Lamia - Claws",
+      "Lamia - Dagger"
     ],
     "applied_effects": [],
     "cr": 4
@@ -3877,8 +3475,7 @@
       "CHA": -4
     },
     "actions": [
-      "Fist",
-      "Fist"
+      "Lemure - Fist"
     ],
     "applied_effects": [],
     "cr": 0
@@ -3916,32 +3513,11 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Claw",
-      "Bite",
-      "Claw"
+      "Lion - Bite",
+      "Lion - Claw"
     ],
     "applied_effects": [],
     "cr": 1
-  },
-  "Lizard": {
-    "name": "Lizard",
-    "hp": 2,
-    "ac": 10,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 0,
-      "CON": 0,
-      "WIS": -1,
-      "INT": -5,
-      "CHA": -4
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Lizardfolk": {
     "name": "Lizardfolk",
@@ -3957,12 +3533,10 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Heavy Club",
-      "Javelin",
-      "Javelin",
-      "Spiked Shield"
+      "Lizardfolk - Bite",
+      "Lizardfolk - Heavy Club",
+      "Lizardfolk - Javelin",
+      "Lizardfolk - Spiked Shield"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -3981,8 +3555,7 @@
       "CHA": 0
     },
     "actions": [
-      "Dagger",
-      "Dagger"
+      "Mage - Dagger"
     ],
     "applied_effects": [],
     "cr": 6
@@ -4001,8 +3574,7 @@
       "CHA": 0
     },
     "actions": [
-      "Claws",
-      "Claws"
+      "Magma Mephit - Claws"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -4021,8 +3593,7 @@
       "CHA": 0
     },
     "actions": [
-      "Touch",
-      "Touch"
+      "Magmin - Touch"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -4041,10 +3612,8 @@
       "CHA": -2
     },
     "actions": [
-      "Stomp",
-      "Gore",
-      "Stomp",
-      "Gore"
+      "Mammoth - Stomp",
+      "Mammoth - Gore"
     ],
     "applied_effects": [],
     "cr": 6
@@ -4063,11 +3632,9 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Tail Spike",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Manticore - Bite",
+      "Manticore - Tail Spike",
+      "Manticore - Claw"
     ],
     "applied_effects": [],
     "cr": 3
@@ -4086,10 +3653,8 @@
       "CHA": 10
     },
     "actions": [
-      "Tail",
-      "Longsword",
-      "Tail",
-      "Longsword"
+      "Marilith - Tail",
+      "Marilith - Longsword"
     ],
     "applied_effects": [],
     "cr": 16
@@ -4108,8 +3673,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Mastiff - Bite"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -4128,11 +3692,9 @@
       "CHA": 2
     },
     "actions": [
-      "Longbow",
-      "Longbow",
-      "Shortsword",
-      "Shortsword",
-      "Snake Hair"
+      "Medusa - Longbow",
+      "Medusa - Shortsword",
+      "Medusa - Snake Hair"
     ],
     "applied_effects": [],
     "cr": 6
@@ -4151,8 +3713,7 @@
       "CHA": 1
     },
     "actions": [
-      "Spear",
-      "Spear"
+      "Merfolk - Spear"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -4171,11 +3732,9 @@
       "CHA": -1
     },
     "actions": [
-      "Harpoon",
-      "Bite",
-      "Bite",
-      "Claws",
-      "Claws"
+      "Merrow - Harpoon",
+      "Merrow - Bite",
+      "Merrow - Claws"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4194,10 +3753,8 @@
       "CHA": -1
     },
     "actions": [
-      "Pseudopod",
-      "Bite",
-      "Bite",
-      "Pseudopod"
+      "Mimic - Pseudopod",
+      "Mimic - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4216,10 +3773,8 @@
       "CHA": -1
     },
     "actions": [
-      "Greataxe",
-      "Gore",
-      "Greataxe",
-      "Gore"
+      "Minotaur - Greataxe",
+      "Minotaur - Gore"
     ],
     "applied_effects": [],
     "cr": 3
@@ -4238,10 +3793,8 @@
       "CHA": -3
     },
     "actions": [
-      "Greataxe",
-      "Greataxe",
-      "Gore",
-      "Gore"
+      "Minotaur Skeleton - Greataxe",
+      "Minotaur Skeleton - Gore"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4260,8 +3813,7 @@
       "CHA": -3
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Mule - Hooves"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -4280,7 +3832,7 @@
       "CHA": 1
     },
     "actions": [
-      "Rotting Fist"
+      "Mummy - Rotting Fist"
     ],
     "applied_effects": [],
     "cr": 3
@@ -4299,8 +3851,7 @@
       "CHA": 8
     },
     "actions": [
-      "Rotting Fist",
-      "Rotting Fist"
+      "Mummy Lord - Rotting Fist"
     ],
     "applied_effects": [],
     "cr": 15
@@ -4319,10 +3870,8 @@
       "CHA": 7
     },
     "actions": [
-      "Bite",
-      "Claw",
-      "Bite",
-      "Claw"
+      "Nalfeshnee - Bite",
+      "Nalfeshnee - Claw"
     ],
     "applied_effects": [],
     "cr": 13
@@ -4341,7 +3890,7 @@
       "CHA": 3
     },
     "actions": [
-      "Claws (Hag Form Only)"
+      "Night Hag - Claws (Hag Form Only)"
     ],
     "applied_effects": [],
     "cr": 5
@@ -4360,8 +3909,7 @@
       "CHA": 2
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Nightmare - Hooves"
     ],
     "applied_effects": [],
     "cr": 3
@@ -4380,7 +3928,7 @@
       "CHA": 3
     },
     "actions": [
-      "Rapier"
+      "Noble - Rapier"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -4399,30 +3947,10 @@
       "CHA": -5
     },
     "actions": [
-      "Pseudopod",
-      "Pseudopod"
+      "Ochre Jelly - Pseudopod"
     ],
     "applied_effects": [],
     "cr": 2
-  },
-  "Octopus": {
-    "name": "Octopus",
-    "hp": 3,
-    "ac": 12,
-    "proficiency": 2,
-    "saves": {
-      "STR": -3,
-      "DEX": 2,
-      "CON": 0,
-      "WIS": 0,
-      "INT": -4,
-      "CHA": -3
-    },
-    "actions": [
-      "Tentacles"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Ogre": {
     "name": "Ogre",
@@ -4438,10 +3966,8 @@
       "CHA": -2
     },
     "actions": [
-      "Greatclub",
-      "Greatclub",
-      "Javelin",
-      "Javelin"
+      "Ogre - Greatclub",
+      "Ogre - Javelin"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4460,8 +3986,7 @@
       "CHA": -3
     },
     "actions": [
-      "Morningstar",
-      "Morningstar"
+      "Ogre Zombie - Morningstar"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4480,9 +4005,8 @@
       "CHA": 5
     },
     "actions": [
-      "Glaive",
-      "Glaive",
-      "Claw (Oni Form Only)"
+      "Oni - Glaive",
+      "Oni - Claw (Oni Form Only)"
     ],
     "applied_effects": [],
     "cr": 7
@@ -4501,10 +4025,8 @@
       "CHA": 0
     },
     "actions": [
-      "Greataxe",
-      "Greataxe",
-      "Javelin",
-      "Javelin"
+      "Orc - Greataxe",
+      "Orc - Javelin"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -4523,32 +4045,11 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Tentacle",
-      "Tentacle"
+      "Otyugh - Bite",
+      "Otyugh - Tentacle"
     ],
     "applied_effects": [],
     "cr": 5
-  },
-  "Owl": {
-    "name": "Owl",
-    "hp": 1,
-    "ac": 11,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 1,
-      "CON": -1,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -2
-    },
-    "actions": [
-      "Talons"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Owlbear": {
     "name": "Owlbear",
@@ -4564,10 +4065,8 @@
       "CHA": -2
     },
     "actions": [
-      "Claws",
-      "Beak",
-      "Beak",
-      "Claws"
+      "Owlbear - Claws",
+      "Owlbear - Beak"
     ],
     "applied_effects": [],
     "cr": 3
@@ -4586,10 +4085,8 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Claw",
-      "Bite",
-      "Claw"
+      "Panther - Bite",
+      "Panther - Claw"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -4608,8 +4105,7 @@
       "CHA": 3
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Pegasus - Hooves"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4628,8 +4124,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Phase Spider - Bite"
     ],
     "applied_effects": [],
     "cr": 3
@@ -4648,14 +4143,10 @@
       "CHA": 7
     },
     "actions": [
-      "Mace",
-      "Tail",
-      "Bite",
-      "Tail",
-      "Claw",
-      "Bite",
-      "Mace",
-      "Claw"
+      "Pit Fiend - Tail",
+      "Pit Fiend - Bite",
+      "Pit Fiend - Claw",
+      "Pit Fiend - Mace"
     ],
     "applied_effects": [],
     "cr": 20
@@ -4674,8 +4165,7 @@
       "CHA": 12
     },
     "actions": [
-      "Greatsword",
-      "Greatsword"
+      "Planetar - Greatsword"
     ],
     "applied_effects": [],
     "cr": 16
@@ -4694,30 +4184,10 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Plesiosaurus - Bite"
     ],
     "applied_effects": [],
     "cr": 2
-  },
-  "Poisonous Snake": {
-    "name": "Poisonous Snake",
-    "hp": 2,
-    "ac": 13,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 3,
-      "CON": 0,
-      "WIS": 0,
-      "INT": -5,
-      "CHA": -4
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0.125
   },
   "Polar Bear": {
     "name": "Polar Bear",
@@ -4733,10 +4203,8 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Claws",
-      "Bite"
+      "Polar Bear - Claws",
+      "Polar Bear - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4755,8 +4223,7 @@
       "CHA": -2
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Pony - Hooves"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -4775,8 +4242,7 @@
       "CHA": 1
     },
     "actions": [
-      "Mace",
-      "Mace"
+      "Priest - Mace"
     ],
     "applied_effects": [],
     "cr": 2
@@ -4795,10 +4261,8 @@
       "CHA": 0
     },
     "actions": [
-      "Bite",
-      "Sting",
-      "Bite",
-      "Sting"
+      "Pseudodragon - Bite",
+      "Pseudodragon - Sting"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -4817,9 +4281,8 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Tail Stinger",
-      "Bite"
+      "Purple Worm - Bite",
+      "Purple Worm - Tail Stinger"
     ],
     "applied_effects": [],
     "cr": 15
@@ -4838,29 +4301,10 @@
       "CHA": 0
     },
     "actions": [
-      "Claw (Bite in Beast Form)"
+      "Quasit - Claw (Bite in Beast Form)"
     ],
     "applied_effects": [],
     "cr": 1
-  },
-  "Quipper": {
-    "name": "Quipper",
-    "hp": 1,
-    "ac": 13,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 3,
-      "CON": -1,
-      "WIS": -2,
-      "INT": -5,
-      "CHA": -4
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Rakshasa": {
     "name": "Rakshasa",
@@ -4877,49 +4321,10 @@
     },
     "actions": [
       "Rakshasa - Multi-attack",
-      "Claw",
-      "Claw"
+      "Rakshasa - Claw"
     ],
     "applied_effects": [],
     "cr": 13
-  },
-  "Rat": {
-    "name": "Rat",
-    "hp": 1,
-    "ac": 10,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 0,
-      "CON": -1,
-      "WIS": 0,
-      "INT": -4,
-      "CHA": -3
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
-  },
-  "Raven": {
-    "name": "Raven",
-    "hp": 1,
-    "ac": 12,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 2,
-      "CON": -1,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -2
-    },
-    "actions": [
-      "Beak"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Red Dragon Wyrmling": {
     "name": "Red Dragon Wyrmling",
@@ -4935,8 +4340,7 @@
       "CHA": 4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Red Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 4
@@ -4955,8 +4359,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Reef Shark - Bite"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -4975,8 +4378,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Remorhaz - Bite"
     ],
     "applied_effects": [],
     "cr": 11
@@ -4995,8 +4397,7 @@
       "CHA": -2
     },
     "actions": [
-      "Gore",
-      "Gore"
+      "Rhinoceros - Gore"
     ],
     "applied_effects": [],
     "cr": 2
@@ -5015,8 +4416,7 @@
       "CHA": -2
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Riding Horse - Hooves"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -5035,10 +4435,8 @@
       "CHA": 3
     },
     "actions": [
-      "Beak",
-      "Talons",
-      "Beak",
-      "Talons"
+      "Roc - Beak",
+      "Roc - Talons"
     ],
     "applied_effects": [],
     "cr": 11
@@ -5057,8 +4455,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Roper - Bite"
     ],
     "applied_effects": [],
     "cr": 5
@@ -5077,8 +4474,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Rust Monster - Bite"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5097,10 +4493,8 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Claw",
-      "Claw",
-      "Bite"
+      "Saber-Toothed Tiger - Bite",
+      "Saber-Toothed Tiger - Claw"
     ],
     "applied_effects": [],
     "cr": 2
@@ -5119,12 +4513,9 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Claws",
-      "Spear",
-      "Spear",
-      "Bite",
-      "Claws"
+      "Sahuagin - Spear",
+      "Sahuagin - Bite",
+      "Sahuagin - Claws"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5143,10 +4534,8 @@
       "CHA": 1
     },
     "actions": [
-      "Tail",
-      "Spear",
-      "Tail",
-      "Spear"
+      "Salamander - Spear",
+      "Salamander - Tail"
     ],
     "applied_effects": [],
     "cr": 5
@@ -5165,34 +4554,12 @@
       "CHA": 2
     },
     "actions": [
-      "Ram",
-      "Shortsword",
-      "Shortsword",
-      "Shortbow",
-      "Shortbow",
-      "Ram"
+      "Satyr - Ram",
+      "Satyr - Shortsword",
+      "Satyr - Shortbow"
     ],
     "applied_effects": [],
     "cr": 0.5
-  },
-  "Scorpion": {
-    "name": "Scorpion",
-    "hp": 1,
-    "ac": 11,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 0,
-      "CON": -1,
-      "WIS": -1,
-      "INT": -5,
-      "CHA": -4
-    },
-    "actions": [
-      "Sting"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Scout": {
     "name": "Scout",
@@ -5208,10 +4575,8 @@
       "CHA": 0
     },
     "actions": [
-      "Longbow",
-      "Longbow",
-      "Shortsword",
-      "Shortsword"
+      "Scout - Longbow",
+      "Scout - Shortsword"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5230,8 +4595,7 @@
       "CHA": 1
     },
     "actions": [
-      "Claws",
-      "Claws"
+      "Sea Hag - Claws"
     ],
     "applied_effects": [],
     "cr": 2
@@ -5250,7 +4614,7 @@
       "CHA": -1
     },
     "actions": [
-      "Strength Drain"
+      "Shadow - Strength Drain"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5269,8 +4633,7 @@
       "CHA": -3
     },
     "actions": [
-      "Slam",
-      "Slam"
+      "Shambling Mound - Slam"
     ],
     "applied_effects": [],
     "cr": 5
@@ -5290,8 +4653,7 @@
     },
     "actions": [
       "Shield Guardian - Multi-attack",
-      "Fist",
-      "Fist"
+      "Shield Guardian - Fist"
     ],
     "applied_effects": [],
     "cr": 7
@@ -5310,8 +4672,7 @@
       "CHA": 4
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Silver Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -5330,10 +4691,8 @@
       "CHA": -3
     },
     "actions": [
-      "Shortsword",
-      "Shortsword",
-      "Shortbow",
-      "Shortbow"
+      "Skeleton - Shortsword",
+      "Skeleton - Shortbow"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -5353,9 +4712,8 @@
     },
     "actions": [
       "Solar - Multi-attack",
-      "Greatsword",
-      "Greatsword",
-      "Slaying Longbow"
+      "Solar - Greatsword",
+      "Solar - Slaying Longbow"
     ],
     "applied_effects": [],
     "cr": 21
@@ -5379,25 +4737,6 @@
     "applied_effects": [],
     "cr": 1
   },
-  "Spider": {
-    "name": "Spider",
-    "hp": 1,
-    "ac": 12,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 2,
-      "CON": -1,
-      "WIS": 0,
-      "INT": -5,
-      "CHA": -4
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
-  },
   "Spirit Naga": {
     "name": "Spirit Naga",
     "hp": 75,
@@ -5412,30 +4751,10 @@
       "CHA": 6
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Spirit Naga - Bite"
     ],
     "applied_effects": [],
     "cr": 8
-  },
-  "Sprite": {
-    "name": "Sprite",
-    "hp": 2,
-    "ac": 15,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 4,
-      "CON": 0,
-      "WIS": 1,
-      "INT": 2,
-      "CHA": 0
-    },
-    "actions": [
-      "Longsword"
-    ],
-    "applied_effects": [],
-    "cr": 0.25
   },
   "Spy": {
     "name": "Spy",
@@ -5451,10 +4770,8 @@
       "CHA": 3
     },
     "actions": [
-      "Shortsword",
-      "Shortsword",
-      "Hand Crossbow",
-      "Hand Crossbow"
+      "Spy - Shortsword",
+      "Spy - Hand Crossbow"
     ],
     "applied_effects": [],
     "cr": 1
@@ -5473,8 +4790,7 @@
       "CHA": 1
     },
     "actions": [
-      "Claws",
-      "Claws"
+      "Steam Mephit - Claws"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -5493,7 +4809,7 @@
       "CHA": -2
     },
     "actions": [
-      "Blood Drain"
+      "Stirge - Blood Drain"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -5513,10 +4829,8 @@
     },
     "actions": [
       "Stone Giant - Multi-attack",
-      "Rock",
-      "Rock",
-      "Greatclub",
-      "Greatclub"
+      "Stone Giant - Rock",
+      "Stone Giant - Greatclub"
     ],
     "applied_effects": [],
     "cr": 7
@@ -5536,8 +4850,7 @@
     },
     "actions": [
       "Stone Golem - Multi-attack",
-      "Slam",
-      "Slam"
+      "Stone Golem - Slam"
     ],
     "applied_effects": [],
     "cr": 10
@@ -5556,11 +4869,9 @@
       "CHA": 9
     },
     "actions": [
-      "Greatsword",
       "Storm Giant - Multi-attack",
-      "Rock",
-      "Rock",
-      "Greatsword"
+      "Storm Giant - Rock",
+      "Storm Giant - Greatsword"
     ],
     "applied_effects": [],
     "cr": 13
@@ -5579,7 +4890,7 @@
       "CHA": 5
     },
     "actions": [
-      "Claw (Fiend Form Only)"
+      "Succubus/Incubus - Claw (Fiend Form Only)"
     ],
     "applied_effects": [],
     "cr": 4
@@ -5598,8 +4909,7 @@
       "CHA": -3
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Bats - Bites"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -5618,8 +4928,7 @@
       "CHA": -5
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Beetles - Bites"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5638,8 +4947,7 @@
       "CHA": -5
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Centipedes - Bites"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5658,8 +4966,7 @@
       "CHA": -5
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Insects - Bites"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5678,8 +4985,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Poisonous Snakes - Bites"
     ],
     "applied_effects": [],
     "cr": 2
@@ -5698,8 +5004,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Quippers - Bites"
     ],
     "applied_effects": [],
     "cr": 1
@@ -5718,8 +5023,7 @@
       "CHA": -4
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Rats - Bites"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -5738,7 +5042,7 @@
       "CHA": -2
     },
     "actions": [
-      "Beaks"
+      "Swarm of Ravens - Beaks"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -5757,8 +5061,7 @@
       "CHA": -5
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Spiders - Bites"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5777,8 +5080,7 @@
       "CHA": -5
     },
     "actions": [
-      "Bites",
-      "Bites"
+      "Swarm of Wasps - Bites"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5797,14 +5099,10 @@
       "CHA": 9
     },
     "actions": [
-      "Bite",
-      "Horns",
-      "Claw",
-      "Tail",
-      "Horns",
-      "Claw",
-      "Tail",
-      "Bite"
+      "Tarrasque - Bite",
+      "Tarrasque - Horns",
+      "Tarrasque - Claw",
+      "Tarrasque - Tail"
     ],
     "applied_effects": [],
     "cr": 30
@@ -5823,10 +5121,8 @@
       "CHA": 0
     },
     "actions": [
-      "Heavy Crossbow",
-      "Heavy Crossbow",
-      "Mace",
-      "Mace"
+      "Thug - Heavy Crossbow",
+      "Thug - Mace"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -5845,9 +5141,7 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Claw",
-      "Bite"
+      "Tiger - Bite"
     ],
     "applied_effects": [],
     "cr": 1
@@ -5866,11 +5160,9 @@
       "CHA": 1
     },
     "actions": [
-      "Rock",
-      "Rock",
+      "Treant - Rock",
       "Treant - Multi-attack",
-      "Slam",
-      "Slam"
+      "Treant - Slam"
     ],
     "applied_effects": [],
     "cr": 9
@@ -5889,8 +5181,7 @@
       "CHA": -1
     },
     "actions": [
-      "Spear",
-      "Spear"
+      "Tribal Warrior - Spear"
     ],
     "applied_effects": [],
     "cr": 0.125
@@ -5909,10 +5200,8 @@
       "CHA": -3
     },
     "actions": [
-      "Stomp",
-      "Gore",
-      "Stomp",
-      "Gore"
+      "Triceratops - Gore",
+      "Triceratops - Stomp"
     ],
     "applied_effects": [],
     "cr": 5
@@ -5931,10 +5220,8 @@
       "CHA": -2
     },
     "actions": [
-      "Claw",
-      "Bite",
-      "Claw",
-      "Bite"
+      "Troll - Claw",
+      "Troll - Bite"
     ],
     "applied_effects": [],
     "cr": 5
@@ -5953,10 +5240,8 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Tail",
-      "Tail",
-      "Bite"
+      "Tyrannosaurus Rex - Bite",
+      "Tyrannosaurus Rex - Tail"
     ],
     "applied_effects": [],
     "cr": 8
@@ -5975,9 +5260,8 @@
       "CHA": 3
     },
     "actions": [
-      "Hooves",
-      "Horn",
-      "Hooves"
+      "Unicorn - Hooves",
+      "Unicorn - Horn"
     ],
     "applied_effects": [],
     "cr": 5
@@ -5996,30 +5280,11 @@
       "CHA": 9
     },
     "actions": [
-      "Bite (Bat or Vampire Form Only)",
-      "Unarmed Strike (Vampire Form Only)"
+      "Vampire - Bite (Bat or Vampire Form Only)",
+      "Vampire - Unarmed Strike (Vampire Form Only)"
     ],
     "applied_effects": [],
     "cr": 13
-  },
-  "Vampire Spawn": {
-    "name": "Vampire Spawn",
-    "hp": 82,
-    "ac": 15,
-    "proficiency": 3,
-    "saves": {
-      "STR": 3,
-      "DEX": 6,
-      "CON": 3,
-      "WIS": 3,
-      "INT": 0,
-      "CHA": 1
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 5
   },
   "Veteran": {
     "name": "Veteran",
@@ -6035,12 +5300,9 @@
       "CHA": 0
     },
     "actions": [
-      "Longsword",
-      "Heavy Crossbow",
-      "Heavy Crossbow",
-      "Longsword",
-      "Shortsword",
-      "Shortsword"
+      "Veteran - Heavy Crossbow",
+      "Veteran - Longsword",
+      "Veteran - Shortsword"
     ],
     "applied_effects": [],
     "cr": 3
@@ -6059,7 +5321,7 @@
       "CHA": -5
     },
     "actions": [
-      "Rotting Touch"
+      "Violet Fungus - Rotting Touch"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -6078,10 +5340,8 @@
       "CHA": 2
     },
     "actions": [
-      "Beak",
-      "Talons",
-      "Talons",
-      "Beak"
+      "Vrock - Talons",
+      "Vrock - Beak"
     ],
     "applied_effects": [],
     "cr": 6
@@ -6100,8 +5360,7 @@
       "CHA": -3
     },
     "actions": [
-      "Beak",
-      "Beak"
+      "Vulture - Beak"
     ],
     "applied_effects": [],
     "cr": 0
@@ -6120,8 +5379,7 @@
       "CHA": -2
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Warhorse - Hooves"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -6140,8 +5398,7 @@
       "CHA": -3
     },
     "actions": [
-      "Hooves",
-      "Hooves"
+      "Warhorse Skeleton - Hooves"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -6161,30 +5418,10 @@
     },
     "actions": [
       "Water Elemental - Multi-attack",
-      "Slam",
-      "Slam"
+      "Water Elemental - Slam"
     ],
     "applied_effects": [],
     "cr": 5
-  },
-  "Weasel": {
-    "name": "Weasel",
-    "hp": 1,
-    "ac": 13,
-    "proficiency": 2,
-    "saves": {
-      "STR": -4,
-      "DEX": 3,
-      "CON": -1,
-      "WIS": 1,
-      "INT": -4,
-      "CHA": -4
-    },
-    "actions": [
-      "Bite"
-    ],
-    "applied_effects": [],
-    "cr": 0
   },
   "Werebear": {
     "name": "Werebear",
@@ -6200,9 +5437,9 @@
       "CHA": 1
     },
     "actions": [
-      "Bite (Bear or Hybrid Form Only)",
-      "Claw (Bear or Hybrid Form Only)",
-      "Greataxe (Humanoid or Hybrid Form Only)"
+      "Werebear - Bite (Bear or Hybrid Form Only)",
+      "Werebear - Claw (Bear or Hybrid Form Only)",
+      "Werebear - Greataxe (Humanoid or Hybrid Form Only)"
     ],
     "applied_effects": [],
     "cr": 5
@@ -6221,8 +5458,8 @@
       "CHA": -1
     },
     "actions": [
-      "Maul (Humanoid or Hybrid Form Only)",
-      "Tusks (Boar or Hybrid Form Only)"
+      "Wereboar - Maul (Humanoid or Hybrid Form Only)",
+      "Wereboar - Tusks (Boar or Hybrid Form Only)"
     ],
     "applied_effects": [],
     "cr": 4
@@ -6241,9 +5478,9 @@
       "CHA": -1
     },
     "actions": [
-      "Shortsword (Humanoid or Hybrid Form Only)",
-      "Hand Crossbow (Humanoid or Hybrid Form Only)",
-      "Bite (Rat or Hybrid Form Only)."
+      "Wererat - Shortsword (Humanoid or Hybrid Form Only)",
+      "Wererat - Hand Crossbow (Humanoid or Hybrid Form Only)",
+      "Wererat - Bite (Rat or Hybrid Form Only)."
     ],
     "applied_effects": [],
     "cr": 2
@@ -6262,10 +5499,10 @@
       "CHA": 0
     },
     "actions": [
-      "Bite (Tiger or Hybrid Form Only)",
-      "Claw (Tiger or Hybrid Form Only)",
-      "Longbow (Humanoid or Hybrid Form Only)",
-      "Scimitar (Humanoid or Hybrid Form Only)"
+      "Weretiger - Bite (Tiger or Hybrid Form Only)",
+      "Weretiger - Claw (Tiger or Hybrid Form Only)",
+      "Weretiger - Longbow (Humanoid or Hybrid Form Only)",
+      "Weretiger - Scimitar (Humanoid or Hybrid Form Only)"
     ],
     "applied_effects": [],
     "cr": 4
@@ -6284,9 +5521,9 @@
       "CHA": 0
     },
     "actions": [
-      "Bite (Wolf or Hybrid Form Only)",
-      "Claws (Hybrid Form Only)",
-      "Spear (Humanoid Form Only)"
+      "Werewolf - Bite (Wolf or Hybrid Form Only)",
+      "Werewolf - Claws (Hybrid Form Only)",
+      "Werewolf - Spear (Humanoid Form Only)"
     ],
     "applied_effects": [],
     "cr": 3
@@ -6305,8 +5542,7 @@
       "CHA": 2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "White Dragon Wyrmling - Bite"
     ],
     "applied_effects": [],
     "cr": 2
@@ -6325,12 +5561,10 @@
       "CHA": 2
     },
     "actions": [
-      "Longsword",
-      "Longsword",
-      "Longbow",
-      "Longbow",
+      "Wight - Longsword",
+      "Wight - Longbow",
       "Wight - Multi-attack",
-      "Life Drain"
+      "Wight - Life Drain"
     ],
     "applied_effects": [],
     "cr": 3
@@ -6368,8 +5602,7 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Winter Wolf - Bite"
     ],
     "applied_effects": [],
     "cr": 3
@@ -6388,8 +5621,7 @@
       "CHA": -2
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Wolf - Bite"
     ],
     "applied_effects": [],
     "cr": 0.25
@@ -6408,8 +5640,7 @@
       "CHA": -1
     },
     "actions": [
-      "Bite",
-      "Bite"
+      "Worg - Bite"
     ],
     "applied_effects": [],
     "cr": 0.5
@@ -6428,8 +5659,7 @@
       "CHA": 2
     },
     "actions": [
-      "Life Drain",
-      "Life Drain"
+      "Wraith - Life Drain"
     ],
     "applied_effects": [],
     "cr": 5
@@ -6448,11 +5678,9 @@
       "CHA": -2
     },
     "actions": [
-      "Claws",
-      "Bite",
-      "Bite",
-      "Stinger",
-      "Claws"
+      "Wyvern - Claws",
+      "Wyvern - Bite",
+      "Wyvern - Stinger"
     ],
     "applied_effects": [],
     "cr": 6
@@ -6471,11 +5699,9 @@
       "CHA": 0
     },
     "actions": [
-      "Bite",
+      "Xorn - Bite",
       "Xorn - Multi-attack",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Xorn - Claw"
     ],
     "applied_effects": [],
     "cr": 5
@@ -6494,10 +5720,8 @@
       "CHA": 5
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Black Dragon - Bite",
+      "Young Black Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 7
@@ -6516,10 +5740,8 @@
       "CHA": 7
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Blue Dragon - Bite",
+      "Young Blue Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 9
@@ -6538,10 +5760,8 @@
       "CHA": 5
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Brass Dragon - Bite",
+      "Young Brass Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 6
@@ -6560,10 +5780,8 @@
       "CHA": 6
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Bronze Dragon - Bite",
+      "Young Bronze Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 8
@@ -6582,10 +5800,8 @@
       "CHA": 5
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Copper Dragon - Bite",
+      "Young Copper Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 7
@@ -6604,10 +5820,8 @@
       "CHA": 9
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Gold Dragon - Bite",
+      "Young Gold Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 10
@@ -6626,10 +5840,8 @@
       "CHA": 5
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Green Dragon - Bite",
+      "Young Green Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 8
@@ -6648,10 +5860,8 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Red Dragon - Bite",
+      "Young Red Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 10
@@ -6670,10 +5880,8 @@
       "CHA": 8
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young Silver Dragon - Bite",
+      "Young Silver Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 9
@@ -6692,10 +5900,8 @@
       "CHA": 4
     },
     "actions": [
-      "Bite",
-      "Bite",
-      "Claw",
-      "Claw"
+      "Young White Dragon - Bite",
+      "Young White Dragon - Claw"
     ],
     "applied_effects": [],
     "cr": 6
@@ -6714,8 +5920,7 @@
       "CHA": -3
     },
     "actions": [
-      "Slam",
-      "Slam"
+      "Zombie - Slam"
     ],
     "applied_effects": [],
     "cr": 0.25
